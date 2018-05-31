@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="__STATIC__/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="__STATIC__/css/bootstrap.min.css">、
+	<style type="text/css">
+		body{
+			padding: 30px;
+		}
+		#ul{
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<ul id="ul" class="nav nav-pills">
+		<li role="presentation" class="active"><a href="{:url('notice/index')}">返回</a></li>
+	</ul>
+	<center><table class="table table-striped table-bordered">
+		<tr>
+			<td>id:{$notice.id}</td>
+		</tr>
+
+		<tr>
+			<td>title:{$notice.title}</td>
+		</tr>
+
+		<tr>
+			<td>content:{$notice.content|html_entity_decode}</td>
+		</tr>
+
+		<tr>
+			<td>status:{$notice.status}</td>
+		</tr>
+
+		<tr>
+			<td>创建时间：{$notice.create_time}</td>
+		</tr>
+	</table></center>
+	{include file="public/footer"}
+</body>
+</html>

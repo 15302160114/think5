@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"D:\xampp\htdocs\think5\public/../application/index\view\index\index.html";i:1528083075;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"D:\xampp\htdocs\think5\public/../application/index\view\index\index.html";i:1528084463;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,9 +78,8 @@
 						</div>
 						<div class="agileinfo-social-grids">
 							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-rss"></i></a></li>
+								<li><a href="<?php echo url('@user/login/index'); ?>">登录</a></li>
+								<li><a href="#">注册</a></li>
 							</ul>
 						</div>
 					</div>

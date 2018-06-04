@@ -1,13 +1,13 @@
 <?php
-namespace app\index\controller;
+namespace app\user\controller;
 use think\Controller;
 use think\Db;
-class NoticeController extends Controller
+class ArticleController extends Controller
 {
     public function index()
     {
-      $notice=model('notice')->getNotice();
-	  return $this->fetch('',['notice'=>$notice]);
+      $article=model('Article')->getArticle();
+	  return $this->fetch('',['article'=>$article]);
     }
     public function add(){
 		return $this->fetch();
@@ -19,7 +19,7 @@ class NoticeController extends Controller
 		}
 		$input=input('post.');
 
-		$validate=validate('Notice');
+		$validate=validate('Article');
 		if(!$validate->scene('add')->check($input)){
 			$this->error($validate->getError());
 		}
@@ -27,14 +27,12 @@ class NoticeController extends Controller
 		$date=[
 				'id'=>$input['id'],
 				'title'=>$input['title'],
-				'author_id'=>$input['author_id'],
-				'description'=>$input['description'],
 				'content'=>$input['content']
 			];
 
-		$xuhao=model('Notice')->add($date);
+		$xuhao=model('Article')->add($date);
 		if($xuhao){
-			$this->success('增加成功',url('notice/index'));
+			$this->success('增加成功',url('article/index'));
 		}else{
 			$this->error('增加失败');
 		}
@@ -44,9 +42,9 @@ class NoticeController extends Controller
 		if($id==0||is_null($id)){
 			$this->error('参数有误');
 		}
-		$notice=model('Notice')->get($id);
-		if(!is_null($notice->delete())){
-			$this->success('删除成功','notice/index');
+		$article=model('Article')->get($id);
+		if(!is_null($article->delete())){
+			$this->success('删除成功','article/index');
 		}
 		$this->error('删除失败');
 	}
@@ -55,9 +53,9 @@ class NoticeController extends Controller
 		if($id==0||is_null($id)){
 			$this->error('参数有误');
 		}
-		$notice=model('Notice')->get($id);
+		$article=model('Article')->get($id);
 		
-		$this->assign('notice',$notice);
+		$this->assign('article',$article);
 		return $this->fetch('');
 	} 
 	public function edit(){
@@ -65,8 +63,8 @@ class NoticeController extends Controller
 		if($id==0||is_null($id)){
 			$this->error('参数有误');
 		}
-		$notice=model('Notice')->get($id);
-		$this->assign('notice',$notice);
+		$article=model('Article')->get($id);
+		$this->assign('article',$article);
 		return $this->fetch('');
 	}
 	public function update(){
@@ -76,7 +74,7 @@ class NoticeController extends Controller
 		}
 		$input=input('post.');
 
-		$validate=validate('Notice');
+		$validate=validate('Article');
 		if(!$validate->scene('edit')->check($input)){
 			$this->error($validate->getError());
 		}
@@ -84,14 +82,12 @@ class NoticeController extends Controller
 		$date=[
 				'id'=>$input['id'],
 				'title'=>$input['title'],
-				'author_id'=>$input['author_id'],
-				'description'=>$input['description'],
 				'content'=>$input['content']
 			];
 
-		$xuhao=model('Notice')->save($date,['id'=>intval($input['id'])]);
+		$xuhao=model('Article')->save($date,['id'=>intval($input['id'])]);
 		if($xuhao){
-			$this->success('更新成功',url('notice/index'));
+			$this->success('更新成功',url('article/index'));
 		}else{
 			$this->error('更新失败');
 		}

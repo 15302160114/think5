@@ -1,8 +1,8 @@
 <?php 
 namespace app\common\model;
 use think\Model;
-class Notice extends Model{
-	public function getNotice(){
+class Article extends Model{
+	public function getArticle(){
 		$data=[];
 		$order=['id'=>'desc'];
 		return $this->where($data)

@@ -1,7 +1,7 @@
 <?php
 namespace app\common\validate;
 use think\Validate;
-class Notice extends Validate{
+class Article extends Validate{
 	protected $rule=[
 		'id'=>'require|max:15'
 	];

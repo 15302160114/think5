@@ -16,27 +16,26 @@
 </head>
 <body>
 	<ul id="ul" class="nav nav-pills">
-    <li role="presentation" class="active"><a href="{:url('notice/index')}">返回</a></li>
+    <li role="presentation" class="active"><a href="{:url('article/index')}">返回</a></li>
   </ul>
-<form class="form-horizontal" method="post" name="form1" action="{:url('notice/update')}">
+<form class="form-horizontal" method="post" name="form1" action="{:url('article/update')}">
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">ID</label>
     <div class="col-sm-7">
-      <input type="text" name="id" class="form-control" id="inputEmail3" placeholder="ID" value="{$notice.id}">
+      <input type="text" name="id" class="form-control" id="inputEmail3" placeholder="ID" value="{$article.id}">
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">title</label>
     <div class="col-sm-7">
-      <input type="text" name="title" class="form-control" id="title" placeholder="title" value="{$notice.title}">
+      <input type="text" name="title" class="form-control" id="title" placeholder="title" value="{$article.title}">
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">content</label>
     <div class="col-sm-7">
-      <!-- <textarea class="form-control" value="" name="content" rows="3">{$notice.content}</textarea> -->
       <script id="container" name="content" type="text/plain">
        
      </script>
@@ -56,7 +55,7 @@
     <script type="text/javascript">
         var ue = UE.getEditor('container');
         ue.ready(function(){
-          ue.setContent('{$notice.content|html_entity_decode}');
+          ue.setContent('{$article.content|html_entity_decode}');
         })
     </script>
 </body>

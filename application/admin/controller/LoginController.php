@@ -13,6 +13,9 @@ class LoginController extends Controller
       	}
       	return $this->fetch();
     }
+    public function zhuce(){
+        return $this->fetch();
+    }
     public function check(){
     	if(!request()->isPost()){
     		$this->error('有错');

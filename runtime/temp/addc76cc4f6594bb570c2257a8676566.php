@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"D:\xampp\htdocs\think5\public/../application/user\view\login\index.html";i:1528073884;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"D:\xampp\htdocs\think5\public/../application/user\view\login\index.html";i:1528343528;}*/ ?>
 <!DOCTYPE html>
 <html>
   <head>  
@@ -20,16 +20,24 @@
                   <h3>LOGIN</h3>
               </div>
 
-            <form>
+            <form class="form-horizontal" method="post" name="form1" action="<?php echo url('login/check'); ?>">
                 <div class="ticker">
                   <h4>Username</h4>
-                    <input type="text" value="John Smith" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'John Smith';}" >
+                    <input type="text" value="John Smith" name="username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'John Smith';}" >
                     <div class="clear"> </div>
                   </div>
                   <div>
-                  <h4>Username</h4>
-                <input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" >
-                        <div class="clear"> </div>
+                  <h4>Password</h4>
+                <input type="password" value="Password" name="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" >
+                <div class="clear"> </div>
+                </div>
+                <div>
+                <h4>验证码</h4>
+                <div class="col-sm-7">
+                      <input type="text" placeholder="请输入验证码" class="form-control" name="captcha">
+                      <img src="<?php echo captcha_src(); ?>" alt="captcha" onclick="javascript:this.src='<?php echo captcha_src(); ?>?tm='+Math.random();" style="cursor: pointer"/>
+                    </div>
+                    <div class="clear"> </div>
                 </div>
                 <div class="checkbox-grid">
                   <div class="inline-group green">

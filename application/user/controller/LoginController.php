@@ -13,13 +13,51 @@ class LoginController extends Controller
       	}
       	return $this->fetch();
     }
+    public function zhuce(){
+        return $this->fetch();
+    }
+    public function save(){
+        echo "<meta charset='UTF-8'>";
+        if(!request()->isPost()){
+            $this->error("非法输入");
+        }
+        
+        $input=input('post.');
+
+        $username=$input['username'];
+        $user=model('Author')->getAuthorByuserName($username);
+        if($user){
+            $this->error('用户名不可用');
+        }
+        if(!captcha_check($input['captcha'])){          
+            $this->error('验证码错误');
+        }
+
+        $validate=validate('Author');
+        if(!$validate->scene('add')->check($input)){
+            $this->error($validate->getError());
+        }
+        
+        $date=[
+                'email'=>$input['email'],
+                'username'=>$input['username'],
+                'password'=>$input['password1'],
+            ];
+
+        $xuhao=model('Author')->add($date);
+        if($xuhao){
+            $this->success('增加成功，新增序号为'.$xuhao,url('@index/index/index'));
+        }else{
+            $this->error('增加失败');
+        }
+    }
     public function check(){
     	if(!request()->isPost()){
     		$this->error('有错');
     	}
     	$data=input('post.');
     	$username=$data['username'];
-    	$teacher=model('Teacher')->getTeacherByuserName($username);
+    	$teacher=model('Author')->getAuthorByuserName($username);
     	if(!$teacher){
     		$this->error('有错');
     	}

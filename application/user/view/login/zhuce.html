@@ -2,7 +2,7 @@
 <html>
 	<head>	
 		<title>Register-login-form Website Template | Home :: 小贝壳网站模板</title>
-		<link href="__STATIC__/css/style.css" rel='stylesheet' type='text/css' />
+		<link href="__STATIC__/css/login.css" rel='stylesheet' type='text/css' />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<!--webfonts-->
@@ -21,13 +21,17 @@
 						  	<div class="Regisration-head">
 						    	<h2><span></span>Register</h2>
 						 	 </div>
-						  	<form>
-						  		<input type="text" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}" >
-						  		<input type="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}" >
-						  		<input type="text" value="Email Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Address';}" >
-						  		<input type="text" value="User Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User Name';}" >
-								<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" >
-								<input type="password" value=" Confirm Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Confirm Password';}" >
+						  	<form class="form-horizontal" method="post" name="form1" action="{:url('login/save')}" onsubmit="return Form_Submit()">
+						  		<input type="text" name="username" value="UserName" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User Name';}" >
+						  		<input type="text" name="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Address';}" >
+								<input type="password" name="password1" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" >
+								<input type="password" name="password2" value=" Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Confirm Password';}" >
+								<div class="form-group">
+									  
+									  <div class="col-sm-7">
+									    <input type="text" placeholder="请输入验证码" class="form-control" name="captcha">
+									    <img src="{:captcha_src()}" alt="captcha" onclick="javascript:this.src='{:captcha_src()}?tm='+Math.random();" style="cursor: pointer"/>
+									  </div>
 								 <div class="Remember-me">
 								<div class="p-container">
 								<label class="checkbox"><input type="checkbox" name="checkbox" checked><i></i>I agree to the Terms and Conditions</label>
@@ -46,5 +50,19 @@
 			  </div>
 	</body>
 </html>
+<script type="text/javascript">
+	function Form_Submit(){
+		var msg="";
 
+		if(!form1.password1.value==form1.password2.value){
+			msg+="密码出错\n";
+		}
+		
+		if(msg.length>0){
+			alert(msg);
+			return false;
+		}
+	}
+
+</script>
 

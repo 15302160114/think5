@@ -7,9 +7,9 @@ class LoginController extends Controller
 {
     public function index()
     {
-      	$author=session('my_user','','my');
-      	if($author){
-      		$this->redirect('userhotai/index');
+      	$teacher=session('my_user','','my');
+      	if($teacher&&$teacher->id){
+      		$this->redirect('teacher/biaoge');
       	}
       	return $this->fetch();
     }

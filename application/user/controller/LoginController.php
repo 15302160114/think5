@@ -7,9 +7,9 @@ class LoginController extends Controller
 {
     public function index()
     {
-      	$teacher=session('my_user','','my');
-      	if($teacher&&$teacher->id){
-      		$this->redirect('teacher/biaoge');
+      	$author=session('my_user','','my');
+      	if($author){
+      		$this->redirect('userhotai/index');
       	}
       	return $this->fetch();
     }
@@ -46,7 +46,7 @@ class LoginController extends Controller
 
         $xuhao=model('Author')->add($date);
         if($xuhao){
-            $this->success('增加成功，新增序号为'.$xuhao,url('@index/index/index'));
+            $this->success('增加成功，新增序号为'.$xuhao,url('userhotai/index'));
         }else{
             $this->error('增加失败');
         }
@@ -57,18 +57,18 @@ class LoginController extends Controller
     	}
     	$data=input('post.');
     	$username=$data['username'];
-    	$teacher=model('Author')->getAuthorByuserName($username);
-    	if(!$teacher){
+    	$author=model('Author')->getAuthorByuserName($username);
+    	if(!$author){
     		$this->error('有错');
     	}
         if(!captcha_check($data['captcha'])){          
             $this->error('验证码错误');
         }
-    	if($teacher->password!=md5($data['password'])){
+    	if($author->password!=$data['password']){
     		$this->error('密码有错');
     	}
-    	session('my_user',$teacher,'my');
-    	$this->success('ok','teacher/biaoge');
+    	session('my_user',$author,'my');
+    	$this->success('ok','userhotai/index');
     }
     public function logout(){
     	session(null,'my');

@@ -1,11 +1,11 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\index.html";i:1528870986;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\index.html";i:1528892836;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Amaze UI Admin index Examples</title>
+    <title>首页</title>
     <meta name="description" content="这是一个 index 页面">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -208,19 +208,19 @@
                         <i class="am-icon-home sidebar-nav-link-logo"></i> 首页
                     </a>
                 </li>
-                <li class="sidebar-nav-link">
+                <!-- <li class="sidebar-nav-link">
                     <a href="tables.html">
                         <i class="am-icon-table sidebar-nav-link-logo"></i> 表格
                     </a>
-                </li>
+                </li> -->
                 <li class="sidebar-nav-link">
                     <a href="calendar.html">
-                        <i class="am-icon-calendar sidebar-nav-link-logo"></i> 日历
+                        <i class="am-icon-calendar sidebar-nav-link-logo"></i> 我的文章
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="form.html">
-                        <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 表单
+                    <a href="add.html">
+                        <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 写文章
 
                     </a>
                 </li>

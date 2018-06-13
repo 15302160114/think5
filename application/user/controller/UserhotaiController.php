@@ -19,6 +19,37 @@ class UserhotaiController extends Base
 		$this->assign('userhotai',$userhotai);
 		return $this->fetch('');
     }
+    public function add(){
+		return $this->fetch();
+	}
+	public function save(){
+		echo "<meta charset='UTF-8'>";
+		if(!request()->isPost()){
+			$this->error("非法输入");
+		}
+		$input=input('post.');
+
+		$validate=validate('Article');
+		if(!$validate->scene('add')->check($input)){
+			$this->error($validate->getError());
+		}
+		
+		$date=[
+				'id'=>$input['id'],
+				'title'=>$input['title'],
+				'content'=>$input['content']
+			];
+
+		$xuhao=model('Article')->add($date);
+		if($xuhao){
+			$this->success('增加成功',url('userhotai/add'));
+		}else{
+			$this->error('增加失败');
+		}
+	}
+	public function all(){
+		return $this->fetch();
+	}
     public function edit(){
 		$id=input('param.id');
 		if($id==0||is_null($id)){

@@ -7,10 +7,10 @@ class LoginController extends Controller
 {
     public function index()
     {
-      	$teacher=session('my_user','','my');
-      	if($teacher&&$teacher->id){
-      		$this->redirect('teacher/biaoge');
-      	}
+      	// $teacher=session('my_user','','my');
+      	// if($teacher&&$teacher->id){
+      	// 	$this->redirect('teacher/biaoge');
+      	// }
       	return $this->fetch();
     }
     public function zhuce(){

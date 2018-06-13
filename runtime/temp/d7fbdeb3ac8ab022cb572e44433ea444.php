@@ -1,55 +1,87 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"D:\xampp\htdocs\think5\public/../application/admin\view\login\index.html";i:1528073884;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"D:\xampp\htdocs\think5\public/../application/admin\view\login\index.html";i:1528679874;}*/ ?>
 <!DOCTYPE html>
-<html>
-  <head>  
-    <title>Register-login-form Website Template | Home :: 小贝壳网站模板</title>
-    <link href="/think5/public/static/css/login.css" rel='stylesheet' type='text/css' />
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amaze UI Admin index Examples</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <!--webfonts-->
-    <link href='http://fonts.googleapis.com/css?family=Lobster|Pacifico:400,700,300|Roboto:400,100,100italic,300,300italic,400italic,500italic,500'  rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,500,600,700,300' rel='stylesheet' type='text/css'>
-    <!--webfonts-->
-  </head>
-  <body>  
-      <!--start-login-form-->
-        <div class="main">
-            
-          <div class="Login">
-              <div class="Login-head">
-                  <h3>LOGIN</h3>
-              </div>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="/think5/public/static/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/think5/public/static/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="stylesheet" href="/think5/public/static/css/amazeui.min.css" />
+    <link rel="stylesheet" href="/think5/public/static/css/amazeui.datatables.min.css" />
+    <link rel="stylesheet" href="/think5/public/static/css/app.css">
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 
-            <form>
-                <div class="ticker">
-                  <h4>Username</h4>
-                    <input type="text" value="John Smith" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'John Smith';}" >
-                    <div class="clear"> </div>
-                  </div>
-                  <div>
-                  <h4>Username</h4>
-                <input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" >
-                        <div class="clear"> </div>
+</head>
+
+<body data-type="login">
+    <script src="/think5/public/static/js/theme.js"></script>
+    <div class="am-g tpl-g">
+        <!-- 风格切换 -->
+        <div class="tpl-skiner">
+            <div class="tpl-skiner-toggle am-icon-cog">
+            </div>
+            <div class="tpl-skiner-content">
+                <div class="tpl-skiner-content-title">
+                    选择主题
                 </div>
-                <div class="checkbox-grid">
-                  <div class="inline-group green">
-                  <label class="radio"><input type="radio" name="radio-inline"><i> </i>Remember me</label>
-                  <div class="clear"> </div>
-                  </div>
+                <div class="tpl-skiner-content-bar">
+                    <span class="skiner-color skiner-white" data-color="theme-white"></span>
+                    <span class="skiner-color skiner-black" data-color="theme-black"></span>
+                </div>
+            </div>
+        </div>
+        <div class="tpl-login">
+            <div class="tpl-login-content">
+                <div class="tpl-login-logo">
 
                 </div>
-                         
-                <div class="submit-button">
-                  <input type="submit" onclick="myFunction()" value="LOGIN  >" >
-                </div>
-                  <div class="clear"> </div>
-                </div>
-                      
-              </form>
-          </div>
-      </div>
+
+
+
+                <form class="am-form tpl-form-line-form" method="post" name="form1" action="<?php echo url('login/check'); ?>">
+                    <div class="am-form-group">
+                        <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入账号">
+
+                    </div>
+
+                    <div class="am-form-group">
+                        <input type="password" class="tpl-form-input" id="user-name" placeholder="请输入密码">
+
+                    </div>
+                    <div class="am-form-group tpl-login-remember-me">
+                        <input id="remember-me" type="checkbox">
+                        <label for="remember-me">
+       
+                        记住密码
+                         </label>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="am-form-group">
+
+                        <button type="button" class="am-btn am-btn-primary  am-btn-block tpl-btn-bg-color-success  tpl-login-btn">提交</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-  </body>
+    <script src="http://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+    <script src="/think5/public/static/js/app.js"></script>
+
+</body>
+
 </html>
-
-

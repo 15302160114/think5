@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"D:\xampp\htdocs\think5\public/../application/user\view\login\zhuce.html";i:1528549535;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"D:\xampp\htdocs\think5\public/../application/user\view\login\zhuce.html";i:1528679675;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>	
@@ -26,7 +26,7 @@
 						  		<input type="text" name="username" value="UserName" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User Name';}" >
 						  		<input type="text" name="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Address';}" >
 								<input type="password" name="password1" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" >
-								<input type="password" name="password2" value=" Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Confirm Password';}" >
+								
 								<div class="form-group">
 									  
 									  <div class="col-sm-7">
@@ -34,10 +34,7 @@
 									    <img src="<?php echo captcha_src(); ?>" alt="captcha" onclick="javascript:this.src='<?php echo captcha_src(); ?>?tm='+Math.random();" style="cursor: pointer"/>
 									  </div>
 								 <div class="Remember-me">
-								<div class="p-container">
-								<label class="checkbox"><input type="checkbox" name="checkbox" checked><i></i>I agree to the Terms and Conditions</label>
-								<div class ="clear"></div>
-							</div>
+								
 												 
 								<div class="submit">
 									<input type="submit" onclick="myFunction()" value="Sign Me Up >" >
@@ -51,19 +48,3 @@
 			  </div>
 	</body>
 </html>
-<script type="text/javascript">
-	function Form_Submit(){
-		var msg="";
-
-		if(!form1.password1.value==form1.password2.value){
-			msg+="密码出错\n";
-		}
-		
-		if(msg.length>0){
-			alert(msg);
-			return false;
-		}
-	}
-
-</script>
-

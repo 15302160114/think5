@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"D:\xampp\htdocs\think5\public/../application/user\view\login\index.html";i:1528549535;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"D:\xampp\htdocs\think5\public/../application/user\view\login\index.html";i:1528689116;}*/ ?>
 <!DOCTYPE html>
 <html>
   <head>  
@@ -12,6 +12,13 @@
     <!--webfonts-->
   </head>
   <body>  
+      <div id="fanhui">
+          <a href="<?php echo url('@index/index/index'); ?>"><h3>首页</h3></a>
+      </div>
+
+      <div id="zhuce">
+          <a href="<?php echo url('login/zhuce'); ?>"><h3>注册</h3></a>
+      </div>
       <!--start-login-form-->
         <div class="main">
             
@@ -39,12 +46,16 @@
                     </div>
                     <div class="clear"> </div>
                 </div>
-                <div class="checkbox-grid">
+                <!-- <div class="checkbox-grid">
                   <div class="inline-group green">
                   <label class="radio"><input type="radio" name="radio-inline"><i> </i>Remember me</label>
                   <div class="clear"> </div>
                   </div>
 
+                </div> -->
+
+                <div class="guanli">
+                    <p><a href="<?php echo url('@admin/login/index'); ?>">管理员登录</a></p>
                 </div>
                          
                 <div class="submit-button">

@@ -35,6 +35,26 @@ body{
  	background-size: cover;
 	font-family: 'Raleway', sans-serif;
 }
+#fanhui{
+	font-weight: bold;
+	color: #888;
+	position: absolute;
+	left: 220px;
+	top:110px;
+}
+#zhuce{
+	position: absolute;
+	font-weight: bold;
+	color: #888;
+	right:220px;
+	top:110px;
+}
+#fanhui a,#zhuce a{
+	color: #888;
+}
+#fanhui a:hover,#zhuce a:hover{
+	color: #20252D;
+}
 .main {
 	text-align: center;
 	margin-top:2% ;
@@ -400,10 +420,24 @@ form span{
 	height:18px;
 	width:18px;
 }
+.guanli{
+	text-align: left;
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 400px;
+}
+.guanli p a{
+	color:#777;
+	font-weight: bold;
+}
+.guanli p a:hover{
+	color: #000;
+}
 /*************************/
 .submit {
 	text-align: center;
 	margin: 2px 0;
+	margin-top:30px;
 }
 .submit input[type="submit"]{
 	color: #203500;
@@ -434,6 +468,7 @@ form span{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#71d11a', endColorstr='#4b8800',GradientType=0 ); /* IE6-9 */
 }
 .submit-button input[type="submit"]{
+	margin-top:30px;
 	color: #203500;
 	cursor: pointer;
 	border: none;

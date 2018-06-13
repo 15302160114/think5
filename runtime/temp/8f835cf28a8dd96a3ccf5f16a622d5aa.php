@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\zhanghao.html";i:1528688455;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,25 +11,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="icon" type="image/png" href="__STATIC__/i/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="__STATIC__/i/app-icon72x72@2x.png">
+    <link rel="icon" type="image/png" href="/think5/public/static/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/think5/public/static/i/app-icon72x72@2x.png">
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
     <script src="http://cdn.bootcss.com/echarts/3.3.2/echarts.min.js"></script>
-    <link rel="stylesheet" href="__STATIC__/css/amazeui.min.css" />
-    <link rel="stylesheet" href="__STATIC__/css/amazeui.datatables.min.css" />
-    <link rel="stylesheet" href="__STATIC__/css/app.css">
+    <link rel="stylesheet" href="/think5/public/static/css/amazeui.min.css" />
+    <link rel="stylesheet" href="/think5/public/static/css/amazeui.datatables.min.css" />
+    <link rel="stylesheet" href="/think5/public/static/css/app.css">
     <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="/think5/public/static/css/bootstrap.min.css">
 
 </head>
 
 <body data-type="index">
-    <script src="__STATIC__/js/theme.js"></script>
+    <script src="/think5/public/static/js/theme.js"></script>
     <div class="am-g tpl-g">
         <!-- 头部 -->
         <header>
             <!-- logo -->
             <div class="am-fl tpl-header-logo">
-                <a href="javascript:;"><img src="__STATIC__/images/logo.png" alt=""></a>
+                <a href="javascript:;"><img src="/think5/public/static/images/logo.png" alt=""></a>
             </div>
             <!-- 右侧内容 -->
             <div class="tpl-header-fluid">
@@ -160,7 +162,7 @@
 
                         <!-- 退出 -->
                         <li class="am-text-sm">
-                            <a href="{:url('login/logout')}">
+                            <a href="<?php echo url('login/logout'); ?>">
                                 <span class="am-icon-sign-out"></span>退出
                             </a>
                         </li>
@@ -189,13 +191,13 @@
             <div class="tpl-sidebar-user-panel">
                 <div class="tpl-user-panel-slide-toggleable">
                     <div class="tpl-user-panel-profile-picture">
-                        <img src="__STATIC__/images/user04.png" alt="">
+                        <img src="/think5/public/static/images/user04.png" alt="">
                     </div>
                     <span class="user-panel-logged-in-text">
               <i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>
-              {if condition="$user"}{$user->username}{/if}
+              <?php if($user): ?><?php echo $user->username; endif; ?>
           </span>
-                    <a href="zhanghao.html" class="tpl-user-panel-action-link"> <span class="am-icon-pencil"></span> 账号设置</a>
+                    <a href="javascript:;" class="tpl-user-panel-action-link"> <span class="am-icon-pencil"></span> 账号设置</a>
                 </div>
             </div>
 
@@ -203,7 +205,7 @@
             <ul class="sidebar-nav">
                 
                 <li class="sidebar-nav-link">
-                    <a href="index.html" class="active">
+                    <a href="index.html">
                         <i class="am-icon-home sidebar-nav-link-logo"></i> 首页
                     </a>
                 </li>
@@ -235,180 +237,64 @@
 
         <!-- 内容区域 -->
         <div class="tpl-content-wrapper">
-
-            <div class="row-content am-cf">
-
-                <div class="row am-cf">
-                    <div class="am-u-sm-12 am-u-md-8">
-                        <div class="widget am-cf">
-                            <div class="widget-head am-cf">
-                                <div class="widget-title am-fl">月度财务收支计划</div>
-                                <div class="widget-function am-fr">
-                                    <a href="javascript:;" class="am-icon-cog"></a>
-                                </div>
-                            </div>
-                            <div class="widget-body-md widget-body tpl-amendment-echarts am-fr" id="tpl-echarts">
-
-                            </div>
-                        </div>
+            <div class="detail">
+                <form class="form-horizontal" method="post" name="form1" action="<?php echo url('userhotai/update'); ?>">
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+                    <div class="col-sm-7">
+                      <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="Username" value="<?php echo $userhotai['username']; ?>">
                     </div>
+                  </div>
 
-                    <div class="am-u-sm-12 am-u-md-4">
-                        <div class="widget am-cf">
-                            <div class="widget-head am-cf">
-                                <div class="widget-title am-fl">专用服务器负载</div>
-                                <div class="widget-function am-fr">
-                                    <a href="javascript:;" class="am-icon-cog"></a>
-                                </div>
-                            </div>
-                            <div class="widget-body widget-body-md am-fr">
-
-                                <div class="am-progress-title">CPU Load <span class="am-fr am-progress-title-more">28% / 100%</span></div>
-                                <div class="am-progress">
-                                    <div class="am-progress-bar" style="width: 15%"></div>
-                                </div>
-                                <div class="am-progress-title">CPU Load <span class="am-fr am-progress-title-more">28% / 100%</span></div>
-                                <div class="am-progress">
-                                    <div class="am-progress-bar  am-progress-bar-warning" style="width: 75%"></div>
-                                </div>
-                                <div class="am-progress-title">CPU Load <span class="am-fr am-progress-title-more">28% / 100%</span></div>
-                                <div class="am-progress">
-                                    <div class="am-progress-bar am-progress-bar-danger" style="width: 35%"></div>
-                                </div>
-                            </div>
-                        </div>
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">realname</label>
+                    <div class="col-sm-7">
+                      <input type="text" name="realname" class="form-control" id="title" placeholder="realname" value="<?php echo $userhotai['realname']; ?>">
                     </div>
-                </div>
+                  </div>
 
-
-                <!-- <div class="row am-cf">
-                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-4 widget-margin-bottom-lg ">
-                        <div class="tpl-user-card am-text-center widget-body-lg">
-                            <div class="tpl-user-card-title">
-                                禁言小张
-                            </div>
-                            <div class="achievement-subheading">
-                                月度最佳员工
-                            </div>
-                            <img class="achievement-image" src="__STATIC__/images/user07.png" alt="">
-                            <div class="achievement-description">
-                                禁言小张在
-                                <strong>30天内</strong> 禁言了
-                                <strong>200多</strong>人。
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-8 widget-margin-bottom-lg">
-
-                        <div class="widget am-cf widget-body-lg">
-
-                            <div class="widget-body  am-fr">
-                                <div class="am-scrollable-horizontal ">
-                                    <table width="100%" class="am-table am-table-compact am-text-nowrap tpl-table-black " id="example-r">
-                                        <thead>
-                                            <tr>
-                                                <th>文章标题</th>
-                                                <th>作者</th>
-                                                <th>时间</th>
-                                                <th>操作</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="gradeX">
-                                                <td>新加坡大数据初创公司 Latize 获 150 万美元风险融资</td>
-                                                <td>张鹏飞</td>
-                                                <td>2016-09-26</td>
-                                                <td>
-                                                    <div class="tpl-table-black-operation">
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> 编辑
-                                                        </a>
-                                                        <a href="javascript:;" class="tpl-table-black-operation-del">
-                                                            <i class="am-icon-trash"></i> 删除
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="even gradeC">
-                                                <td>自拍的“政治角色”：观众背对希拉里自拍合影表示“支持”</td>
-                                                <td>天纵之人</td>
-                                                <td>2016-09-26</td>
-                                                <td>
-                                                    <div class="tpl-table-black-operation">
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> 编辑
-                                                        </a>
-                                                        <a href="javascript:;" class="tpl-table-black-operation-del">
-                                                            <i class="am-icon-trash"></i> 删除
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="gradeX">
-                                                <td>关于创新管理，我想和你当面聊聊。</td>
-                                                <td>王宽师</td>
-                                                <td>2016-09-26</td>
-                                                <td>
-                                                    <div class="tpl-table-black-operation">
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> 编辑
-                                                        </a>
-                                                        <a href="javascript:;" class="tpl-table-black-operation-del">
-                                                            <i class="am-icon-trash"></i> 删除
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="even gradeC">
-                                                <td>究竟是趋势带动投资，还是投资引领趋势？</td>
-                                                <td>着迷</td>
-                                                <td>2016-09-26</td>
-                                                <td>
-                                                    <div class="tpl-table-black-operation">
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> 编辑
-                                                        </a>
-                                                        <a href="javascript:;" class="tpl-table-black-operation-del">
-                                                            <i class="am-icon-trash"></i> 删除
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="even gradeC">
-                                                <td>Docker领域再添一员，网易云发布“蜂巢”，加入云计算之争</td>
-                                                <td>醉里挑灯看键</td>
-                                                <td>2016-09-26</td>
-                                                <td>
-                                                    <div class="tpl-table-black-operation">
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> 编辑
-                                                        </a>
-                                                        <a href="javascript:;" class="tpl-table-black-operation-del">
-                                                            <i class="am-icon-trash"></i> 删除
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-                                            <!-- more data -->
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">code</label>
+                    <div class="col-sm-7">
+                      <input type="text" name="code" class="form-control" id="title" placeholder="code" value="<?php echo $userhotai['code']; ?>">
                     </div>
-                </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Tel</label>
+                    <div class="col-sm-7">
+                      <input type="text" name="tel" class="form-control" id="title" placeholder="Tel" value="<?php echo $userhotai['tel']; ?>">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-7">
+                      <input type="text" name="email" class="form-control" id="title" placeholder="Email" value="<?php echo $userhotai['email']; ?>">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Note</label>
+                    <div class="col-sm-7">
+                      <input type="text" name="note" class="form-control" id="title" placeholder="note" value="<?php echo $userhotai['note']; ?>">
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-default">更新</button>
+                    </div>
+                  </div>
+                </form>
             </div>
         </div>
     </div>
     </div>
     <script src="http://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
-    <script src="__STATIC__/js/amazeui.datatables.min.js"></script>
-    <script src="__STATIC__/js/dataTables.responsive.min.js"></script>
-    <script src="__STATIC__/js/app.js"></script>
+    <script src="/think5/public/static/js/amazeui.datatables.min.js"></script>
+    <script src="/think5/public/static/js/dataTables.responsive.min.js"></script>
+    <script src="/think5/public/static/js/app.js"></script>
 
 </body>
 

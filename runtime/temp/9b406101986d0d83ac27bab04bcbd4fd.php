@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html";i:1528895315;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html";i:1528895584;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -244,8 +244,17 @@
                             <div class="widget-head am-cf">
                                 <div class="widget-title  am-cf">文章列表</div>
                             </div>
-                            
+                            <div class="widget-body  am-fr">
                                 <form class="form-horizontal" method="post" name="form1" action="<?php echo url('userhotai/save'); ?>">
+                                  <select data-am-selected="{btnSize: 'sm'}">
+                                      <option value="option1">所有类别</option>
+                                      <option value="option2">IT业界</option>
+                                      <option value="option3">数码产品</option>
+                                      <option value="option3">笔记本电脑</option>
+                                      <option value="option3">平板电脑</option>
+                                      <option value="option3">只能手机</option>
+                                      <option value="option3">超极本</option>
+                                  </select>
                                   <div class="form-group">
                                     <label for="inputEmail3" class="col-sm-2 control-label">标题</label>
                                     <div class="col-sm-10">
@@ -269,7 +278,7 @@
                                     </div>
                                   </div>
                                 </form>
-                            
+                            </div>
                         </div>
                     </div>
                 </div>

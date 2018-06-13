@@ -35,26 +35,6 @@ body{
  	background-size: cover;
 	font-family: 'Raleway', sans-serif;
 }
-#fanhui{
-	font-weight: bold;
-	color: #888;
-	position: absolute;
-	left: 220px;
-	top:110px;
-}
-#zhuce{
-	position: absolute;
-	font-weight: bold;
-	color: #888;
-	right:220px;
-	top:110px;
-}
-#fanhui a,#zhuce a{
-	color: #888;
-}
-#fanhui a:hover,#zhuce a:hover{
-	color: #20252D;
-}
 .main {
 	text-align: center;
 	margin-top:2% ;
@@ -87,7 +67,24 @@ body{
 }
 .Login-head {
 	padding: 1.5em 0em;
-	text-align: center; 
+	text-align: center;
+}
+#fanhui,#zhuce{
+	position: absolute;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+#fanhui{
+	margin-left: 20px;
+}
+#zhuce{
+	margin-left: 100px;
+}
+#fanhui a,#zhuce a{
+	color:#999;
+}
+#fanhui a:hover,#zhuce a:hover{
+	color:#498900;
 }
 .login-head h1{
 	font-family: 'Pacifico', cursive;
@@ -424,14 +421,14 @@ form span{
 	text-align: left;
 	position: absolute;
 	margin-top: 50px;
-	margin-left: 400px;
+	margin-left: 24%;
 }
 .guanli p a{
 	color:#777;
 	font-weight: bold;
 }
 .guanli p a:hover{
-	color: #000;
+	color: #498900;
 }
 /*************************/
 .submit {

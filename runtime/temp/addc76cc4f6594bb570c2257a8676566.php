@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"D:\xampp\htdocs\think5\public/../application/user\view\login\index.html";i:1528689116;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"D:\xampp\htdocs\think5\public/../application/user\view\login\index.html";i:1528868284;}*/ ?>
 <!DOCTYPE html>
 <html>
   <head>  
@@ -12,18 +12,19 @@
     <!--webfonts-->
   </head>
   <body>  
-      <div id="fanhui">
-          <a href="<?php echo url('@index/index/index'); ?>"><h3>首页</h3></a>
-      </div>
-
-      <div id="zhuce">
-          <a href="<?php echo url('login/zhuce'); ?>"><h3>注册</h3></a>
-      </div>
       <!--start-login-form-->
         <div class="main">
             
           <div class="Login">
               <div class="Login-head">
+                  <div id="fanhui">
+                    <a href="<?php echo url('@index/index/index'); ?>"><h2>< 首页</h2></a>
+                  </div>
+
+                  <div id="zhuce">
+                    <a href="<?php echo url('login/zhuce'); ?>"><h2>注册 ></h2></a>
+                  </div>
+
                   <h3>LOGIN</h3>
               </div>
 

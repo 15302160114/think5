@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"D:\xampp\htdocs\think5\public/../application/user\view\login\zhuce.html";i:1528679675;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"D:\xampp\htdocs\think5\public/../application/user\view\login\zhuce.html";i:1528868933;}*/ ?>
 <!DOCTYPE html>
 <html>
 	<head>	
@@ -20,6 +20,9 @@
 					<div  class="wrap">
 						  <div class="Regisration">
 						  	<div class="Regisration-head">
+						  		<div id="fanhui">
+				                	<a href="<?php echo url('@index/index/index'); ?>"><h3>< 首页</h3></a>
+				                </div>
 						    	<h2><span></span>Register</h2>
 						 	 </div>
 						  	<form class="form-horizontal" method="post" name="form1" action="<?php echo url('login/save'); ?>" onsubmit="return Form_Submit()">

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"D:\xampp\htdocs\think5\public/../application/admin\view\login\index.html";i:1528679874;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"D:\xampp\htdocs\think5\public/../application/admin\view\login\index.html";i:1528872656;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,12 +48,12 @@
 
                 <form class="am-form tpl-form-line-form" method="post" name="form1" action="<?php echo url('login/check'); ?>">
                     <div class="am-form-group">
-                        <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入账号">
+                        <input type="text" class="tpl-form-input" name="username" id="user-name" placeholder="请输入账号">
 
                     </div>
 
                     <div class="am-form-group">
-                        <input type="password" class="tpl-form-input" id="user-name" placeholder="请输入密码">
+                        <input type="password" class="tpl-form-input" name="password" id="user-name" placeholder="请输入密码">
 
                     </div>
                     <div class="am-form-group tpl-login-remember-me">
@@ -71,8 +71,7 @@
 
 
                     <div class="am-form-group">
-
-                        <button type="button" class="am-btn am-btn-primary  am-btn-block tpl-btn-bg-color-success  tpl-login-btn">提交</button>
+                        <input type="submit" class="am-btn am-btn-primary  am-btn-block tpl-btn-bg-color-success  tpl-login-btn">
 
                     </div>
                 </form>

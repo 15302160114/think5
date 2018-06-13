@@ -1,5 +1,5 @@
 <?php
-namespace app\user\controller;
+namespace app\admin\controller;
 use think\Controller;
 
 class AdminhotaiController extends Controller

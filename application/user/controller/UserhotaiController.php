@@ -1,6 +1,7 @@
 <?php
 namespace app\user\controller;
 use think\Controller;
+use think\File;
 
 class UserhotaiController extends Base
 {
@@ -20,6 +21,8 @@ class UserhotaiController extends Base
 		return $this->fetch('');
     }
     public function add(){
+    	$category=model('Category')->getCategorys();
+		$this->assign('category',$category);
 		return $this->fetch();
 	}
 	public function save(){
@@ -50,6 +53,28 @@ class UserhotaiController extends Base
 	public function all(){
 		return $this->fetch();
 	}
+	function upload(){
+        $file = request()->file('file');
+
+        $data['status'] = 1;   
+        if(empty($file)){  
+          //  $this->error('文件导入错误');
+           $data['status'] =0;   
+        }
+      
+        $info = $file->rule('uniqid')->move(ROOT_PATH . 'public' . DS . 'uploads');
+        if(!$info){             
+            //  $this->error('文件上传错误');
+             $data['status'] =0;   
+             
+        } 
+        
+         $data['url'] =$info->getFilename();
+         unset($info);
+        
+      
+         return json_encode($data);
+    }
     public function edit(){
 		$id=input('param.id');
 		if($id==0||is_null($id)){

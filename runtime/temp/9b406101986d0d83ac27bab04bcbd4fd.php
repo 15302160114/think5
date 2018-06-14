@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html";i:1528895584;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html";i:1528948218;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,11 +19,9 @@
     <link rel="stylesheet" href="/think5/public/static/css/amazeui.datatables.min.css" />
     <link rel="stylesheet" href="/think5/public/static/css/app.css">
     <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-    <link rel="stylesheet" type="text/css" href="/think5/public/static/css/bootstrap.min.css">
-
 </head>
 
-<body data-type="index">
+<body data-type="widgets">
     <script src="/think5/public/static/js/theme.js"></script>
     <div class="am-g tpl-g">
         <!-- 头部 -->
@@ -52,7 +50,7 @@
                     <ul>
                         <!-- 欢迎语 -->
                         <li class="am-text-sm tpl-header-navbar-welcome">
-                            <a href="javascript:;">欢迎你, <?php if($user): ?><?php echo $user->username; endif; ?> </a>
+                            <a href="javascript:;">欢迎你,  <?php if($user): ?><?php echo $user->username; endif; ?></a>
                         </li>
 
                         <!-- 新邮件 -->
@@ -85,7 +83,7 @@
                                 <li class="tpl-dropdown-menu-messages">
                                     <a href="javascript:;" class="tpl-dropdown-menu-messages-item am-cf">
                                         <div class="menu-messages-ico">
-                                            <img src="assets/img/user02.png" alt="">
+                                            <img src="/think5/public/static/images/user02.png" alt="">
                                         </div>
                                         <div class="menu-messages-time">
                                             5天前
@@ -162,8 +160,8 @@
 
                         <!-- 退出 -->
                         <li class="am-text-sm">
-                            <a href="<?php echo url('login/logout'); ?>">
-                                <span class="am-icon-sign-out"></span>退出
+                            <a href="javascript:;">
+                                <span class="am-icon-sign-out"></span> 退出
                             </a>
                         </li>
                     </ul>
@@ -234,54 +232,116 @@
             </ul>
         </div>
 
-
         <!-- 内容区域 -->
         <div class="tpl-content-wrapper">
-            <div class="row-content am-cf">
+
+            <div class="container-fluid am-cf">
                 <div class="row">
+
                     <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
                         <div class="widget am-cf">
                             <div class="widget-head am-cf">
-                                <div class="widget-title  am-cf">文章列表</div>
+                                <div class="widget-title am-fl">换行边框</div>
+                                <div class="widget-function am-fr">
+                                    <a href="javascript:;" class="am-icon-cog"></a>
+                                </div>
                             </div>
-                            <div class="widget-body  am-fr">
-                                <form class="form-horizontal" method="post" name="form1" action="<?php echo url('userhotai/save'); ?>">
-                                  <select data-am-selected="{btnSize: 'sm'}">
-                                      <option value="option1">所有类别</option>
-                                      <option value="option2">IT业界</option>
-                                      <option value="option3">数码产品</option>
-                                      <option value="option3">笔记本电脑</option>
-                                      <option value="option3">平板电脑</option>
-                                      <option value="option3">只能手机</option>
-                                      <option value="option3">超极本</option>
-                                  </select>
-                                  <div class="form-group">
-                                    <label for="inputEmail3" class="col-sm-2 control-label">标题</label>
-                                    <div class="col-sm-10">
-                                      <input type="text" name="title" class="form-control" id="inputEmail3" placeholder="标题">
-                                    </div>
-                                  </div>
+                            <div class="widget-body am-fr">
 
-                                  <div class="form-group">
-                                    <label for="inputPassword3" class="col-sm-2 control-label">内容</label>
-                                    <div class="col-sm-10">
-                                     <!-- <textarea class="form-control" name="content" rows="3"></textarea> -->
-                                     <script id="container" name="content" type="text/plain">
-                                       
-                                     </script>
+                                <form class="am-form tpl-form-border-form">
+                                    <div class="am-form-group">
+                                        <label for="user-name" class="am-u-sm-12 am-form-label am-text-left">标题 <span class="tpl-form-line-small-title">Title</span></label>
+                                        <div class="am-u-sm-12">
+                                            <input type="text" class="tpl-form-input am-margin-top-xs" id="user-name" placeholder="请输入标题文字">
+                                            <small>请填写标题文字10-20字左右。</small>
+                                        </div>
                                     </div>
-                                  </div>
-                                 
-                                  <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                      <button type="submit" class="btn btn-default">Sign in</button>
+
+                                    <div class="am-form-group">
+                                        <label for="user-email" class="am-u-sm-12 am-form-label am-text-left">发布时间 <span class="tpl-form-line-small-title">Time</span></label>
+                                        <div class="am-u-sm-12">
+                                            <input type="text" class="am-form-field tpl-form-no-bg am-margin-top-xs" placeholder="发布时间" data-am-datepicker="" readonly>
+                                            <small>发布时间为必填</small>
+                                        </div>
                                     </div>
-                                  </div>
+
+                                    <div class="am-form-group">
+                                        <label for="user-phone" class="am-u-sm-12 am-form-label am-text-left">文章类别<span class="tpl-form-line-small-title">Category</span></label>
+                                        <div class="am-u-sm-12  am-margin-top-xs">
+                                            <select data-am-selected="{searchBox: 1}" style="display: none;">
+                                              <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                                              <option value="<?php echo $vo['id']; ?>"><?php echo $vo['name']; ?></option>
+                                              <?php endforeach; endif; else: echo "" ;endif; ?>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <label class="am-u-sm-12 am-form-label  am-text-left">SEO关键字 <span class="tpl-form-line-small-title">SEO</span></label>
+                                        <div class="am-u-sm-12">
+                                            <input type="text" class="am-margin-top-xs" placeholder="输入SEO关键字">
+                                        </div>
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <label for="user-weibo" class="am-u-sm-12 am-form-label  am-text-left">封面图 <span class="tpl-form-line-small-title">Images</span></label>
+
+                                        <div id="uploader-demo" class="am-u-sm-12 am-margin-top-xs">
+                                            <div class="am-form-group am-form-file">
+                                                <div id="fileList" class="tpl-form-file-img uploader-list">
+                                                </div>
+
+                                                <button id="filePicker" type="button" class="am-btn am-btn-danger am-btn-sm ">
+                                                <i class="am-icon-cloud-upload"></i> 添加封面图片</button>
+                                                <input id="doc-form-file" type="file" multiple>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <label for="user-weibo" class="am-u-sm-12 am-form-label  am-text-left">添加分类 <span class="tpl-form-line-small-title">Type</span></label>
+                                        <div class="am-u-sm-12">
+                                            <input type="text" id="user-weibo" class="am-margin-top-xs" placeholder="请添加分类用点号隔开">
+                                            <div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <label for="user-intro" class="am-u-sm-12 am-form-label  am-text-left">隐藏文章</label>
+                                        <div class="am-u-sm-12">
+                                            <div class="tpl-switch">
+                                                <input type="checkbox" class="ios-switch bigswitch tpl-switch-btn am-margin-top-xs" checked="">
+                                                <div class="tpl-switch-btn-view">
+                                                    <div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <label for="user-intro" class="am-u-sm-12 am-form-label  am-text-left">文章内容</label>
+                                        <div class="am-u-sm-12 am-margin-top-xs">
+                                            <textarea class="" rows="10" id="user-intro" placeholder="请输入文章内容"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <div class="am-u-sm-12 am-u-sm-push-12">
+                                            <button type="button" class="am-btn am-btn-primary tpl-btn-bg-color-success ">提交</button>
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
     </div>
@@ -289,15 +349,52 @@
     <script src="http://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
     <script src="/think5/public/static/js/amazeui.datatables.min.js"></script>
     <script src="/think5/public/static/js/dataTables.responsive.min.js"></script>
-    <script src="/think5/public/static/js/app.js"></script>
-    <script type="text/javascript" src="/think5/public/static/ueditor/ueditor.config.js"></script>
-    <!-- 编辑器源码文件 -->
-    <script type="text/javascript" src="/think5/public/static/ueditor/ueditor.all.js"></script>
-    <!-- 实例化编辑器 -->
-    <script type="text/javascript">
-        var editor = UE.getEditor('container');
-    </script>
+    <script src="/think5/public/static/js/app.js"></script> 
+    <script type="text/javascript" src="/think5/public/static/webuploader/webuploader.min.js"></script>    <!-- 引用插件js -->
 
 </body>
-
+<script type="text/javascript">
+           var $list=$("#fileList");   //这几个初始化全局的百度文档上没说明，好蛋疼
+           var thumbnailWidth = 100;   //缩略图高度和宽度 （单位是像素），当宽高度是0~1的时候，是按照百分比计算，具体可以看api文档  
+           var thumbnailHeight = 100;  
+           var uploader = WebUploader.create({
+            // 选完文件后，是否自动上传。
+           auto: true,
+            // swf文件路径
+           swf: '/think5/public/static/webuploader/uploader.swf', //加载swf文件，路径一定要对
+            // 文件接收服务端。
+            server: '<?php echo url("userhotai/upload"); ?>',
+            // 选择文件的按钮。可选。
+            // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+            pick: '#filePicker',
+            // 只允许选择图片文件。
+            accept: {
+                title: 'Images',
+                extensions: 'gif,jpg,jpeg,bmp,png',
+                mimeTypes: 'image/'
+            }
+        });
+      //上传完成事件监听
+        uploader.on( 'fileQueued', function(file) {
+            var $li = $(
+                    '<div id="' + file.id + '" class="file-item thumbnail">' +
+                        '<img>' +
+                        '<div class="info">' + file.name + '</div>' +
+                    '</div>'
+                    ),
+                $img = $li.find('img');
+            // $list为容器jQuery实例
+                   $("#fileList").append( $li );
+            // 创建缩略图
+            // 如果为非图片文件，可以不用调用此方法。
+            // thumbnailWidth x thumbnailHeight 为 100 x 100
+            uploader.makeThumb( file, function( error, src ) {
+                if ( error ) {
+                    $img.replaceWith('<span>不能预览</span>');
+                    return;
+                }
+                $img.attr( 'src', src );
+            }, thumbnailWidth, thumbnailHeight );
+        });
+</script>
 </html>

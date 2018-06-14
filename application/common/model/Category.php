@@ -1,8 +1,8 @@
 <?php
 namespace app\common\model;
 use think\Model;
-class Author extends Model{
-	public function getAuthor(){
+class Category extends Model{
+	public function getCategory(){
 		$data=[];
 		$order=['id'=>'desc','sex'=>'desc'];
 		return $this->where($data)
@@ -15,14 +15,14 @@ class Author extends Model{
 		return $this->id;
 	}
 
-	public function getAuthors(){
+	public function getCategorys(){
 		$order=['id'=>'desc','sex'=>'desc'];
 		return $this->order($order)
 					->select();
 	}
 
-	public function getAuthorByuserName($username){
-		$data=['username'=>$username];
+	public function getCategoryByName($categoryname){
+		$data=['categoryname'=>$categoryname];
 		return $this->where($data)->find();
 	}
 }

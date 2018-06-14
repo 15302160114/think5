@@ -21,8 +21,8 @@ class UserhotaiController extends Base
 		return $this->fetch('');
     }
     public function add(){
-    	$category=model('Category')->getCategorys();
-		$this->assign('category',$category);
+    	$categorys=model('Category')->getCategorys();
+		$this->assign('categorys',$categorys);
 		return $this->fetch();
 	}
 	public function save(){

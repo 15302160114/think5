@@ -8042,3 +8042,207 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.010001s ]
 [ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sex' in 'order clause'[D:\xampp\htdocs\think5\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-06-14T11:55:57+08:00 ] 0.0.0.0 GET /think5/public/user/userhotai/add.html
+[ info ] localhost:88/think5/public/user/userhotai/add.html [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：2,761.16kb] [文件加载：57]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'userhotai',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/user/userhotai/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=h3q9orcdji040r4j64gn9f15c0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\user\controller\UserhotaiController->add[ D:\xampp\htdocs\think5\application\user\controller\UserhotaiController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html [ array (
+  0 => 'user',
+  1 => 'category',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.000000s ]
+[ error ] [8]未定义变量: categorys[D:\xampp\htdocs\think5\runtime\temp\9b406101986d0d83ac27bab04bcbd4fd.php:272]
+---------------------------------------------------------------
+[ 2018-06-14T11:55:59+08:00 ] 0.0.0.0 GET /think5/public/user/userhotai/add.html
+[ info ] localhost:88/think5/public/user/userhotai/add.html [运行时间：0.087005s][吞吐率：11.49req/s] [内存消耗：2,761.16kb] [文件加载：57]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'userhotai',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/user/userhotai/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=h3q9orcdji040r4j64gn9f15c0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\user\controller\UserhotaiController->add[ D:\xampp\htdocs\think5\application\user\controller\UserhotaiController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html [ array (
+  0 => 'user',
+  1 => 'category',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: categorys[D:\xampp\htdocs\think5\runtime\temp\9b406101986d0d83ac27bab04bcbd4fd.php:272]
+---------------------------------------------------------------
+[ 2018-06-14T11:56:35+08:00 ] 0.0.0.0 GET /think5/public/user/userhotai/add.html
+[ info ] localhost:88/think5/public/user/userhotai/add.html [运行时间：0.087005s][吞吐率：11.49req/s] [内存消耗：2,792.75kb] [文件加载：54]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'userhotai',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/user/userhotai/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=h3q9orcdji040r4j64gn9f15c0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\user\controller\UserhotaiController->add[ D:\xampp\htdocs\think5\application\user\controller\UserhotaiController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html [ array (
+  0 => 'user',
+  1 => 'categorys',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-14T11:56:35+08:00 ] 0.0.0.0 GET /think5/public/user/userhotai/assets/img/user04.png
+[ info ] localhost:88/think5/public/user/userhotai/assets/img/user04.png [运行时间：0.043003s][吞吐率：23.25req/s] [内存消耗：1,963.62kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'userhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/user/userhotai/add.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=h3q9orcdji040r4j64gn9f15c0',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-14T11:56:35+08:00 ] 0.0.0.0 GET /think5/public/user/userhotai/assets/img/user04.png
+[ info ] localhost:88/think5/public/user/userhotai/assets/img/user04.png [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：1,963.62kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'userhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/user/userhotai/add.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=h3q9orcdji040r4j64gn9f15c0',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File

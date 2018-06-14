@@ -16,7 +16,7 @@ class Category extends Model{
 	}
 
 	public function getCategorys(){
-		$order=['id'=>'desc','sex'=>'desc'];
+		$order=['id'=>'desc'];
 		return $this->order($order)
 					->select();
 	}

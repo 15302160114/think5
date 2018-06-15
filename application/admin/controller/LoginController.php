@@ -13,58 +13,20 @@ class LoginController extends Controller
         // }
         return $this->fetch();
     }
-    public function zhuce(){
-        return $this->fetch();
-    }
-    public function save(){
-        echo "<meta charset='UTF-8'>";
-        if(!request()->isPost()){
-            $this->error("非法输入");
-        }
-        
-        $input=input('post.');
-
-        $username=$input['username'];
-        $user=model('Admin')->getAdminByuserName($username);
-        if($user){
-            $this->error('用户名不可用');
-        }
-        if(!captcha_check($input['captcha'])){
-            $this->error('验证码错误');
-        }
-
-        $validate=validate('Admin');
-        if(!$validate->scene('add')->check($input)){
-            $this->error($validate->getError());
-        }
-        
-        $date=[
-                'email'=>$input['email'],
-                'username'=>$input['username'],
-                'password'=>$input['password1'],
-            ];
-
-        $xuhao=model('Admin')->add($date);
-        if($xuhao){
-            $this->success('增加成功，新增序号为'.$xuhao,url('adminhotai/index'));
-        }else{
-            $this->error('增加失败');
-        }
-    }
     public function check(){
         if(!request()->isPost()){
             $this->error('有错');
         }
         $data=input('post.');
         $username=$data['username'];
-        $author=model('Admin')->getAdminByuserName($username);
-        if(!$author){
+        $admin=model('Admin')->getAdminByuserName($username);
+        if(!$admin){
             $this->error('用户名有错');
         }
-        if($author->password!=$data['password']){
+        if($admin->password!=$data['password']){
             $this->error('密码有错');
         }
-        session('my_user',$author,'my');
+        session('my_user',$admin,'my');
         $this->success('ok','adminhotai/index');
     }
     public function logout(){

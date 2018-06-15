@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html";i:1528948218;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html";i:1529027758;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -160,7 +160,7 @@
 
                         <!-- 退出 -->
                         <li class="am-text-sm">
-                            <a href="javascript:;">
+                            <a href="<?php echo url('login/logout'); ?>">
                                 <span class="am-icon-sign-out"></span> 退出
                             </a>
                         </li>
@@ -258,17 +258,10 @@
                                     </div>
 
                                     <div class="am-form-group">
-                                        <label for="user-email" class="am-u-sm-12 am-form-label am-text-left">发布时间 <span class="tpl-form-line-small-title">Time</span></label>
-                                        <div class="am-u-sm-12">
-                                            <input type="text" class="am-form-field tpl-form-no-bg am-margin-top-xs" placeholder="发布时间" data-am-datepicker="" readonly>
-                                            <small>发布时间为必填</small>
-                                        </div>
-                                    </div>
-
-                                    <div class="am-form-group">
                                         <label for="user-phone" class="am-u-sm-12 am-form-label am-text-left">文章类别<span class="tpl-form-line-small-title">Category</span></label>
                                         <div class="am-u-sm-12  am-margin-top-xs">
-                                            <select data-am-selected="{searchBox: 1}" style="display: none;">
+                                            <select data-am-selected="{searchBox: 1}">
+                                               <option value="all">无分类</option>
                                               <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                                               <option value="<?php echo $vo['id']; ?>"><?php echo $vo['name']; ?></option>
                                               <?php endforeach; endif; else: echo "" ;endif; ?>
@@ -300,16 +293,6 @@
                                     </div>
 
                                     <div class="am-form-group">
-                                        <label for="user-weibo" class="am-u-sm-12 am-form-label  am-text-left">添加分类 <span class="tpl-form-line-small-title">Type</span></label>
-                                        <div class="am-u-sm-12">
-                                            <input type="text" id="user-weibo" class="am-margin-top-xs" placeholder="请添加分类用点号隔开">
-                                            <div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="am-form-group">
                                         <label for="user-intro" class="am-u-sm-12 am-form-label  am-text-left">隐藏文章</label>
                                         <div class="am-u-sm-12">
                                             <div class="tpl-switch">
@@ -326,7 +309,10 @@
                                     <div class="am-form-group">
                                         <label for="user-intro" class="am-u-sm-12 am-form-label  am-text-left">文章内容</label>
                                         <div class="am-u-sm-12 am-margin-top-xs">
-                                            <textarea class="" rows="10" id="user-intro" placeholder="请输入文章内容"></textarea>
+                                            <!-- <textarea class="" rows="10" id="user-intro" placeholder="请输入文章内容"></textarea> -->
+                                            <script id="container" name="content" type="text/plain">
+       
+                                            </script>
                                         </div>
                                     </div>
 
@@ -351,6 +337,14 @@
     <script src="/think5/public/static/js/dataTables.responsive.min.js"></script>
     <script src="/think5/public/static/js/app.js"></script> 
     <script type="text/javascript" src="/think5/public/static/webuploader/webuploader.min.js"></script>    <!-- 引用插件js -->
+
+    <script type="text/javascript" src="/think5/public/static/ueditor/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="/think5/public/static/ueditor/ueditor.all.js"></script>
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+        var editor = UE.getEditor('container');
+    </script>
 
 </body>
 <script type="text/javascript">

@@ -1,11 +1,11 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\index.html";i:1529030618;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\fenlei.html";i:1529033806;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>首页</title>
+    <title>文章分类</title>
     <meta name="description" content="这是一个 index 页面">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,10 +19,9 @@
     <link rel="stylesheet" href="/think5/public/static/css/amazeui.datatables.min.css" />
     <link rel="stylesheet" href="/think5/public/static/css/app.css">
     <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-
 </head>
 
-<body data-type="index">
+<body data-type="widgets">
     <script src="/think5/public/static/js/theme.js"></script>
     <div class="am-g tpl-g">
         <!-- 头部 -->
@@ -51,7 +50,7 @@
                     <ul>
                         <!-- 欢迎语 -->
                         <li class="am-text-sm tpl-header-navbar-welcome">
-                            <a href="javascript:;">欢迎你, <?php if($user): ?><?php echo $user->username; endif; ?> </a>
+                            <a href="javascript:;">欢迎你,  <?php if($user): ?><?php echo $user->username; endif; ?></a>
                         </li>
 
                         <!-- 新邮件 -->
@@ -84,7 +83,7 @@
                                 <li class="tpl-dropdown-menu-messages">
                                     <a href="javascript:;" class="tpl-dropdown-menu-messages-item am-cf">
                                         <div class="menu-messages-ico">
-                                            <img src="assets/img/user02.png" alt="">
+                                            <img src="/think5/public/static/images/user02.png" alt="">
                                         </div>
                                         <div class="menu-messages-time">
                                             5天前
@@ -162,7 +161,7 @@
                         <!-- 退出 -->
                         <li class="am-text-sm">
                             <a href="<?php echo url('login/logout'); ?>">
-                                <span class="am-icon-sign-out"></span>退出
+                                <span class="am-icon-sign-out"></span> 退出
                             </a>
                         </li>
                     </ul>
@@ -203,7 +202,7 @@
             <!-- 菜单 -->
             <ul class="sidebar-nav">
                 <li class="sidebar-nav-link">
-                    <a href="index.html" class="active">
+                    <a href="index.html">
                         <i class="am-icon-home sidebar-nav-link-logo"></i> 首页
                     </a>
                 </li>
@@ -214,7 +213,7 @@
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="fenlei.html">
+                    <a href="fenlei.html" class="active">
                         <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 添加文章分类
 
                     </a>
@@ -233,253 +232,74 @@
             </ul>
         </div>
 
-
         <!-- 内容区域 -->
         <div class="tpl-content-wrapper">
 
             <div class="container-fluid am-cf">
                 <div class="row">
-                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-9">
-                        <div class="page-header-heading"><span class="am-icon-home page-header-heading-icon"></span> 部件首页 <small>Amaze UI</small></div>
-                        <p class="page-header-description">Amaze UI 含近 20 个 CSS 组件、20 余 JS 组件，更有多个包含不同主题的 Web 组件。</p>
-                    </div>
-                    <div class="am-u-lg-3 tpl-index-settings-button">
-                        <button type="button" class="page-header-button"><span class="am-icon-paint-brush"></span> 设置</button>
-                    </div>
-                </div>
 
-            </div>
-
-            <div class="row-content am-cf">
-                <div class="row  am-cf">
-                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-4">
+                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
                         <div class="widget am-cf">
                             <div class="widget-head am-cf">
-                                <div class="widget-title am-fl">月度财务收支计划</div>
+                                <div class="widget-title am-fl">文章类别</div>
                                 <div class="widget-function am-fr">
                                     <a href="javascript:;" class="am-icon-cog"></a>
                                 </div>
                             </div>
                             <div class="widget-body am-fr">
-                                <div class="am-fl">
-                                    <div class="widget-fluctuation-period-text">
-                                        ￥61746.45
-                                        <button class="widget-fluctuation-tpl-btn">
-                        <i class="am-icon-calendar"></i>
-                        更多月份
-                      </button>
-                                    </div>
-                                </div>
-                                <div class="am-fr am-cf">
-                                    <div class="widget-fluctuation-description-amount text-success" am-cf>
-                                        +￥30420.56
 
-                                    </div>
-                                    <div class="widget-fluctuation-description-text am-text-right">
-                                        8月份收入
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
-                        <div class="widget widget-primary am-cf">
-                            <div class="widget-statistic-header">
-                                本季度利润
-                            </div>
-                            <div class="widget-statistic-body">
-                                <div class="widget-statistic-value">
-                                    ￥27,294
-                                </div>
-                                <div class="widget-statistic-description">
-                                    本季度比去年多收入 <strong>2593元</strong> 人民币
-                                </div>
-                                <span class="widget-statistic-icon am-icon-credit-card-alt"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
-                        <div class="widget widget-purple am-cf">
-                            <div class="widget-statistic-header">
-                                本季度利润
-                            </div>
-                            <div class="widget-statistic-body">
-                                <div class="widget-statistic-value">
-                                    ￥27,294
-                                </div>
-                                <div class="widget-statistic-description">
-                                    本季度比去年多收入 <strong>2593元</strong> 人民币
-                                </div>
-                                <span class="widget-statistic-icon am-icon-support"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row am-cf">
-                    <div class="am-u-sm-12 am-u-md-8">
-                        <div class="widget am-cf">
-                            <div class="widget-head am-cf">
-                                <div class="widget-title am-fl">月度财务收支计划</div>
-                                <div class="widget-function am-fr">
-                                    <a href="javascript:;" class="am-icon-cog"></a>
-                                </div>
-                            </div>
-                            <div class="widget-body-md widget-body tpl-amendment-echarts am-fr" id="tpl-echarts">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="am-u-sm-12 am-u-md-4">
-                        <div class="widget am-cf">
-                            <div class="widget-head am-cf">
-                                <div class="widget-title am-fl">专用服务器负载</div>
-                                <div class="widget-function am-fr">
-                                    <a href="javascript:;" class="am-icon-cog"></a>
-                                </div>
-                            </div>
-                            <div class="widget-body widget-body-md am-fr">
-
-                                <div class="am-progress-title">CPU Load <span class="am-fr am-progress-title-more">28% / 100%</span></div>
-                                <div class="am-progress">
-                                    <div class="am-progress-bar" style="width: 15%"></div>
-                                </div>
-                                <div class="am-progress-title">CPU Load <span class="am-fr am-progress-title-more">28% / 100%</span></div>
-                                <div class="am-progress">
-                                    <div class="am-progress-bar  am-progress-bar-warning" style="width: 75%"></div>
-                                </div>
-                                <div class="am-progress-title">CPU Load <span class="am-fr am-progress-title-more">28% / 100%</span></div>
-                                <div class="am-progress">
-                                    <div class="am-progress-bar am-progress-bar-danger" style="width: 35%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row am-cf">
-                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-4 widget-margin-bottom-lg ">
-                        <div class="tpl-user-card am-text-center widget-body-lg">
-                            <div class="tpl-user-card-title">
-                                禁言小张
-                            </div>
-                            <div class="achievement-subheading">
-                                月度最佳员工
-                            </div>
-                            <img class="achievement-image" src="/think5/public/static/images/user07.png" alt="">
-                            <div class="achievement-description">
-                                禁言小张在
-                                <strong>30天内</strong> 禁言了
-                                <strong>200多</strong>人。
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-8 widget-margin-bottom-lg">
-
-                        <div class="widget am-cf widget-body-lg">
-
-                            <div class="widget-body  am-fr">
-                                <div class="am-scrollable-horizontal ">
-                                    <table width="100%" class="am-table am-table-compact am-text-nowrap tpl-table-black " id="example-r">
+                                <div class="am-u-sm-12">
+                                    <table width="100%" class="am-table am-table-compact am-table-striped tpl-table-black " id="example-r">
                                         <thead>
                                             <tr>
-                                                <th>文章标题</th>
-                                                <th>作者</th>
+                                                <th>序号</th>
+                                                <th>文章分类</th>
                                                 <th>时间</th>
                                                 <th>操作</th>
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $num = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($num % 2 );++$num;?>
                                             <tr class="gradeX">
-                                                <td>新加坡大数据初创公司 Latize 获 150 万美元风险融资</td>
-                                                <td>张鹏飞</td>
-                                                <td>2016-09-26</td>
+                                                <td><?php echo $num; ?></td>
+                                                <td><?php echo $vo['categoryname']; ?></td>
+                                                <td><?php echo $vo['create_time']; ?></td>
                                                 <td>
                                                     <div class="tpl-table-black-operation">
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> 编辑
-                                                        </a>
-                                                        <a href="javascript:;" class="tpl-table-black-operation-del">
+                                                        <a href="<?php echo url('adminhotai/delete',['id'=>$vo['id']]); ?>" class="tpl-table-black-operation-del">
                                                             <i class="am-icon-trash"></i> 删除
                                                         </a>
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="even gradeC">
-                                                <td>自拍的“政治角色”：观众背对希拉里自拍合影表示“支持”</td>
-                                                <td>天纵之人</td>
-                                                <td>2016-09-26</td>
-                                                <td>
-                                                    <div class="tpl-table-black-operation">
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> 编辑
-                                                        </a>
-                                                        <a href="javascript:;" class="tpl-table-black-operation-del">
-                                                            <i class="am-icon-trash"></i> 删除
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="gradeX">
-                                                <td>关于创新管理，我想和你当面聊聊。</td>
-                                                <td>王宽师</td>
-                                                <td>2016-09-26</td>
-                                                <td>
-                                                    <div class="tpl-table-black-operation">
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> 编辑
-                                                        </a>
-                                                        <a href="javascript:;" class="tpl-table-black-operation-del">
-                                                            <i class="am-icon-trash"></i> 删除
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="even gradeC">
-                                                <td>究竟是趋势带动投资，还是投资引领趋势？</td>
-                                                <td>着迷</td>
-                                                <td>2016-09-26</td>
-                                                <td>
-                                                    <div class="tpl-table-black-operation">
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> 编辑
-                                                        </a>
-                                                        <a href="javascript:;" class="tpl-table-black-operation-del">
-                                                            <i class="am-icon-trash"></i> 删除
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="even gradeC">
-                                                <td>Docker领域再添一员，网易云发布“蜂巢”，加入云计算之争</td>
-                                                <td>醉里挑灯看键</td>
-                                                <td>2016-09-26</td>
-                                                <td>
-                                                    <div class="tpl-table-black-operation">
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> 编辑
-                                                        </a>
-                                                        <a href="javascript:;" class="tpl-table-black-operation-del">
-                                                            <i class="am-icon-trash"></i> 删除
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
+                                            <?php endforeach; endif; else: echo "" ;endif; ?>
+                                            
                                             <!-- more data -->
                                         </tbody>
                                     </table>
                                 </div>
+
+                                <form class="am-form tpl-form-border-form" method="post" action="<?php echo url('adminhotai/save'); ?>">
+                                    
+                                    <div class="am-form-group">
+                                        <label class="am-u-sm-12 am-form-label  am-text-left">文章类名<span class="tpl-form-line-small-title">SEO</span></label>
+                                        <div class="am-u-sm-12">
+                                            <input type="text" class="am-margin-top-xs" name="categoryname" placeholder="输入文章类名">
+                                        </div>
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <div class="am-u-sm-12 am-u-sm-push-12">
+                                            <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success ">提交</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-
                     </div>
                 </div>
+
+
             </div>
         </div>
     </div>
@@ -487,8 +307,7 @@
     <script src="http://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
     <script src="/think5/public/static/js/amazeui.datatables.min.js"></script>
     <script src="/think5/public/static/js/dataTables.responsive.min.js"></script>
-    <script src="/think5/public/static/js/app.js"></script>
+    <script src="/think5/public/static/js/app.js"></script> 
 
 </body>
-
 </html>

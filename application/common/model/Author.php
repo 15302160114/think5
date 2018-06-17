@@ -4,10 +4,10 @@ use think\Model;
 class Author extends Model{
 	public function getAuthor(){
 		$data=[];
-		$order=['id'=>'desc','sex'=>'desc'];
+		$order=['id'=>'acs'];
 		return $this->where($data)
 				->order($order)
-				->paginate(3);
+				->paginate();
 	}
 
 	public function add($date){
@@ -16,7 +16,7 @@ class Author extends Model{
 	}
 
 	public function getAuthors(){
-		$order=['id'=>'desc','sex'=>'desc'];
+		$order=['id'=>'desc'];
 		return $this->order($order)
 					->select();
 	}

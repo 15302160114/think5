@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>文章分类</title>
+    <title>用户列表</title>
     <meta name="description" content="这是一个 index 页面">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -206,19 +206,19 @@
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="sign-up.html">
+                    <a href="aa.html">
                         <i class="am-icon-clone sidebar-nav-link-logo"></i> 用户文章
                         <span class="am-badge am-badge-secondary sidebar-nav-link-logo-ico am-round am-fr am-margin-right-sm">6</span>
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="fenlei.html" class="active">
+                    <a href="fenlei.html">
                         <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 添加文章分类
 
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="user.html">
+                    <a href="user.html" class="active">
                         <i class="am-icon-table sidebar-nav-link-logo"></i> 用户列表
                     </a>
                 </li>
@@ -240,7 +240,7 @@
                     <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
                         <div class="widget am-cf">
                             <div class="widget-head am-cf">
-                                <div class="widget-title am-fl">文章类别</div>
+                                <div class="widget-title am-fl">用户列表</div>
                                 <div class="widget-function am-fr">
                                     <a href="javascript:;" class="am-icon-cog"></a>
                                 </div>
@@ -251,21 +251,24 @@
                                     <table width="100%" class="am-table am-table-compact am-table-striped tpl-table-black " id="example-r">
                                         <thead>
                                             <tr>
-                                                <th>序号</th>
-                                                <th>文章分类</th>
-                                                <th>时间</th>
+                                                <th>ID</th>
+                                                <th>用户</th>
+                                                <th>注册时间</th>
                                                 <th>操作</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            {volist name="categorys" id="vo" key="num"}
+                                            {volist name="author" id="vo" key="num"}
                                             <tr class="gradeX">
-                                                <td>{$num}</td>
-                                                <td>{$vo.categoryname}</td>
+                                                <td>{$vo.id}</td>
+                                                <td>{$vo.username}</td>
                                                 <td>{$vo.create_time}</td>
                                                 <td>
                                                     <div class="tpl-table-black-operation">
-                                                        <a href="{:url('adminhotai/delete',['id'=>$vo.id])}" class="tpl-table-black-operation-del">
+                                                        <a href="{:url('adminhotai/edit')}">
+                                                            <i class="am-icon-pencil"></i> 编辑
+                                                        </a>
+                                                        <a href="{:url('adminhotai/delete')}" class="tpl-table-black-operation-del">
                                                             <i class="am-icon-trash"></i> 删除
                                                         </a>
                                                     </div>
@@ -276,23 +279,9 @@
                                             <!-- more data -->
                                         </tbody>
                                     </table>
+
                                 </div>
-
-                                <form class="am-form tpl-form-border-form" method="post" action="{:url('adminhotai/save')}">
-                                    
-                                    <div class="am-form-group">
-                                        <label class="am-u-sm-12 am-form-label  am-text-left">文章类名<span class="tpl-form-line-small-title">SEO</span></label>
-                                        <div class="am-u-sm-12">
-                                            <input type="text" class="am-margin-top-xs" name="categoryname" placeholder="输入文章类名">
-                                        </div>
-                                    </div>
-
-                                    <div class="am-form-group">
-                                        <div class="am-u-sm-12 am-u-sm-push-12">
-                                            <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success ">提交</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                {$author->render()}
                             </div>
                         </div>
                     </div>

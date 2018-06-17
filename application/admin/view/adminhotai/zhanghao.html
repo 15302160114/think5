@@ -51,7 +51,7 @@
                     <ul>
                         <!-- 欢迎语 -->
                         <li class="am-text-sm tpl-header-navbar-welcome">
-                            <a href="javascript:;">欢迎你,  </a>
+                            <a href="javascript:;">欢迎你, {if condition="$user"}{$user->username}{/if} </a>
                         </li>
 
                         <!-- 新邮件 -->
@@ -196,32 +196,32 @@
               <i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>
               {if condition="$user"}{$user->username}{/if}
           </span>
-                    <a href="javascript:;" class="tpl-user-panel-action-link"> <span class="am-icon-pencil"></span> 账号设置</a>
+                    <a href="zhanghao.html" class="tpl-user-panel-action-link"> <span class="am-icon-pencil"></span> 账号设置</a>
                 </div>
             </div>
 
             <!-- 菜单 -->
             <ul class="sidebar-nav">
-                
                 <li class="sidebar-nav-link">
                     <a href="index.html">
                         <i class="am-icon-home sidebar-nav-link-logo"></i> 首页
                     </a>
                 </li>
-                <!-- <li class="sidebar-nav-link">
-                    <a href="tables.html">
-                        <i class="am-icon-table sidebar-nav-link-logo"></i> 表格
-                    </a>
-                </li> -->
                 <li class="sidebar-nav-link">
-                    <a href="calendar.html">
-                        <i class="am-icon-calendar sidebar-nav-link-logo"></i> 我的文章
+                    <a href="aa.html">
+                        <i class="am-icon-clone sidebar-nav-link-logo"></i> 用户文章
+                        <span class="am-badge am-badge-secondary sidebar-nav-link-logo-ico am-round am-fr am-margin-right-sm">6</span>
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="add.html">
-                        <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 写文章
+                    <a href="fenlei.html">
+                        <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 添加文章分类
 
+                    </a>
+                </li>
+                <li class="sidebar-nav-link">
+                    <a href="user.html">
+                        <i class="am-icon-table sidebar-nav-link-logo"></i> 用户列表
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
@@ -236,56 +236,73 @@
 
         <!-- 内容区域 -->
         <div class="tpl-content-wrapper">
-            <div class="detail">
-                <form class="form-horizontal" method="post" name="form1" action="{:url('userhotai/update')}">
-                  <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
-                    <div class="col-sm-7">
-                      <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="Username" value="{$userhotai.username}">
-                    </div>
-                  </div>
 
-                  <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label">realname</label>
-                    <div class="col-sm-7">
-                      <input type="text" name="realname" class="form-control" id="title" placeholder="realname" value="{$userhotai.realname}">
-                    </div>
-                  </div>
+            <div class="container-fluid am-cf">
+                <div class="row">
 
-                  <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label">code</label>
-                    <div class="col-sm-7">
-                      <input type="text" name="code" class="form-control" id="title" placeholder="code" value="{$userhotai.code}">
-                    </div>
-                  </div>
+                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+                        <div class="widget am-cf">
+                            <div class="widget-head am-cf">
+                                <div class="widget-title am-fl">账号设置</div>
+                                <div class="widget-function am-fr">
+                                    <a href="javascript:;" class="am-icon-cog"></a>
+                                </div>
+                            </div>
+                            <div class="widget-body am-fr">
 
-                  <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label">Tel</label>
-                    <div class="col-sm-7">
-                      <input type="text" name="tel" class="form-control" id="title" placeholder="Tel" value="{$userhotai.tel}">
-                    </div>
-                  </div>
+                                    <form class="form-horizontal" method="post" name="form1" action="{:url('adminhotai/update')}">
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="Username" value="{$admin.username}">
+                                        </div>
+                                      </div>
 
-                  <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                    <div class="col-sm-7">
-                      <input type="text" name="email" class="form-control" id="title" placeholder="Email" value="{$userhotai.email}">
-                    </div>
-                  </div>
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">realname</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="realname" class="form-control" id="title" placeholder="realname" value="{$admin.realname}">
+                                        </div>
+                                      </div>
 
-                  <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label">Note</label>
-                    <div class="col-sm-7">
-                      <input type="text" name="note" class="form-control" id="title" placeholder="note" value="{$userhotai.note}">
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">code</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="code" class="form-control" id="title" placeholder="code" value="{$admin.code}">
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Tel</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="tel" class="form-control" id="title" placeholder="Tel" value="{$admin.tel}">
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="email" class="form-control" id="title" placeholder="Email" value="{$admin.email}">
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Note</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="note" class="form-control" id="title" placeholder="note" value="{$admin.note}">
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                          <button type="submit" class="btn btn-default">更新</button>
+                                        </div>
+                                      </div>
+                                    </form>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  
-                  <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                      <button type="submit" class="btn btn-default">更新</button>
-                    </div>
-                  </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
@@ -294,7 +311,6 @@
     <script src="__STATIC__/js/amazeui.datatables.min.js"></script>
     <script src="__STATIC__/js/dataTables.responsive.min.js"></script>
     <script src="__STATIC__/js/app.js"></script>
-
 </body>
 
 </html>

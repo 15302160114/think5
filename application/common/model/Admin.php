@@ -7,7 +7,7 @@ class Admin extends Model{
 		$order=['id'=>'desc','sex'=>'desc'];
 		return $this->where($data)
 				->order($order)
-				->paginate(3);
+				->paginate();
 	}
 
 	public function add($date){

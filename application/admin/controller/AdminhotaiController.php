@@ -8,6 +8,16 @@ class AdminhotaiController extends Base
     {
         return $this->fetch();
     }
+    public function zhanghao(){
+    	$id=$user('id');
+		if($id==0||is_null($id)){
+			$this->error('参数有误');
+		}
+		$admin=model('Admin')->get($id);
+		
+		$this->assign('admin',$admin);
+    	return $this->fetch();
+    }
     public function fenlei()
     {
     	$categorys=model('Category')->getCategorys();
@@ -47,6 +57,44 @@ class AdminhotaiController extends Base
 		}else{
 			$this->error('增加失败');
 		}
+	}
+	public function edit(){
+		$id=input('param.id');
+		if($id==0||is_null($id)){
+			$this->error($id);
+		}
+		$author=model('Author')->get($id);
+		$this->assign('author',$author);
+		return $this->fetch('');
+	}
+	public function update(){
+		echo "<meta charset='UTF-8'>";
+		if(!request()->isPost()){
+			$this->error("非法输入");
+		}
+		$input=input('post.');
+
+		$validate=validate('Author');
+		if(!$validate->scene('edit')->check($input)){
+			$this->error($validate->getError());
+		}
+		
+		$date=[
+				'id'=>$input['id'],
+				'title'=>$input['title'],
+				'content'=>$input['content']
+			];
+
+		$xuhao=model('Author')->save($date,['id'=>intval($input['id'])]);
+		if($xuhao){
+			$this->success('更新成功',url('adminhotai/user'));
+		}else{
+			$this->error('更新失败');
+		}
+	}
+	public function user(){
+		$author=model('Author')->getAuthor();
+	  return $this->fetch('',['author'=>$author]);
 	}
     public function logout(){
         session(null,'my');

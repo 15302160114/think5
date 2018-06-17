@@ -1,33 +1,36 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:80:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\zhanghao.html";i:1529215026;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>文章分类</title>
+    <title>账号设置</title>
     <meta name="description" content="这是一个 index 页面">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="icon" type="image/png" href="__STATIC__/i/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="__STATIC__/i/app-icon72x72@2x.png">
+    <link rel="icon" type="image/png" href="/think5/public/static/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/think5/public/static/i/app-icon72x72@2x.png">
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
     <script src="http://cdn.bootcss.com/echarts/3.3.2/echarts.min.js"></script>
-    <link rel="stylesheet" href="__STATIC__/css/amazeui.min.css" />
-    <link rel="stylesheet" href="__STATIC__/css/amazeui.datatables.min.css" />
-    <link rel="stylesheet" href="__STATIC__/css/app.css">
+    <link rel="stylesheet" href="/think5/public/static/css/amazeui.min.css" />
+    <link rel="stylesheet" href="/think5/public/static/css/amazeui.datatables.min.css" />
+    <link rel="stylesheet" href="/think5/public/static/css/app.css">
     <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="/think5/public/static/css/bootstrap.min.css">
+
 </head>
 
-<body data-type="widgets">
-    <script src="__STATIC__/js/theme.js"></script>
+<body data-type="index">
+    <script src="/think5/public/static/js/theme.js"></script>
     <div class="am-g tpl-g">
         <!-- 头部 -->
         <header>
             <!-- logo -->
             <div class="am-fl tpl-header-logo">
-                <a href="javascript:;"><img src="__STATIC__/images/logo.png" alt=""></a>
+                <a href="javascript:;"><img src="/think5/public/static/images/logo.png" alt=""></a>
             </div>
             <!-- 右侧内容 -->
             <div class="tpl-header-fluid">
@@ -49,7 +52,7 @@
                     <ul>
                         <!-- 欢迎语 -->
                         <li class="am-text-sm tpl-header-navbar-welcome">
-                            <a href="javascript:;">欢迎你,  {if condition="$user"}{$user->username}{/if}</a>
+                            <a href="javascript:;">欢迎你, <?php if($user): ?><?php echo $user->username; endif; ?> </a>
                         </li>
 
                         <!-- 新邮件 -->
@@ -82,7 +85,7 @@
                                 <li class="tpl-dropdown-menu-messages">
                                     <a href="javascript:;" class="tpl-dropdown-menu-messages-item am-cf">
                                         <div class="menu-messages-ico">
-                                            <img src="__STATIC__/images/user02.png" alt="">
+                                            <img src="assets/img/user02.png" alt="">
                                         </div>
                                         <div class="menu-messages-time">
                                             5天前
@@ -159,8 +162,8 @@
 
                         <!-- 退出 -->
                         <li class="am-text-sm">
-                            <a href="{:url('login/logout')}">
-                                <span class="am-icon-sign-out"></span> 退出
+                            <a href="<?php echo url('login/logout'); ?>">
+                                <span class="am-icon-sign-out"></span>退出
                             </a>
                         </li>
                     </ul>
@@ -188,11 +191,11 @@
             <div class="tpl-sidebar-user-panel">
                 <div class="tpl-user-panel-slide-toggleable">
                     <div class="tpl-user-panel-profile-picture">
-                        <img src="__STATIC__/images/user04.png" alt="">
+                        <img src="/think5/public/static/images/user04.png" alt="">
                     </div>
                     <span class="user-panel-logged-in-text">
               <i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>
-              {if condition="$user"}{$user->username}{/if}
+              <?php if($user): ?><?php echo $user->username; endif; ?>
           </span>
                     <a href="zhanghao.html" class="tpl-user-panel-action-link"> <span class="am-icon-pencil"></span> 账号设置</a>
                 </div>
@@ -206,13 +209,13 @@
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="sign-up.html">
+                    <a href="aa.html">
                         <i class="am-icon-clone sidebar-nav-link-logo"></i> 用户文章
                         <span class="am-badge am-badge-secondary sidebar-nav-link-logo-ico am-round am-fr am-margin-right-sm">6</span>
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="fenlei.html" class="active">
+                    <a href="fenlei.html">
                         <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 添加文章分类
 
                     </a>
@@ -231,6 +234,7 @@
             </ul>
         </div>
 
+
         <!-- 内容区域 -->
         <div class="tpl-content-wrapper">
 
@@ -240,73 +244,74 @@
                     <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
                         <div class="widget am-cf">
                             <div class="widget-head am-cf">
-                                <div class="widget-title am-fl">文章类别</div>
+                                <div class="widget-title am-fl">用户列表</div>
                                 <div class="widget-function am-fr">
                                     <a href="javascript:;" class="am-icon-cog"></a>
                                 </div>
                             </div>
                             <div class="widget-body am-fr">
 
-                                <div class="am-u-sm-12">
-                                    <table width="100%" class="am-table am-table-compact am-table-striped tpl-table-black " id="example-r">
-                                        <thead>
-                                            <tr>
-                                                <th>序号</th>
-                                                <th>文章分类</th>
-                                                <th>时间</th>
-                                                <th>操作</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            {volist name="categorys" id="vo" key="num"}
-                                            <tr class="gradeX">
-                                                <td>{$num}</td>
-                                                <td>{$vo.categoryname}</td>
-                                                <td>{$vo.create_time}</td>
-                                                <td>
-                                                    <div class="tpl-table-black-operation">
-                                                        <a href="{:url('adminhotai/delete',['id'=>$vo.id])}" class="tpl-table-black-operation-del">
-                                                            <i class="am-icon-trash"></i> 删除
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            {/volist}
-                                            
-                                            <!-- more data -->
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                                <form class="am-form tpl-form-border-form" method="post" action="{:url('adminhotai/save')}">
-                                    
-                                    <div class="am-form-group">
-                                        <label class="am-u-sm-12 am-form-label  am-text-left">文章类名<span class="tpl-form-line-small-title">SEO</span></label>
-                                        <div class="am-u-sm-12">
-                                            <input type="text" class="am-margin-top-xs" name="categoryname" placeholder="输入文章类名">
+                                    <form class="form-horizontal" method="post" name="form1" action="<?php echo url('adminhotai/update'); ?>">
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="Username" value="<?php echo $admin['username']; ?>">
                                         </div>
-                                    </div>
+                                      </div>
 
-                                    <div class="am-form-group">
-                                        <div class="am-u-sm-12 am-u-sm-push-12">
-                                            <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success ">提交</button>
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">realname</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="realname" class="form-control" id="title" placeholder="realname" value="<?php echo $admin['realname']; ?>">
                                         </div>
-                                    </div>
-                                </form>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">code</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="code" class="form-control" id="title" placeholder="code" value="<?php echo $admin['code']; ?>">
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Tel</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="tel" class="form-control" id="title" placeholder="Tel" value="<?php echo $admin['tel']; ?>">
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="email" class="form-control" id="title" placeholder="Email" value="<?php echo $admin['email']; ?>">
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Note</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="note" class="form-control" id="title" placeholder="note" value="<?php echo $admin['note']; ?>">
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                          <button type="submit" class="btn btn-default">更新</button>
+                                        </div>
+                                      </div>
+                                    </form>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
     </div>
     <script src="http://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
-    <script src="__STATIC__/js/amazeui.datatables.min.js"></script>
-    <script src="__STATIC__/js/dataTables.responsive.min.js"></script>
-    <script src="__STATIC__/js/app.js"></script> 
-
+    <script src="/think5/public/static/js/amazeui.datatables.min.js"></script>
+    <script src="/think5/public/static/js/dataTables.responsive.min.js"></script>
+    <script src="/think5/public/static/js/app.js"></script>
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\fenlei.html";i:1529033806;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\fenlei.html";i:1529212146;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -219,7 +219,7 @@
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="tables.html">
+                    <a href="user.html">
                         <i class="am-icon-table sidebar-nav-link-logo"></i> 用户列表
                     </a>
                 </li>

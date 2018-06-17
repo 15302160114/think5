@@ -15,7 +15,7 @@ class UserhotaiController extends Base
 		// if($id==0||is_null($id)){
 		// 	$this->error('参数有误');
 		// }
-		$userhotai=model('Userhotai')->get($id);
+		$userhotai=model('Author')->get($id);
 		
 		$this->assign('userhotai',$userhotai);
 		return $this->fetch('');

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\user.html";i:1529231411;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\user.html";i:1529241962;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -207,7 +207,7 @@
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="aa.html">
+                    <a href="article.html">
                         <i class="am-icon-clone sidebar-nav-link-logo"></i> 用户文章
                         <span class="am-badge am-badge-secondary sidebar-nav-link-logo-ico am-round am-fr am-margin-right-sm">6</span>
                     </a>
@@ -266,10 +266,10 @@
                                                 <td><?php echo $vo['create_time']; ?></td>
                                                 <td>
                                                     <div class="tpl-table-black-operation">
-                                                        <a href="<?php echo url('adminhotai/edit'); ?>">
+                                                        <a href="<?php echo url('adminhotai/edit',['id'=>$vo['id']]); ?>">
                                                             <i class="am-icon-pencil"></i> 编辑
                                                         </a>
-                                                        <a href="<?php echo url('adminhotai/delete'); ?>" class="tpl-table-black-operation-del">
+                                                        <a href="<?php echo url('adminhotai/authordelete',['id'=>$vo['id']]); ?>" class="tpl-table-black-operation-del">
                                                             <i class="am-icon-trash"></i> 删除
                                                         </a>
                                                     </div>

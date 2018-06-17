@@ -9,7 +9,8 @@ class AdminhotaiController extends Base
         return $this->fetch();
     }
     public function zhanghao(){
-    	$id=$user('id');
+    	$a=explode(',', session('my_user','','my'));
+    	$id=substr($a[0],6);
 		if($id==0||is_null($id)){
 			$this->error('参数有误');
 		}
@@ -24,6 +25,14 @@ class AdminhotaiController extends Base
     	$this->assign('categorys',$categorys);
         return $this->fetch();
     }
+    public function article()
+    {
+    	$categorys=model('Category')->getCategorys();
+    	$articles=model('Article')->getArticles();
+    	$this->assign('categorys',$categorys);
+    	$this->assign('articles',$articles);
+        return $this->fetch();
+    }
     public function delete(){
 		$id=input('param.id');
 		if($id==0||is_null($id)){
@@ -32,6 +41,28 @@ class AdminhotaiController extends Base
 		$category=model('Category')->get($id);
 		if(!is_null($category->delete())){
 			$this->success('删除成功','adminhotai/fenlei');
+		}
+		$this->error('删除失败');
+	}
+	public function authordelete(){
+		$id=input('param.id');
+		if($id==0||is_null($id)){
+			$this->error('参数有误');
+		}
+		$author=model('Author')->get($id);
+		if(!is_null($author->delete())){
+			$this->success('删除成功','adminhotai/user');
+		}
+		$this->error('删除失败');
+	}
+	public function articledelete(){
+		$id=input('param.id');
+		if($id==0||is_null($id)){
+			$this->error('参数有误');
+		}
+		$article=model('Article')->get($id);
+		if(!is_null($article->delete())){
+			$this->success('删除成功','adminhotai/article');
 		}
 		$this->error('删除失败');
 	}
@@ -61,7 +92,7 @@ class AdminhotaiController extends Base
 	public function edit(){
 		$id=input('param.id');
 		if($id==0||is_null($id)){
-			$this->error($id);
+			$this->error('参数有误');
 		}
 		$author=model('Author')->get($id);
 		$this->assign('author',$author);
@@ -94,7 +125,7 @@ class AdminhotaiController extends Base
 	}
 	public function user(){
 		$author=model('Author')->getAuthor();
-	  return $this->fetch('',['author'=>$author]);
+	  	return $this->fetch('',['author'=>$author]);
 	}
     public function logout(){
         session(null,'my');

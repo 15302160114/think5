@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:80:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\zhanghao.html";i:1529215026;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:80:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\zhanghao.html";i:1529238547;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -244,7 +244,7 @@
                     <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
                         <div class="widget am-cf">
                             <div class="widget-head am-cf">
-                                <div class="widget-title am-fl">用户列表</div>
+                                <div class="widget-title am-fl">账号设置</div>
                                 <div class="widget-function am-fr">
                                     <a href="javascript:;" class="am-icon-cog"></a>
                                 </div>
@@ -273,27 +273,6 @@
                                         </div>
                                       </div>
 
-                                      <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label">Tel</label>
-                                        <div class="col-sm-7">
-                                          <input type="text" name="tel" class="form-control" id="title" placeholder="Tel" value="<?php echo $admin['tel']; ?>">
-                                        </div>
-                                      </div>
-
-                                      <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                                        <div class="col-sm-7">
-                                          <input type="text" name="email" class="form-control" id="title" placeholder="Email" value="<?php echo $admin['email']; ?>">
-                                        </div>
-                                      </div>
-
-                                      <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label">Note</label>
-                                        <div class="col-sm-7">
-                                          <input type="text" name="note" class="form-control" id="title" placeholder="note" value="<?php echo $admin['note']; ?>">
-                                        </div>
-                                      </div>
-                                      
                                       <div class="form-group">
                                         <div class="col-sm-offset-2 col-sm-10">
                                           <button type="submit" class="btn btn-default">更新</button>

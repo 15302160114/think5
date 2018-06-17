@@ -4,7 +4,7 @@ use think\Model;
 class Admin extends Model{
 	public function getAdmin(){
 		$data=[];
-		$order=['id'=>'desc','sex'=>'desc'];
+		$order=['id'=>'desc'];
 		return $this->where($data)
 				->order($order)
 				->paginate();

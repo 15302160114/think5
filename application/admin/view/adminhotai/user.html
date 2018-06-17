@@ -206,7 +206,7 @@
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="aa.html">
+                    <a href="article.html">
                         <i class="am-icon-clone sidebar-nav-link-logo"></i> 用户文章
                         <span class="am-badge am-badge-secondary sidebar-nav-link-logo-ico am-round am-fr am-margin-right-sm">6</span>
                     </a>
@@ -265,10 +265,10 @@
                                                 <td>{$vo.create_time}</td>
                                                 <td>
                                                     <div class="tpl-table-black-operation">
-                                                        <a href="{:url('adminhotai/edit')}">
+                                                        <a href="{:url('adminhotai/edit',['id'=>$vo.id])}">
                                                             <i class="am-icon-pencil"></i> 编辑
                                                         </a>
-                                                        <a href="{:url('adminhotai/delete')}" class="tpl-table-black-operation-del">
+                                                        <a href="{:url('adminhotai/authordelete',['id'=>$vo.id])}" class="tpl-table-black-operation-del">
                                                             <i class="am-icon-trash"></i> 删除
                                                         </a>
                                                     </div>

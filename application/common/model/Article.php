@@ -13,4 +13,9 @@ class Article extends Model{
 		$this->save($date);
 		return $this->id;
 	}
+	public function getArticles(){
+		$order=['id'=>'desc'];
+		return $this->order($order)
+					->select();
+	}
 }

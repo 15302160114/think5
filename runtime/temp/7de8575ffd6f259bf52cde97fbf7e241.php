@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\edit.html";i:1529215434;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\edit.html";i:1529240185;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -259,9 +259,9 @@
                                       </div>
 
                                       <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label">realname</label>
+                                        <label for="inputEmail3" class="col-sm-2 control-label">realrname</label>
                                         <div class="col-sm-7">
-                                          <input type="text" name="realname" class="form-control" id="title" placeholder="realname" value="<?php echo $author['realname']; ?>">
+                                          <input type="text" name="realname" class="form-control" id="title" placeholder="realrname" value="<?php echo $author['realrname']; ?>">
                                         </div>
                                       </div>
 
@@ -286,13 +286,6 @@
                                         </div>
                                       </div>
 
-                                      <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label">Note</label>
-                                        <div class="col-sm-7">
-                                          <input type="text" name="note" class="form-control" id="title" placeholder="note" value="<?php echo $author['note']; ?>">
-                                        </div>
-                                      </div>
-                                      
                                       <div class="form-group">
                                         <div class="col-sm-offset-2 col-sm-10">
                                           <button type="submit" class="btn btn-default">更新</button>

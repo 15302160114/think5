@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html";i:1529027758;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html";i:1529242111;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -263,7 +263,7 @@
                                             <select data-am-selected="{searchBox: 1}">
                                                <option value="all">无分类</option>
                                               <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                              <option value="<?php echo $vo['id']; ?>"><?php echo $vo['name']; ?></option>
+                                              <option value="<?php echo $vo['id']; ?>"><?php echo $vo['categoryname']; ?></option>
                                               <?php endforeach; endif; else: echo "" ;endif; ?>
                                             </select>
                                         </div>

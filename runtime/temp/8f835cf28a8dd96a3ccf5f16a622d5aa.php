@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\zhanghao.html";i:1528943367;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\zhanghao.html";i:1529242859;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -237,56 +237,72 @@
 
         <!-- 内容区域 -->
         <div class="tpl-content-wrapper">
-            <div class="detail">
-                <form class="form-horizontal" method="post" name="form1" action="<?php echo url('userhotai/update'); ?>">
-                  <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
-                    <div class="col-sm-7">
-                      <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="Username" value="<?php echo $userhotai['username']; ?>">
-                    </div>
-                  </div>
 
-                  <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label">realname</label>
-                    <div class="col-sm-7">
-                      <input type="text" name="realname" class="form-control" id="title" placeholder="realname" value="<?php echo $userhotai['realname']; ?>">
-                    </div>
-                  </div>
+            <div class="container-fluid am-cf">
+                <div class="row">
 
-                  <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label">code</label>
-                    <div class="col-sm-7">
-                      <input type="text" name="code" class="form-control" id="title" placeholder="code" value="<?php echo $userhotai['code']; ?>">
-                    </div>
-                  </div>
+                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+                        <div class="widget am-cf">
+                            <div class="widget-head am-cf">
+                                <div class="widget-title am-fl">账号设置</div>
+                                <div class="widget-function am-fr">
+                                    <a href="javascript:;" class="am-icon-cog"></a>
+                                </div>
+                            </div>
+                            <div class="widget-body am-fr">
 
-                  <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label">Tel</label>
-                    <div class="col-sm-7">
-                      <input type="text" name="tel" class="form-control" id="title" placeholder="Tel" value="<?php echo $userhotai['tel']; ?>">
-                    </div>
-                  </div>
+                                    <form class="form-horizontal" method="post" name="form1" action="<?php echo url('adminhotai/update'); ?>">
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="Username" value="<?php echo $author['username']; ?>">
+                                        </div>
+                                      </div>
 
-                  <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                    <div class="col-sm-7">
-                      <input type="text" name="email" class="form-control" id="title" placeholder="Email" value="<?php echo $userhotai['email']; ?>">
-                    </div>
-                  </div>
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">realrname</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="realname" class="form-control" id="title" placeholder="realrname" value="<?php echo $author['realrname']; ?>">
+                                        </div>
+                                      </div>
 
-                  <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label">Note</label>
-                    <div class="col-sm-7">
-                      <input type="text" name="note" class="form-control" id="title" placeholder="note" value="<?php echo $userhotai['note']; ?>">
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">code</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="code" class="form-control" id="title" placeholder="code" value="<?php echo $author['code']; ?>">
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Tel</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="tel" class="form-control" id="title" placeholder="tel" value="<?php echo $author['tel']; ?>">
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="email" class="form-control" id="title" placeholder="email" value="<?php echo $author['email']; ?>">
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Password</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="password" class="form-control" id="title" placeholder="password" value="<?php echo $author['password']; ?>">
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                          <button type="submit" class="btn btn-default">更新</button>
+                                        </div>
+                                      </div>
+                                    </form>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  
-                  <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                      <button type="submit" class="btn btn-default">更新</button>
-                    </div>
-                  </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>

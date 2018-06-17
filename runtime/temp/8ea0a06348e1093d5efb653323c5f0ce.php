@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:80:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\zhanghao.html";i:1529238547;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:80:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\zhanghao.html";i:1529242969;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -209,7 +209,7 @@
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="aa.html">
+                    <a href="article.html">
                         <i class="am-icon-clone sidebar-nav-link-logo"></i> 用户文章
                         <span class="am-badge am-badge-secondary sidebar-nav-link-logo-ico am-round am-fr am-margin-right-sm">6</span>
                     </a>
@@ -267,9 +267,9 @@
                                       </div>
 
                                       <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label">code</label>
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Password</label>
                                         <div class="col-sm-7">
-                                          <input type="text" name="code" class="form-control" id="title" placeholder="code" value="<?php echo $admin['code']; ?>">
+                                          <input type="text" name="password" class="form-control" id="title" placeholder="password" value="<?php echo $admin['password']; ?>">
                                         </div>
                                       </div>
 

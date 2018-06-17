@@ -11,13 +11,14 @@ class UserhotaiController extends Base
     }
     public function zhanghao()
     {
-        $id=input('param.id');
-		// if($id==0||is_null($id)){
-		// 	$this->error('参数有误');
-		// }
-		$userhotai=model('Author')->get($id);
+        $a=explode(',', session('my_user','','my'));
+    	$id=substr($a[0],6);
+		if($id==0||is_null($id)){
+			$this->error('参数有误');
+		}
+		$author=model('Author')->get($id);
 		
-		$this->assign('userhotai',$userhotai);
+		$this->assign('author',$author);
 		return $this->fetch('');
     }
     public function add(){

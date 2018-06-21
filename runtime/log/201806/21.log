@@ -14182,3 +14182,992 @@
   'auto_start' => true,
 )
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T11:53:45+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/article.html
+[ info ] localhost:88/think5/public/admin/adminhotai/article.html [运行时间：0.101006s][吞吐率：9.90req/s] [内存消耗：2,854.68kb] [文件加载：55]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/zhanghao.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\AdminhotaiController->article[ D:\xampp\htdocs\think5\application\admin\controller\AdminhotaiController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\article.html [ array (
+  0 => 'user',
+  1 => 'categorys',
+  2 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-21T11:53:45+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/assets/img/user04.png
+[ info ] localhost:88/think5/public/admin/adminhotai/assets/img/user04.png [运行时间：0.046002s][吞吐率：21.74req/s] [内存消耗：1,972.13kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/article.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T11:53:45+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/assets/img/user04.png
+[ info ] localhost:88/think5/public/admin/adminhotai/assets/img/user04.png [运行时间：0.048003s][吞吐率：20.83req/s] [内存消耗：1,972.13kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/article.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T11:54:48+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/index.html
+[ info ] localhost:88/think5/public/admin/adminhotai/index.html [运行时间：0.040003s][吞吐率：25.00req/s] [内存消耗：2,014.20kb] [文件加载：46]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/article.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\AdminhotaiController->index[ D:\xampp\htdocs\think5\application\admin\controller\AdminhotaiController.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\index.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T11:54:48+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/assets/img/user04.png
+[ info ] localhost:88/think5/public/admin/adminhotai/assets/img/user04.png [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：1,971.89kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T11:54:48+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/assets/img/user02.png
+[ info ] localhost:88/think5/public/admin/adminhotai/assets/img/user02.png [运行时间：0.068004s][吞吐率：14.71req/s] [内存消耗：1,971.89kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user02.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T11:54:48+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/assets/img/user04.png
+[ info ] localhost:88/think5/public/admin/adminhotai/assets/img/user04.png [运行时间：0.048003s][吞吐率：20.83req/s] [内存消耗：1,971.89kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T11:54:50+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/user.html
+[ info ] localhost:88/think5/public/admin/adminhotai/user.html [运行时间：0.103005s][吞吐率：9.71req/s] [内存消耗：2,907.70kb] [文件加载：57]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\AdminhotaiController->user[ D:\xampp\htdocs\think5\application\admin\controller\AdminhotaiController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\user.html [ array (
+  0 => 'user',
+  1 => 'author',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `author` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `author` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `author` ORDER BY `id`  LIMIT 0,20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-21T11:54:50+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/assets/img/user04.png
+[ info ] localhost:88/think5/public/admin/adminhotai/assets/img/user04.png [运行时间：0.066004s][吞吐率：15.15req/s] [内存消耗：1,971.88kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/user.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T11:54:50+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/assets/img/user04.png
+[ info ] localhost:88/think5/public/admin/adminhotai/assets/img/user04.png [运行时间：0.063004s][吞吐率：15.87req/s] [内存消耗：1,971.88kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/user.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T11:54:51+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/fenlei.html
+[ info ] localhost:88/think5/public/admin/adminhotai/fenlei.html [运行时间：0.073004s][吞吐率：13.70req/s] [内存消耗：2,809.48kb] [文件加载：54]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'fenlei',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/user.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\AdminhotaiController->fenlei[ D:\xampp\htdocs\think5\application\admin\controller\AdminhotaiController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\fenlei.html [ array (
+  0 => 'user',
+  1 => 'categorys',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-21T11:54:51+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/assets/img/user04.png
+[ info ] localhost:88/think5/public/admin/adminhotai/assets/img/user04.png [运行时间：0.040003s][吞吐率：25.00req/s] [内存消耗：1,971.89kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/fenlei.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T11:54:51+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/assets/img/user04.png
+[ info ] localhost:88/think5/public/admin/adminhotai/assets/img/user04.png [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,971.89kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/fenlei.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T11:54:55+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/delete/id/3.html
+[ info ] localhost:88/think5/public/admin/adminhotai/delete/id/3.html [运行时间：0.110007s][吞吐率：9.09req/s] [内存消耗：2,882.76kb] [文件加载：58]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'delete',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/fenlei.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\AdminhotaiController->delete[ D:\xampp\htdocs\think5\application\admin\controller\AdminhotaiController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'user',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] DELETE FROM `category`    WHERE  `id` = 3 [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2018-06-21T11:54:57+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/fenlei.html
+[ info ] localhost:88/think5/public/admin/adminhotai/fenlei.html [运行时间：0.064004s][吞吐率：15.62req/s] [内存消耗：2,806.80kb] [文件加载：54]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'fenlei',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/delete/id/3.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\AdminhotaiController->fenlei[ D:\xampp\htdocs\think5\application\admin\controller\AdminhotaiController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\fenlei.html [ array (
+  0 => 'user',
+  1 => 'categorys',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-21T11:54:57+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/assets/img/user04.png
+[ info ] localhost:88/think5/public/admin/adminhotai/assets/img/user04.png [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,971.89kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/fenlei.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T11:54:57+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/assets/img/user04.png
+[ info ] localhost:88/think5/public/admin/adminhotai/assets/img/user04.png [运行时间：0.045003s][吞吐率：22.22req/s] [内存消耗：1,971.89kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/fenlei.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T11:55:00+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/article.html
+[ info ] localhost:88/think5/public/admin/adminhotai/article.html [运行时间：0.103006s][吞吐率：9.71req/s] [内存消耗：2,852.04kb] [文件加载：55]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/fenlei.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\AdminhotaiController->article[ D:\xampp\htdocs\think5\application\admin\controller\AdminhotaiController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\article.html [ array (
+  0 => 'user',
+  1 => 'categorys',
+  2 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-21T11:55:00+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/assets/img/user04.png
+[ info ] localhost:88/think5/public/admin/adminhotai/assets/img/user04.png [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,971.89kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/article.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T11:55:01+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/assets/img/user04.png
+[ info ] localhost:88/think5/public/admin/adminhotai/assets/img/user04.png [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,971.89kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/article.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T11:55:03+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/article.html
+[ info ] localhost:88/think5/public/admin/adminhotai/article.html [运行时间：0.092005s][吞吐率：10.87req/s] [内存消耗：2,852.30kb] [文件加载：55]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/fenlei.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\AdminhotaiController->article[ D:\xampp\htdocs\think5\application\admin\controller\AdminhotaiController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\article.html [ array (
+  0 => 'user',
+  1 => 'categorys',
+  2 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-21T11:55:03+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/assets/img/user04.png
+[ info ] localhost:88/think5/public/admin/adminhotai/assets/img/user04.png [运行时间：0.052002s][吞吐率：19.23req/s] [内存消耗：1,972.13kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/article.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T11:55:03+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/assets/img/user04.png
+[ info ] localhost:88/think5/public/admin/adminhotai/assets/img/user04.png [运行时间：0.051002s][吞吐率：19.61req/s] [内存消耗：1,972.13kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/article.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T11:55:38+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/article.html
+[ info ] localhost:88/think5/public/admin/adminhotai/article.html [运行时间：0.142009s][吞吐率：7.04req/s] [内存消耗：3,023.37kb] [文件加载：57]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/fenlei.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\AdminhotaiController->article[ D:\xampp\htdocs\think5\application\admin\controller\AdminhotaiController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\article.html [ array (
+  0 => 'user',
+  1 => 'categorys',
+  2 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-21T11:55:38+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/assets/img/user04.png
+[ info ] localhost:88/think5/public/admin/adminhotai/assets/img/user04.png [运行时间：0.069004s][吞吐率：14.49req/s] [内存消耗：1,972.13kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/article.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T11:55:39+08:00 ] 0.0.0.0 GET /think5/public/admin/adminhotai/assets/img/user04.png
+[ info ] localhost:88/think5/public/admin/adminhotai/assets/img/user04.png [运行时间：0.041003s][吞吐率：24.39req/s] [内存消耗：1,972.13kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'adminhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:88',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36',
+  'referer' => 'http://localhost:88/think5/public/admin/adminhotai/article.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=qh0thcigh37t04dtaan449c8m4',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File

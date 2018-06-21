@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\article.html";i:1529547545;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\article.html";i:1529553336;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -251,7 +251,6 @@
                                 <div class="am-u-sm-12">
 
                                     <div class="am-form-group">
-                                        <label for="user-phone" class="am-u-sm-12 am-form-label am-text-left">文章类别<span class="tpl-form-line-small-title">Category</span></label>
                                         <div class="am-u-sm-12  am-margin-top-xs">
                                             <select data-am-selected="{searchBox: 1}">
                                                <option value="all">无分类</option>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html";i:1529242111;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html";i:1529552838;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -213,7 +213,7 @@
                     </a>
                 </li> -->
                 <li class="sidebar-nav-link">
-                    <a href="calendar.html">
+                    <a href="all.html">
                         <i class="am-icon-calendar sidebar-nav-link-logo"></i> 我的文章
                     </a>
                 </li>
@@ -248,11 +248,15 @@
                             </div>
                             <div class="widget-body am-fr">
 
-                                <form class="am-form tpl-form-border-form">
+                                <form method="post" class="am-form tpl-form-border-form" action="<?php echo url('userhotai/save'); ?>">
+                                    <div class="form-group">
+                                          <input type="hidden" name="author_id"placeholder="id" value="<?php echo $author['id']; ?>">
+                                    </div>
+
                                     <div class="am-form-group">
                                         <label for="user-name" class="am-u-sm-12 am-form-label am-text-left">标题 <span class="tpl-form-line-small-title">Title</span></label>
                                         <div class="am-u-sm-12">
-                                            <input type="text" class="tpl-form-input am-margin-top-xs" id="user-name" placeholder="请输入标题文字">
+                                            <input type="text" name="title" class="tpl-form-input am-margin-top-xs" id="user-name" placeholder="请输入标题文字">
                                             <small>请填写标题文字10-20字左右。</small>
                                         </div>
                                     </div>
@@ -260,7 +264,7 @@
                                     <div class="am-form-group">
                                         <label for="user-phone" class="am-u-sm-12 am-form-label am-text-left">文章类别<span class="tpl-form-line-small-title">Category</span></label>
                                         <div class="am-u-sm-12  am-margin-top-xs">
-                                            <select data-am-selected="{searchBox: 1}">
+                                            <select data-am-selected="{searchBox: 1}" name="category_id">
                                                <option value="all">无分类</option>
                                               <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                                               <option value="<?php echo $vo['id']; ?>"><?php echo $vo['categoryname']; ?></option>
@@ -272,7 +276,7 @@
                                     <div class="am-form-group">
                                         <label class="am-u-sm-12 am-form-label  am-text-left">SEO关键字 <span class="tpl-form-line-small-title">SEO</span></label>
                                         <div class="am-u-sm-12">
-                                            <input type="text" class="am-margin-top-xs" placeholder="输入SEO关键字">
+                                            <input type="text" name="description" class="am-margin-top-xs" placeholder="输入SEO关键字">
                                         </div>
                                     </div>
 
@@ -286,21 +290,7 @@
 
                                                 <button id="filePicker" type="button" class="am-btn am-btn-danger am-btn-sm ">
                                                 <i class="am-icon-cloud-upload"></i> 添加封面图片</button>
-                                                <input id="doc-form-file" type="file" multiple>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="am-form-group">
-                                        <label for="user-intro" class="am-u-sm-12 am-form-label  am-text-left">隐藏文章</label>
-                                        <div class="am-u-sm-12">
-                                            <div class="tpl-switch">
-                                                <input type="checkbox" class="ios-switch bigswitch tpl-switch-btn am-margin-top-xs" checked="">
-                                                <div class="tpl-switch-btn-view">
-                                                    <div>
-                                                    </div>
-                                                </div>
+                                                <input id="doc-form-file" type="file" name="logo" multiple>
                                             </div>
 
                                         </div>
@@ -309,7 +299,6 @@
                                     <div class="am-form-group">
                                         <label for="user-intro" class="am-u-sm-12 am-form-label  am-text-left">文章内容</label>
                                         <div class="am-u-sm-12 am-margin-top-xs">
-                                            <!-- <textarea class="" rows="10" id="user-intro" placeholder="请输入文章内容"></textarea> -->
                                             <script id="container" name="content" type="text/plain">
        
                                             </script>
@@ -318,7 +307,7 @@
 
                                     <div class="am-form-group">
                                         <div class="am-u-sm-12 am-u-sm-push-12">
-                                            <button type="button" class="am-btn am-btn-primary tpl-btn-bg-color-success ">提交</button>
+                                            <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success ">提交</button>
                                         </div>
                                     </div>
                                 </form>

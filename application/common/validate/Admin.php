@@ -6,7 +6,7 @@ class Admin extends Validate{
 		// 'name'=>'require|max:6',
 		// 'sex'=>'number|between:0,1',
 		// 'email'=>'email'
-		['username','require|max:8','名称必须|名称最多不能超过8个字符'],
+		['username','require|max:20','名称必须|名称最多不能超过20个字符'],
 		['email','email','邮箱格式错误']
 	];
 	protected $scene=[

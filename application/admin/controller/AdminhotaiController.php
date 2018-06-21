@@ -105,20 +105,20 @@ class AdminhotaiController extends Base
 		}
 		$input=input('post.');
 
-		$validate=validate('Author');
+		$validate=validate('Admin');
 		if(!$validate->scene('edit')->check($input)){
 			$this->error($validate->getError());
 		}
 		
 		$date=[
-				'id'=>$input['id'],
-				'title'=>$input['title'],
-				'content'=>$input['content']
+				'username'=>$input['username'],
+				'realname'=>$input['realname'],
+				'password'=>$input['password']
 			];
 
-		$xuhao=model('Author')->save($date,['id'=>intval($input['id'])]);
+		$xuhao=model('Admin')->save($date,['id'=>intval($input['id'])]);
 		if($xuhao){
-			$this->success('更新成功',url('adminhotai/user'));
+			$this->success('更新成功',url('adminhotai/zhanghao'));
 		}else{
 			$this->error('更新失败');
 		}

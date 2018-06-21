@@ -252,6 +252,11 @@
 
                                     <form class="form-horizontal" method="post" name="form1" action="{:url('adminhotai/update')}">
                                       <div class="form-group">
+                                          <input type="hidden" name="id"placeholder="id" value="{$admin.id}">
+                                        
+                                      </div>
+
+                                      <div class="form-group">
                                         <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
                                         <div class="col-sm-7">
                                           <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="Username" value="{$admin.username}">

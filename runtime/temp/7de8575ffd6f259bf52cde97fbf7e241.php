@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\edit.html";i:1529240185;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\edit.html";i:1529550809;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -208,7 +208,7 @@
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="aa.html">
+                    <a href="article.html">
                         <i class="am-icon-clone sidebar-nav-link-logo"></i> 用户文章
                         <span class="am-badge am-badge-secondary sidebar-nav-link-logo-ico am-round am-fr am-margin-right-sm">6</span>
                     </a>
@@ -259,16 +259,9 @@
                                       </div>
 
                                       <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label">realrname</label>
+                                        <label for="inputEmail3" class="col-sm-2 control-label">realname</label>
                                         <div class="col-sm-7">
-                                          <input type="text" name="realname" class="form-control" id="title" placeholder="realrname" value="<?php echo $author['realrname']; ?>">
-                                        </div>
-                                      </div>
-
-                                      <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label">code</label>
-                                        <div class="col-sm-7">
-                                          <input type="text" name="code" class="form-control" id="title" placeholder="code" value="<?php echo $author['code']; ?>">
+                                          <input type="text" name="realname" class="form-control" id="title" placeholder="realname" value="<?php echo $author['realname']; ?>">
                                         </div>
                                       </div>
 

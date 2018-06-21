@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:80:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\zhanghao.html";i:1529242969;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:80:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\zhanghao.html";i:1529550912;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -252,6 +252,11 @@
                             <div class="widget-body am-fr">
 
                                     <form class="form-horizontal" method="post" name="form1" action="<?php echo url('adminhotai/update'); ?>">
+                                      <div class="form-group">
+                                          <input type="hidden" name="id"placeholder="id" value="<?php echo $admin['id']; ?>">
+                                        
+                                      </div>
+
                                       <div class="form-group">
                                         <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
                                         <div class="col-sm-7">

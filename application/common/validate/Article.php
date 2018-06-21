@@ -3,10 +3,10 @@ namespace app\common\validate;
 use think\Validate;
 class Article extends Validate{
 	protected $rule=[
-		'id'=>'require|max:15'
+		'title'=>'require|max:15'
 	];
 	protected $scene=[
-		'add'=>['id'],
+		'add'=>['title'],
 		'edit'=>['id','title'],
 	];
 }

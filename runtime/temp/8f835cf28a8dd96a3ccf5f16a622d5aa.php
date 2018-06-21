@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\zhanghao.html";i:1529242859;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\zhanghao.html";i:1529550743;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -251,7 +251,12 @@
                             </div>
                             <div class="widget-body am-fr">
 
-                                    <form class="form-horizontal" method="post" name="form1" action="<?php echo url('adminhotai/update'); ?>">
+                                    <form class="form-horizontal" method="post" name="form1" action="<?php echo url('userhotai/update'); ?>">
+                                      <div class="form-group">
+                                          <input type="hidden" name="id"placeholder="id" value="<?php echo $author['id']; ?>">
+                                        
+                                      </div>
+
                                       <div class="form-group">
                                         <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
                                         <div class="col-sm-7">
@@ -260,16 +265,16 @@
                                       </div>
 
                                       <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label">realrname</label>
+                                        <label for="inputEmail3" class="col-sm-2 control-label">realname</label>
                                         <div class="col-sm-7">
-                                          <input type="text" name="realname" class="form-control" id="title" placeholder="realrname" value="<?php echo $author['realrname']; ?>">
+                                          <input type="text" name="realname" class="form-control" id="title" placeholder="realname" value="<?php echo $author['realname']; ?>">
                                         </div>
                                       </div>
 
                                       <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label">code</label>
+                                        <label for="inputEmail3" class="col-sm-2 control-label">note</label>
                                         <div class="col-sm-7">
-                                          <input type="text" name="code" class="form-control" id="title" placeholder="code" value="<?php echo $author['code']; ?>">
+                                          <input type="text" name="note" class="form-control" id="title" placeholder="note" value="<?php echo $author['note']; ?>">
                                         </div>
                                       </div>
 

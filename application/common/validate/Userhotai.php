@@ -7,6 +7,6 @@ class Userhotai extends Validate{
 	];
 	protected $scene=[
 		'add'=>['id'],
-		'edit'=>['id','title'],
+		'edit'=>['username','title'],
 	];
 }

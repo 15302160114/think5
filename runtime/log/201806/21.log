@@ -32431,3 +32431,200 @@
 )
 [ info ] [ RUN ] app\user\controller\UserhotaiController->upload[ D:\xampp\htdocs\think5\application\user\controller\UserhotaiController.php ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T22:40:58+08:00 ] 0.0.0.0 GET /think5/public/admin/login/logout.html
+[ info ] localhost/think5/public/admin/login/logout.html [运行时间：0.251383s][吞吐率：3.98req/s] [内存消耗：1,799.32kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/admin/adminhotai/article.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=di5f5k2ufulsn5pnbr5qn11vni',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\LoginController->logout[ D:\xampp\htdocs\think5\application\admin\controller\LoginController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T22:40:58+08:00 ] 0.0.0.0 GET /think5/public/admin/login/index.html
+[ info ] localhost/think5/public/admin/login/index.html [运行时间：0.183808s][吞吐率：5.44req/s] [内存消耗：1,520.25kb] [文件加载：43]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/admin/adminhotai/article.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=di5f5k2ufulsn5pnbr5qn11vni',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\LoginController->index[ D:\xampp\htdocs\think5\application\admin\controller\LoginController.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T22:40:58+08:00 ] 0.0.0.0 GET /think5/public/static/img/logoa.png
+[ info ] localhost/think5/public/static/img/logoa.png [运行时间：0.133711s][吞吐率：7.48req/s] [内存消耗：1,243.38kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'img',
+    2 => 'logoa.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/static/css/app.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=di5f5k2ufulsn5pnbr5qn11vni',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T22:41:05+08:00 ] 0.0.0.0 GET /think5/public/user/login/logout.html
+[ info ] localhost/think5/public/user/login/logout.html [运行时间：0.408755s][吞吐率：2.45req/s] [内存消耗：1,494.30kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/user/userhotai/add.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=di5f5k2ufulsn5pnbr5qn11vni',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-21T22:42:04+08:00 ] 0.0.0.0 GET /think5/public/user/userhotai/add.html
+[ info ] localhost/think5/public/user/userhotai/add.html [运行时间：0.260927s][吞吐率：3.83req/s] [内存消耗：2,788.26kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'userhotai',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=di5f5k2ufulsn5pnbr5qn11vni',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\user\controller\UserhotaiController->add[ D:\xampp\htdocs\think5\application\user\controller\UserhotaiController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html [ array (
+  0 => 'user',
+  1 => 'author',
+  2 => 'categorys',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004155s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `author` [ RunTime:0.030958s ]
+[ sql ] [ SQL ] SELECT * FROM `author` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001667s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.024279s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001334s ]
+---------------------------------------------------------------
+[ 2018-06-21T22:42:05+08:00 ] 0.0.0.0 GET /think5/public/user/userhotai/assets/img/user04.png
+[ info ] localhost/think5/public/user/userhotai/assets/img/user04.png [运行时间：0.213852s][吞吐率：4.68req/s] [内存消耗：1,777.14kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'userhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/user/userhotai/add.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=di5f5k2ufulsn5pnbr5qn11vni',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File

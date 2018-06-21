@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html";i:1529591603;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html";i:1529592121;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -160,7 +160,7 @@
 
                         <!-- 退出 -->
                         <li class="am-text-sm">
-                            <a href="<?php echo url('login/logout'); ?>">
+                            <a href="<?php echo url('userhotai/logout'); ?>">
                                 <span class="am-icon-sign-out"></span> 退出
                             </a>
                         </li>
@@ -370,7 +370,7 @@
                         '<img>' +
                         '<div class="info">' + file.name + '</div>' +
                     '</div>'+
-                    '<input type="text" name="logo" value="'+yyyyMMdd+'/'+ file.name +'">'
+                    '<input type="text" style="display:none" name="logo" value="'+yyyyMMdd+'/'+ file.name +'">'
                     ),
                 $img = $li.find('img');
             // $list为容器jQuery实例

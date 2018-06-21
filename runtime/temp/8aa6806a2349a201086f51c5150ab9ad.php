@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\article.html";i:1529553336;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\article.html";i:1529573687;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -241,7 +241,7 @@
                     <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
                         <div class="widget am-cf">
                             <div class="widget-head am-cf">
-                                <div class="widget-title am-fl">文章类别</div>
+                                <div class="widget-title am-fl">用户文章</div>
                                 <div class="widget-function am-fr">
                                     <a href="javascript:;" class="am-icon-cog"></a>
                                 </div>

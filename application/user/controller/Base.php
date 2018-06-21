@@ -21,7 +21,7 @@ class Base extends Controller
 	}
 	public function getLoginUser(){
 		if(!$this->account){
-			$this->account=session('my_user','','my');
+			$this->account=session('me_user','','me');
 		}
 		return $this->account;
 	}

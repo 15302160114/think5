@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\index.html";i:1529547545;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\index.html";i:1529571359;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -214,7 +214,7 @@
                     </a>
                 </li> -->
                 <li class="sidebar-nav-link">
-                    <a href="calendar.html">
+                    <a href="all.html">
                         <i class="am-icon-calendar sidebar-nav-link-logo"></i> 我的文章
                     </a>
                 </li>

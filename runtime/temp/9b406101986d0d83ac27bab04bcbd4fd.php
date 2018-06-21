@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html";i:1529552838;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html";i:1529591603;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -241,7 +241,7 @@
                     <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
                         <div class="widget am-cf">
                             <div class="widget-head am-cf">
-                                <div class="widget-title am-fl">换行边框</div>
+                                <div class="widget-title am-fl">写文章</div>
                                 <div class="widget-function am-fr">
                                     <a href="javascript:;" class="am-icon-cog"></a>
                                 </div>
@@ -285,12 +285,10 @@
 
                                         <div id="uploader-demo" class="am-u-sm-12 am-margin-top-xs">
                                             <div class="am-form-group am-form-file">
-                                                <div id="fileList" class="tpl-form-file-img uploader-list">
-                                                </div>
+                                                <div id="fileList" name="logo" class="uploader-list"></div>
 
                                                 <button id="filePicker" type="button" class="am-btn am-btn-danger am-btn-sm ">
                                                 <i class="am-icon-cloud-upload"></i> 添加封面图片</button>
-                                                <input id="doc-form-file" type="file" name="logo" multiple>
                                             </div>
 
                                         </div>
@@ -300,7 +298,7 @@
                                         <label for="user-intro" class="am-u-sm-12 am-form-label  am-text-left">文章内容</label>
                                         <div class="am-u-sm-12 am-margin-top-xs">
                                             <script id="container" name="content" type="text/plain">
-       
+
                                             </script>
                                         </div>
                                     </div>
@@ -325,7 +323,7 @@
     <script src="/think5/public/static/js/amazeui.datatables.min.js"></script>
     <script src="/think5/public/static/js/dataTables.responsive.min.js"></script>
     <script src="/think5/public/static/js/app.js"></script> 
-    <script type="text/javascript" src="/think5/public/static/webuploader/webuploader.min.js"></script>    <!-- 引用插件js -->
+    <script type="text/javascript" src="/think5/public/static/webuploader/webuploader.js"></script>    <!-- 引用插件js -->
 
     <script type="text/javascript" src="/think5/public/static/ueditor/ueditor.config.js"></script>
     <!-- 编辑器源码文件 -->
@@ -337,7 +335,7 @@
 
 </body>
 <script type="text/javascript">
-           var $list=$("#fileList");   //这几个初始化全局的百度文档上没说明，好蛋疼
+           //var $list=$("#fileList");   //这几个初始化全局的百度文档上没说明，好蛋疼
            var thumbnailWidth = 100;   //缩略图高度和宽度 （单位是像素），当宽高度是0~1的时候，是按照百分比计算，具体可以看api文档  
            var thumbnailHeight = 100;  
            var uploader = WebUploader.create({
@@ -346,7 +344,7 @@
             // swf文件路径
            swf: '/think5/public/static/webuploader/uploader.swf', //加载swf文件，路径一定要对
             // 文件接收服务端。
-            server: '<?php echo url("userhotai/upload"); ?>',
+            server: '<?php echo url("user/userhotai/upload"); ?>',
             // 选择文件的按钮。可选。
             // 内部根据当前运行是创建，可能是input元素，也可能是flash.
             pick: '#filePicker',
@@ -358,12 +356,21 @@
             }
         });
       //上传完成事件监听
+        
         uploader.on( 'fileQueued', function(file) {
+            var d = new Date();
+            var curr_date = d.getDate();
+            var curr_month = d.getMonth() + 1; 
+            var curr_year = d.getFullYear();
+            String(curr_month).length < 2 ? (curr_month = "0" + curr_month): curr_month;
+            String(curr_date).length < 2 ? (curr_date = "0" + curr_date): curr_date;
+            var yyyyMMdd = curr_year + "" + curr_month +""+ curr_date;
             var $li = $(
                     '<div id="' + file.id + '" class="file-item thumbnail">' +
                         '<img>' +
                         '<div class="info">' + file.name + '</div>' +
-                    '</div>'
+                    '</div>'+
+                    '<input type="text" name="logo" value="'+yyyyMMdd+'/'+ file.name +'">'
                     ),
                 $img = $li.find('img');
             // $list为容器jQuery实例

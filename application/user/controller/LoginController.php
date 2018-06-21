@@ -67,11 +67,7 @@ class LoginController extends Controller
     	if($author->password!=$data['password']){
     		$this->error('密码有错');
     	}
-    	session('my_user',$author,'my');
+    	session('me_user',$author,'me');
     	$this->success('ok','userhotai/index');
-    }
-    public function logout(){
-    	session(null,'my');
-    	$this->redirect('login/index');
     }
 }

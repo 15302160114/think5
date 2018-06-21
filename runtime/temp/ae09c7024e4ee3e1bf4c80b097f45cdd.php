@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\user.html";i:1529547545;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\user.html";i:1529573604;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -253,7 +253,8 @@
                                         <thead>
                                             <tr>
                                                 <th>ID</th>
-                                                <th>用户</th>
+                                                <th>用户名</th>
+                                                <th>真实姓名</th>
                                                 <th>注册时间</th>
                                                 <th>操作</th>
                                             </tr>
@@ -263,6 +264,7 @@
                                             <tr class="gradeX">
                                                 <td><?php echo $vo['id']; ?></td>
                                                 <td><?php echo $vo['username']; ?></td>
+                                                <td><?php echo $vo['realname']; ?></td>
                                                 <td><?php echo $vo['create_time']; ?></td>
                                                 <td>
                                                     <div class="tpl-table-black-operation">

@@ -159,7 +159,7 @@
 
                         <!-- 退出 -->
                         <li class="am-text-sm">
-                            <a href="{:url('login/logout')}">
+                            <a href="{:url('userhotai/logout')}">
                                 <span class="am-icon-sign-out"></span> 退出
                             </a>
                         </li>
@@ -188,7 +188,7 @@
             <div class="tpl-sidebar-user-panel">
                 <div class="tpl-user-panel-slide-toggleable">
                     <div class="tpl-user-panel-profile-picture">
-                        <img src="__STATIC__/images/user04.png" alt="">
+                        <img src="/think5/public/uploads/{$author.id}/{$author.logo}" alt="">
                     </div>
                     <span class="user-panel-logged-in-text">
               <i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>
@@ -219,12 +219,6 @@
                 <li class="sidebar-nav-link">
                     <a href="add.html" class="active">
                         <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 写文章
-
-                    </a>
-                </li>
-                <li class="sidebar-nav-link">
-                    <a href="chart.html">
-                        <i class="am-icon-bar-chart sidebar-nav-link-logo"></i> 图表
 
                     </a>
                 </li>
@@ -264,7 +258,7 @@
                                         <label for="user-phone" class="am-u-sm-12 am-form-label am-text-left">文章类别<span class="tpl-form-line-small-title">Category</span></label>
                                         <div class="am-u-sm-12  am-margin-top-xs">
                                             <select data-am-selected="{searchBox: 1}" name="category_id" id="select">
-                                               <option value="all">无分类</option>
+                                               <option value="all">所有分类</option>
                                               {volist name="categorys" id="vo"}
                                               <option value="{$vo.id}">{$vo.categoryname}</option>
                                               {/volist}
@@ -285,14 +279,15 @@
                                         <div id="uploader-demo" class="am-u-sm-12 am-margin-top-xs">
                                             <div class="am-form-group am-form-file">
                                                 <div id="fileList" class="tpl-form-file-img uploader-list">
-                                                    <div class="file-item thumbnail">
-                                                        <img src="/think5/public/uploads/{if condition='$user'}{$user->id}{/if}/{$article.logo}">
+                                                    <div id="old" class="file-item thumbnail">
+                                                        <img src="/think5/public/uploads/{$article.author_id}/{$article.logo}" class="tpl-table-line-img">
                                                         <div class="info">{$article.logo}</div>
                                                     </div>
+                                                    <input type="text" style="display:none" name="logo" value="{$article.logo}">
                                                 </div>
-
+                                                
                                                 <button id="filePicker" type="button" class="am-btn am-btn-danger am-btn-sm ">
-                                                <i class="am-icon-cloud-upload"></i> 添加封面图片</button>
+                                                <i class="am-icon-cloud-upload"></i> 更改封面图片</button>
                                             </div>
 
                                         </div>
@@ -361,9 +356,9 @@
             // 选完文件后，是否自动上传。
            auto: true,
             // swf文件路径
-           swf: '/thinkphp5/public/static/webuploader/uploader.swf', //加载swf文件，路径一定要对
+           swf: '__STATIC__/webuploader/uploader.swf', //加载swf文件，路径一定要对
             // 文件接收服务端。
-            server: '{:url("index/file/myupload")}',
+            server: '{:url("user/userhotai/upload")}',
             // 选择文件的按钮。可选。
             // 内部根据当前运行是创建，可能是input元素，也可能是flash.
             pick: '#filePicker',
@@ -375,24 +370,26 @@
             }
         });
       //上传完成事件监听
+        
         uploader.on( 'fileQueued', function(file) {
-            var d = new Date();
-            var curr_date = d.getDate();
-            var curr_month = d.getMonth() + 1; 
-            var curr_year = d.getFullYear();
-            String(curr_month).length < 2 ? (curr_month = "0" + curr_month): curr_month;
-            String(curr_date).length < 2 ? (curr_date = "0" + curr_date): curr_date;
-            var yyyyMMdd = curr_year + "" + curr_month +""+ curr_date;
+            // var d = new Date();
+            // var curr_date = d.getDate();
+            // var curr_month = d.getMonth() + 1; 
+            // var curr_year = d.getFullYear();
+            // String(curr_month).length < 2 ? (curr_month = "0" + curr_month): curr_month;
+            // String(curr_date).length < 2 ? (curr_date = "0" + curr_date): curr_date;
+            // var yyyyMMdd = curr_year + "" + curr_month +""+ curr_date;
             var $li = $(
-                    '<div id="' + file.id + '" class="file-item thumbnail">' +
+                    '<div id="old" class="file-item thumbnail">' +
                         '<img>' +
                         '<div class="info">' + file.name + '</div>' +
                     '</div>'+
-                    '<input type="text" name="logo" value="'+yyyyMMdd+'/'+file.name+'">'
+                    '<input type="text" style="display:none" name="logo" value="'+ file.name +'">'
                     ),
                 $img = $li.find('img');
             // $list为容器jQuery实例
-                   $("#fileList").append( $li );
+                $('#old').remove();
+                $("#fileList").append( $li );
             // 创建缩略图
             // 如果为非图片文件，可以不用调用此方法。
             // thumbnailWidth x thumbnailHeight 为 100 x 100

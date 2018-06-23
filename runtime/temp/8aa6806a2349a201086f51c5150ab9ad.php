@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\article.html";i:1529573687;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\article.html";i:1529742504;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -189,7 +189,7 @@
             <div class="tpl-sidebar-user-panel">
                 <div class="tpl-user-panel-slide-toggleable">
                     <div class="tpl-user-panel-profile-picture">
-                        <img src="/think5/public/static/images/user04.png" alt="">
+                        <img src="/think5/public/admin_uploads/<?php echo $admin['id']; ?>/<?php echo $admin['logo']; ?>" alt="">
                     </div>
                     <span class="user-panel-logged-in-text">
               <i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>
@@ -223,12 +223,6 @@
                         <i class="am-icon-table sidebar-nav-link-logo"></i> 用户列表
                     </a>
                 </li>
-                <li class="sidebar-nav-link">
-                    <a href="chart.html">
-                        <i class="am-icon-bar-chart sidebar-nav-link-logo"></i> 图表
-
-                    </a>
-                </li>
             </ul>
         </div>
 
@@ -253,7 +247,7 @@
                                     <div class="am-form-group">
                                         <div class="am-u-sm-12  am-margin-top-xs">
                                             <select data-am-selected="{searchBox: 1}">
-                                               <option value="all">无分类</option>
+                                               <option value="all">所有分类</option>
                                               <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                                               <option value="<?php echo $vo['id']; ?>"><?php echo $vo['categoryname']; ?></option>
                                               <?php endforeach; endif; else: echo "" ;endif; ?>
@@ -265,22 +259,26 @@
                                         <thead>
                                             <tr>
                                                 <th>序号</th>
+                                                <th>logo</th>
                                                 <th>title</th>
                                                 <th>文章分类</th>
                                                 <th>作者</th>
-                                                <th>时间</th>
+                                                <th>发布时间</th>
                                                 <th>操作</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <?php if(is_array($articles) || $articles instanceof \think\Collection || $articles instanceof \think\Paginator): $num = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($num % 2 );++$num;?>
                                             <tr class="gradeX">
-                                                <td><?php echo $num; ?></td>
-                                                <td><?php echo $vo['title']; ?></td>
-                                                <td><?php echo $vo['category_id']; ?></td>
-                                                <td><?php echo $vo['author_id']; ?></td>
-                                                <td><?php echo $vo['create_time']; ?></td>
-                                                <td>
+                                                <td class="am-text-middle"><?php echo $num; ?></td>
+                                                <td class="am-text-middle">
+                                                    <img src="/think5/public/uploads/<?php echo $vo['author_id']; ?>/<?php echo $vo['logo']; ?>" class="tpl-table-line-img">
+                                                </td>
+                                                <td class="am-text-middle"><?php echo $vo['title']; ?></td>
+                                                <td class="am-text-middle"><?php echo getUsername($vo['category_id']); ?></td>
+                                                <td class="am-text-middle"><?php echo getAuthorname($vo['author_id']); ?></td>
+                                                <td class="am-text-middle"><?php echo $vo['create_time']; ?></td>
+                                                <td class="am-text-middle">
                                                     <div class="tpl-table-black-operation">
                                                         <a href="<?php echo url('adminhotai/articledelete',['id'=>$vo['id']]); ?>" class="tpl-table-black-operation-del">
                                                             <i class="am-icon-trash"></i> 删除

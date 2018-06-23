@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html";i:1529592121;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html";i:1529742568;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -189,7 +189,7 @@
             <div class="tpl-sidebar-user-panel">
                 <div class="tpl-user-panel-slide-toggleable">
                     <div class="tpl-user-panel-profile-picture">
-                        <img src="/think5/public/static/images/user04.png" alt="">
+                        <img src="/think5/public/uploads/<?php echo $author['id']; ?>/<?php echo $author['logo']; ?>" alt="">
                     </div>
                     <span class="user-panel-logged-in-text">
               <i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>
@@ -220,12 +220,6 @@
                 <li class="sidebar-nav-link">
                     <a href="add.html" class="active">
                         <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 写文章
-
-                    </a>
-                </li>
-                <li class="sidebar-nav-link">
-                    <a href="chart.html">
-                        <i class="am-icon-bar-chart sidebar-nav-link-logo"></i> 图表
 
                     </a>
                 </li>
@@ -265,7 +259,7 @@
                                         <label for="user-phone" class="am-u-sm-12 am-form-label am-text-left">文章类别<span class="tpl-form-line-small-title">Category</span></label>
                                         <div class="am-u-sm-12  am-margin-top-xs">
                                             <select data-am-selected="{searchBox: 1}" name="category_id">
-                                               <option value="all">无分类</option>
+                                               <option value="all">所有分类</option>
                                               <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                                               <option value="<?php echo $vo['id']; ?>"><?php echo $vo['categoryname']; ?></option>
                                               <?php endforeach; endif; else: echo "" ;endif; ?>
@@ -358,19 +352,19 @@
       //上传完成事件监听
         
         uploader.on( 'fileQueued', function(file) {
-            var d = new Date();
-            var curr_date = d.getDate();
-            var curr_month = d.getMonth() + 1; 
-            var curr_year = d.getFullYear();
-            String(curr_month).length < 2 ? (curr_month = "0" + curr_month): curr_month;
-            String(curr_date).length < 2 ? (curr_date = "0" + curr_date): curr_date;
-            var yyyyMMdd = curr_year + "" + curr_month +""+ curr_date;
+            // var d = new Date();
+            // var curr_date = d.getDate();
+            // var curr_month = d.getMonth() + 1; 
+            // var curr_year = d.getFullYear();
+            // String(curr_month).length < 2 ? (curr_month = "0" + curr_month): curr_month;
+            // String(curr_date).length < 2 ? (curr_date = "0" + curr_date): curr_date;
+            // var yyyyMMdd = curr_year + "" + curr_month +""+ curr_date;
             var $li = $(
                     '<div id="' + file.id + '" class="file-item thumbnail">' +
                         '<img>' +
                         '<div class="info">' + file.name + '</div>' +
                     '</div>'+
-                    '<input type="text" style="display:none" name="logo" value="'+yyyyMMdd+'/'+ file.name +'">'
+                    '<input type="text" style="display:none" name="logo" value="'+ file.name +'">'
                     ),
                 $img = $li.find('img');
             // $list为容器jQuery实例

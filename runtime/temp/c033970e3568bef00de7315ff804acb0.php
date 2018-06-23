@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\all.html";i:1529573965;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\all.html";i:1529743113;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +22,7 @@
 
 </head>
 
-<body data-type="index">
+<body data-type="widgets">
     <script src="/think5/public/static/js/theme.js"></script>
     <div class="am-g tpl-g">
         <!-- 头部 -->
@@ -161,7 +161,7 @@
 
                         <!-- 退出 -->
                         <li class="am-text-sm">
-                            <a href="<?php echo url('login/logout'); ?>">
+                            <a href="<?php echo url('userhotai/logout'); ?>">
                                 <span class="am-icon-sign-out"></span>退出
                             </a>
                         </li>
@@ -190,7 +190,7 @@
             <div class="tpl-sidebar-user-panel">
                 <div class="tpl-user-panel-slide-toggleable">
                     <div class="tpl-user-panel-profile-picture">
-                        <img src="/think5/public/static/images/user04.png" alt="">
+                        <img src="/think5/public/uploads/<?php echo $author['id']; ?>/<?php echo $author['logo']; ?>" alt="">
                     </div>
                     <span class="user-panel-logged-in-text">
               <i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>
@@ -224,12 +224,6 @@
 
                     </a>
                 </li>
-                <li class="sidebar-nav-link">
-                    <a href="chart.html">
-                        <i class="am-icon-bar-chart sidebar-nav-link-logo"></i> 图表
-
-                    </a>
-                </li>
             </ul>
         </div>
 
@@ -251,7 +245,7 @@
                                     <div class="am-form-group">
                                         <div class="am-u-sm-12  am-margin-left-xs">
                                             <select data-am-selected="{searchBox: 1}">
-                                               <option value="all">无分类</option>
+                                               <option value="all">所有分类</option>
                                               <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                                               <option value="<?php echo $vo['id']; ?>"><?php echo $vo['categoryname']; ?></option>
                                               <?php endforeach; endif; else: echo "" ;endif; ?>
@@ -266,9 +260,9 @@
                                             <tr>
                                                 <th>文章缩略图</th>
                                                 <th>文章标题</th>
-                                                <th>作者</th>
                                                 <th>分类</th>
-                                                <th>时间</th>
+                                                <th>作者</th>
+                                                <th>发布时间</th>
                                                 <th>操作</th>
                                             </tr>
                                         </thead>
@@ -276,12 +270,12 @@
                                         <?php if(is_array($articles) || $articles instanceof \think\Collection || $articles instanceof \think\Paginator): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                                             <tr class="gradeX">
                                                 <td>
-                                                    <img src="/think5/public/static/images/k.jpg" class="tpl-table-line-img" alt="">
+                                                    <img src="/think5/public/uploads/<?php if($user): ?><?php echo $user->id; endif; ?>/<?php echo $vo['logo']; ?>" class="tpl-table-line-img" alt="">
                                                 </td>
                                                 <td class="am-text-middle"><?php echo $vo['title']; ?></td>
-                                                <td class="am-text-middle"><?php echo $vo['author_id']; ?></td>
-                                                <td class="am-text-middle"><?php echo $vo['category_id']; ?></td>
-                                                <td class="am-text-middle"><?php echo $vo['create_time']; ?></td>
+                                                <td class="am-text-middle"><?php echo getUsername($vo['category_id']); ?></td>
+                                                <td class="am-text-middle"><?php echo getAuthorname($vo['author_id']); ?></td>
+                                                <td class="am-text-middle"><?php echo date('y-m-d H:i:s',$vo['create_time']); ?></td>
                                                 <td class="am-text-middle">
                                                     <div class="tpl-table-black-operation">
                                                         <a href="<?php echo url('userhotai/edit',['id'=>$vo['id']]); ?>">

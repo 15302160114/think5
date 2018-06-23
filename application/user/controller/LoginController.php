@@ -7,10 +7,6 @@ class LoginController extends Controller
 {
     public function index()
     {
-      	// $teacher=session('my_user','','my');
-      	// if($teacher&&$teacher->id){
-      	// 	$this->redirect('teacher/biaoge');
-      	// }
       	return $this->fetch();
     }
     public function zhuce(){
@@ -41,7 +37,7 @@ class LoginController extends Controller
         $date=[
                 'email'=>$input['email'],
                 'username'=>$input['username'],
-                'password'=>$input['password1'],
+                'password'=>md5($input['password1']),
             ];
 
         $xuhao=model('Author')->add($date);
@@ -64,7 +60,7 @@ class LoginController extends Controller
         if(!captcha_check($data['captcha'])){          
             $this->error('验证码错误');
         }
-    	if($author->password!=$data['password']){
+    	if($author->password!=md5($data['password'])){
     		$this->error('密码有错');
     	}
     	session('me_user',$author,'me');

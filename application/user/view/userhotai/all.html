@@ -21,7 +21,7 @@
 
 </head>
 
-<body data-type="index">
+<body data-type="widgets">
     <script src="__STATIC__/js/theme.js"></script>
     <div class="am-g tpl-g">
         <!-- 头部 -->
@@ -160,7 +160,7 @@
 
                         <!-- 退出 -->
                         <li class="am-text-sm">
-                            <a href="{:url('login/logout')}">
+                            <a href="{:url('userhotai/logout')}">
                                 <span class="am-icon-sign-out"></span>退出
                             </a>
                         </li>
@@ -189,7 +189,7 @@
             <div class="tpl-sidebar-user-panel">
                 <div class="tpl-user-panel-slide-toggleable">
                     <div class="tpl-user-panel-profile-picture">
-                        <img src="__STATIC__/images/user04.png" alt="">
+                        <img src="/think5/public/uploads/{$author.id}/{$author.logo}" alt="">
                     </div>
                     <span class="user-panel-logged-in-text">
               <i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>
@@ -223,12 +223,6 @@
 
                     </a>
                 </li>
-                <li class="sidebar-nav-link">
-                    <a href="chart.html">
-                        <i class="am-icon-bar-chart sidebar-nav-link-logo"></i> 图表
-
-                    </a>
-                </li>
             </ul>
         </div>
 
@@ -250,7 +244,7 @@
                                     <div class="am-form-group">
                                         <div class="am-u-sm-12  am-margin-left-xs">
                                             <select data-am-selected="{searchBox: 1}">
-                                               <option value="all">无分类</option>
+                                               <option value="all">所有分类</option>
                                               {volist name="categorys" id="vo"}
                                               <option value="{$vo.id}">{$vo.categoryname}</option>
                                               {/volist}
@@ -265,9 +259,9 @@
                                             <tr>
                                                 <th>文章缩略图</th>
                                                 <th>文章标题</th>
-                                                <th>作者</th>
                                                 <th>分类</th>
-                                                <th>时间</th>
+                                                <th>作者</th>
+                                                <th>发布时间</th>
                                                 <th>操作</th>
                                             </tr>
                                         </thead>
@@ -275,12 +269,12 @@
                                         {volist name="articles" id="vo"}
                                             <tr class="gradeX">
                                                 <td>
-                                                    <img src="__STATIC__/images/k.jpg" class="tpl-table-line-img" alt="">
+                                                    <img src="/think5/public/uploads/{if condition='$user'}{$user->id}{/if}/{$vo.logo}" class="tpl-table-line-img" alt="">
                                                 </td>
                                                 <td class="am-text-middle">{$vo.title}</td>
-                                                <td class="am-text-middle">{$vo.author_id}</td>
-                                                <td class="am-text-middle">{$vo.category_id}</td>
-                                                <td class="am-text-middle">{$vo.create_time}</td>
+                                                <td class="am-text-middle">{:getUsername($vo.category_id)}</td>
+                                                <td class="am-text-middle">{:getAuthorname($vo.author_id)}</td>
+                                                <td class="am-text-middle">{$vo.create_time|date='y-m-d H:i:s',###}</td>
                                                 <td class="am-text-middle">
                                                     <div class="tpl-table-black-operation">
                                                         <a href="{:url('userhotai/edit',['id'=>$vo.id])}">

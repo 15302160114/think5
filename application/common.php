@@ -20,3 +20,17 @@ function status($status){
 	}
 	return $str;
 }
+use think\Db;
+
+function getUsername($id){
+    return Db::name('category')->where('id',$id)->find()['categoryname'];
+}
+function getAuthorname($id){
+    return Db::name('author')->where('id',$id)->find()['username'];
+}
+function getAuthornote($id){
+    return Db::name('author')->where('id',$id)->find()['note'];
+}
+function getAuthorlogo($id){
+    return Db::name('author')->where('id',$id)->find()['logo'];
+}

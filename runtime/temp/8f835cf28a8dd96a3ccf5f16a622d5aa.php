@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\zhanghao.html";i:1529573754;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\zhanghao.html";i:1529742631;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +23,7 @@
 
 </head>
 
-<body data-type="index">
+<body data-type="widgets">
     <script src="/think5/public/static/js/theme.js"></script>
     <div class="am-g tpl-g">
         <!-- 头部 -->
@@ -52,7 +52,7 @@
                     <ul>
                         <!-- 欢迎语 -->
                         <li class="am-text-sm tpl-header-navbar-welcome">
-                            <a href="javascript:;">欢迎你,  </a>
+                            <a href="javascript:;">欢迎你, <?php if($user): ?><?php echo $user->username; endif; ?> </a>
                         </li>
 
                         <!-- 新邮件 -->
@@ -162,7 +162,7 @@
 
                         <!-- 退出 -->
                         <li class="am-text-sm">
-                            <a href="<?php echo url('login/logout'); ?>">
+                            <a href="<?php echo url('userhotai/logout'); ?>">
                                 <span class="am-icon-sign-out"></span>退出
                             </a>
                         </li>
@@ -191,7 +191,7 @@
             <div class="tpl-sidebar-user-panel">
                 <div class="tpl-user-panel-slide-toggleable">
                     <div class="tpl-user-panel-profile-picture">
-                        <img src="/think5/public/static/images/user04.png" alt="">
+                        <img src="/think5/public/uploads/<?php echo $author['id']; ?>/<?php echo $author['logo']; ?>" alt="">
                     </div>
                     <span class="user-panel-logged-in-text">
               <i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>
@@ -225,12 +225,6 @@
 
                     </a>
                 </li>
-                <li class="sidebar-nav-link">
-                    <a href="chart.html">
-                        <i class="am-icon-bar-chart sidebar-nav-link-logo"></i> 图表
-
-                    </a>
-                </li>
             </ul>
         </div>
 
@@ -251,10 +245,29 @@
                             </div>
                             <div class="widget-body am-fr">
 
-                                    <form class="form-horizontal" method="post" name="form1" action="<?php echo url('userhotai/update'); ?>">
+                                    <form class="form-horizontal" method="post" action="<?php echo url('userhotai/update'); ?>">
                                       <div class="form-group">
-                                          <input type="hidden" name="id"placeholder="id" value="<?php echo $author['id']; ?>">
+                                          <input type="hidden" name="id" placeholder="id" value="<?php echo $author['id']; ?>">
                                         
+                                      </div>
+
+                                      <div class="am-form-group">
+                                        <label for="user-weibo" class="am-u-sm-12 am-form-label  am-text-left">LOGO <span class="tpl-form-line-small-title">Images</span></label>
+
+                                        <div id="uploader-demo" class="am-u-sm-12 am-margin-top-xs">
+                                            <div class="am-form-group am-form-file">
+                                                <div id="fileList" class="tpl-form-file-img uploader-list">
+                                                    <div id="old" class="file-item thumbnail">
+                                                        <img src="/think5/public/uploads/<?php echo $author['id']; ?>/<?php echo $author['logo']; ?>" class="tpl-table-line-img" width="200px">
+                                                        <div style="text-align: center;" class="info"><?php echo $author['logo']; ?></div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <button id="filePicker" type="button" class="am-btn am-btn-danger am-btn-sm ">
+                                                <i class="am-icon-cloud-upload"></i> 更换logo</button>
+                                            </div>
+
+                                        </div>
                                       </div>
 
                                       <div class="form-group">
@@ -268,13 +281,6 @@
                                         <label for="inputEmail3" class="col-sm-2 control-label">realname</label>
                                         <div class="col-sm-7">
                                           <input type="text" name="realname" class="form-control" id="title" placeholder="realname" value="<?php echo $author['realname']; ?>">
-                                        </div>
-                                      </div>
-
-                                      <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label">note</label>
-                                        <div class="col-sm-7">
-                                          <input type="text" name="note" class="form-control" id="title" placeholder="note" value="<?php echo $author['note']; ?>">
                                         </div>
                                       </div>
 
@@ -294,7 +300,7 @@
                                       <div class="form-group">
                                         <label for="inputEmail3" class="col-sm-2 control-label">Password</label>
                                         <div class="col-sm-7">
-                                          <input type="text" name="password" class="form-control" id="title" placeholder="password" value="<?php echo $author['password']; ?>">
+                                          <input type="password" name="password" class="form-control" id="title" placeholder="password" value="<?php echo $author['password']; ?>">
                                         </div>
                                       </div>
 
@@ -316,7 +322,61 @@
     <script src="/think5/public/static/js/amazeui.datatables.min.js"></script>
     <script src="/think5/public/static/js/dataTables.responsive.min.js"></script>
     <script src="/think5/public/static/js/app.js"></script>
+    <script type="text/javascript" src="/think5/public/static/webuploader/webuploader.js"></script>
 
 </body>
-
+<script type="text/javascript">
+           //var $list=$("#fileList");   //这几个初始化全局的百度文档上没说明，好蛋疼
+           var thumbnailWidth = 100;   //缩略图高度和宽度 （单位是像素），当宽高度是0~1的时候，是按照百分比计算，具体可以看api文档  
+           var thumbnailHeight = 100;  
+           var uploader = WebUploader.create({
+            // 选完文件后，是否自动上传。
+           auto: true,
+            // swf文件路径
+           swf: '/think5/public/static/webuploader/uploader.swf', //加载swf文件，路径一定要对
+            // 文件接收服务端。
+            server: '<?php echo url("user/userhotai/upload"); ?>',
+            // 选择文件的按钮。可选。
+            // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+            pick: '#filePicker',
+            // 只允许选择图片文件。
+            accept: {
+                title: 'Images',
+                extensions: 'gif,jpg,jpeg,bmp,png',
+                mimeTypes: 'image/'
+            }
+        });
+      //上传完成事件监听
+        
+        uploader.on( 'fileQueued', function(file) {
+            // var d = new Date();
+            // var curr_date = d.getDate();
+            // var curr_month = d.getMonth() + 1; 
+            // var curr_year = d.getFullYear();
+            // String(curr_month).length < 2 ? (curr_month = "0" + curr_month): curr_month;
+            // String(curr_date).length < 2 ? (curr_date = "0" + curr_date): curr_date;
+            // var yyyyMMdd = curr_year + "" + curr_month +""+ curr_date;
+            var $li = $(
+                    '<div id="old" class="file-item thumbnail">' +
+                        '<img>' +
+                        '<div style="text-align: center;" class="info">' + file.name + '</div>' +
+                    '</div>'+
+                    '<input type="text" style="display:none" name="logo" value="'+ file.name +'">'
+                    ),
+                $img = $li.find('img');
+            // $list为容器jQuery实例
+                    $('#old').remove();
+                   $("#fileList").append( $li );
+            // 创建缩略图
+            // 如果为非图片文件，可以不用调用此方法。
+            // thumbnailWidth x thumbnailHeight 为 100 x 100
+            uploader.makeThumb( file, function( error, src ) {
+                if ( error ) {
+                    $img.replaceWith('<span>不能预览</span>');
+                    return;
+                }
+                $img.attr( 'src', src );
+            }, thumbnailWidth, thumbnailHeight );
+        });
+</script>
 </html>

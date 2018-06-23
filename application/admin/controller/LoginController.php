@@ -7,10 +7,6 @@ class LoginController extends Controller
 {
     public function index()
     {
-        // $admin=session('my_user','','my');
-        // if($admin&&$admin->id){
-        //  $this->redirect('login/index');
-        // }
         return $this->fetch();
     }
     public function check(){
@@ -23,7 +19,7 @@ class LoginController extends Controller
         if(!$admin){
             $this->error('用户名有错');
         }
-        if($admin->password!=$data['password']){
+        if($admin->password!=(md5($data['password']))){
             $this->error('密码有错');
         }
         session('my_user',$admin,'my');

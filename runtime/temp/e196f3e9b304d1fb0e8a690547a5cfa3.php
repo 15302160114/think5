@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:74:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\edit.html";i:1529586583;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:74:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\edit.html";i:1529757433;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -160,7 +160,7 @@
 
                         <!-- 退出 -->
                         <li class="am-text-sm">
-                            <a href="<?php echo url('login/logout'); ?>">
+                            <a href="<?php echo url('userhotai/logout'); ?>">
                                 <span class="am-icon-sign-out"></span> 退出
                             </a>
                         </li>
@@ -189,7 +189,7 @@
             <div class="tpl-sidebar-user-panel">
                 <div class="tpl-user-panel-slide-toggleable">
                     <div class="tpl-user-panel-profile-picture">
-                        <img src="/think5/public/static/images/user04.png" alt="">
+                        <img src="/think5/public/uploads/<?php echo $author['id']; ?>/<?php echo $author['logo']; ?>" alt="">
                     </div>
                     <span class="user-panel-logged-in-text">
               <i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>
@@ -220,12 +220,6 @@
                 <li class="sidebar-nav-link">
                     <a href="add.html" class="active">
                         <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 写文章
-
-                    </a>
-                </li>
-                <li class="sidebar-nav-link">
-                    <a href="chart.html">
-                        <i class="am-icon-bar-chart sidebar-nav-link-logo"></i> 图表
 
                     </a>
                 </li>
@@ -265,7 +259,7 @@
                                         <label for="user-phone" class="am-u-sm-12 am-form-label am-text-left">文章类别<span class="tpl-form-line-small-title">Category</span></label>
                                         <div class="am-u-sm-12  am-margin-top-xs">
                                             <select data-am-selected="{searchBox: 1}" name="category_id" id="select">
-                                               <option value="all">无分类</option>
+                                               <option value="all">所有分类</option>
                                               <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                                               <option value="<?php echo $vo['id']; ?>"><?php echo $vo['categoryname']; ?></option>
                                               <?php endforeach; endif; else: echo "" ;endif; ?>
@@ -286,14 +280,15 @@
                                         <div id="uploader-demo" class="am-u-sm-12 am-margin-top-xs">
                                             <div class="am-form-group am-form-file">
                                                 <div id="fileList" class="tpl-form-file-img uploader-list">
-                                                    <div class="file-item thumbnail">
-                                                        <img src="/think5/public/uploads/<?php if($user): ?><?php echo $user->id; endif; ?>/<?php echo $article['logo']; ?>">
+                                                    <div id="old" class="file-item thumbnail">
+                                                        <img src="/think5/public/uploads/<?php echo $article['author_id']; ?>/<?php echo $article['logo']; ?>" class="tpl-table-line-img">
                                                         <div class="info"><?php echo $article['logo']; ?></div>
                                                     </div>
+                                                    <input type="text" style="display:none" name="logo" value="<?php echo $article['logo']; ?>">
                                                 </div>
-
+                                                
                                                 <button id="filePicker" type="button" class="am-btn am-btn-danger am-btn-sm ">
-                                                <i class="am-icon-cloud-upload"></i> 添加封面图片</button>
+                                                <i class="am-icon-cloud-upload"></i> 更改封面图片</button>
                                             </div>
 
                                         </div>
@@ -362,9 +357,9 @@
             // 选完文件后，是否自动上传。
            auto: true,
             // swf文件路径
-           swf: '/thinkphp5/public/static/webuploader/uploader.swf', //加载swf文件，路径一定要对
+           swf: '/think5/public/static/webuploader/uploader.swf', //加载swf文件，路径一定要对
             // 文件接收服务端。
-            server: '<?php echo url("index/file/myupload"); ?>',
+            server: '<?php echo url("user/userhotai/upload"); ?>',
             // 选择文件的按钮。可选。
             // 内部根据当前运行是创建，可能是input元素，也可能是flash.
             pick: '#filePicker',
@@ -376,24 +371,26 @@
             }
         });
       //上传完成事件监听
+        
         uploader.on( 'fileQueued', function(file) {
-            var d = new Date();
-            var curr_date = d.getDate();
-            var curr_month = d.getMonth() + 1; 
-            var curr_year = d.getFullYear();
-            String(curr_month).length < 2 ? (curr_month = "0" + curr_month): curr_month;
-            String(curr_date).length < 2 ? (curr_date = "0" + curr_date): curr_date;
-            var yyyyMMdd = curr_year + "" + curr_month +""+ curr_date;
+            // var d = new Date();
+            // var curr_date = d.getDate();
+            // var curr_month = d.getMonth() + 1; 
+            // var curr_year = d.getFullYear();
+            // String(curr_month).length < 2 ? (curr_month = "0" + curr_month): curr_month;
+            // String(curr_date).length < 2 ? (curr_date = "0" + curr_date): curr_date;
+            // var yyyyMMdd = curr_year + "" + curr_month +""+ curr_date;
             var $li = $(
-                    '<div id="' + file.id + '" class="file-item thumbnail">' +
+                    '<div id="old" class="file-item thumbnail">' +
                         '<img>' +
                         '<div class="info">' + file.name + '</div>' +
                     '</div>'+
-                    '<input type="text" name="logo" value="'+yyyyMMdd+'/'+file.name+'">'
+                    '<input type="text" style="display:none" name="logo" value="'+ file.name +'">'
                     ),
                 $img = $li.find('img');
             // $list为容器jQuery实例
-                   $("#fileList").append( $li );
+                $('#old').remove();
+                $("#fileList").append( $li );
             // 创建缩略图
             // 如果为非图片文件，可以不用调用此方法。
             // thumbnailWidth x thumbnailHeight 为 100 x 100

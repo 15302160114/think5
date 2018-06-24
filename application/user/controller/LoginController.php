@@ -9,7 +9,7 @@ class LoginController extends Controller
     {
       	return $this->fetch();
     }
-    public function zhuce(){
+    public function signup(){
         return $this->fetch();
     }
     public function save(){
@@ -37,12 +37,12 @@ class LoginController extends Controller
         $date=[
                 'email'=>$input['email'],
                 'username'=>$input['username'],
-                'password'=>md5($input['password1']),
+                'password'=>md5($input['password']),
             ];
 
         $xuhao=model('Author')->add($date);
         if($xuhao){
-            $this->success('增加成功，新增序号为'.$xuhao,url('userhotai/index'));
+            $this->success('增加成功，新增序号为'.$xuhao,url('login/index'));
         }else{
             $this->error('增加失败');
         }

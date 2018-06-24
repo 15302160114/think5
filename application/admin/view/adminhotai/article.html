@@ -27,7 +27,7 @@
         <header>
             <!-- logo -->
             <div class="am-fl tpl-header-logo">
-                <a href="javascript:;"><img src="__STATIC__/images/logo.png" alt=""></a>
+                <a href="javascript:;"><img src="__STATIC__/images/hologo.png" alt=""></a>
             </div>
             <!-- 右侧内容 -->
             <div class="tpl-header-fluid">
@@ -268,10 +268,11 @@
                                         </thead>
                                         <tbody>
                                             {volist name="articles" id="vo" key="num"}
+                                            
                                             <tr class="gradeX">
                                                 <td class="am-text-middle">{$num}</td>
                                                 <td class="am-text-middle">
-                                                    <img src="/think5/public/uploads/{$vo.author_id}/{$vo.logo}" class="tpl-table-line-img">
+                                                    <a href="{:url('@index/index/single',['id'=>$vo.id])}" target="_blank"><img src="/think5/public/uploads/{$vo.author_id}/{$vo.logo}" class="tpl-table-line-img"></a>
                                                 </td>
                                                 <td class="am-text-middle">{$vo.title}</td>
                                                 <td class="am-text-middle">{:getUsername($vo.category_id)}</td>
@@ -285,6 +286,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
+                                            
                                             {/volist}
                                             
                                             <!-- more data -->

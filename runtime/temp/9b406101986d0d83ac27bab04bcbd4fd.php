@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html";i:1529742568;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\add.html";i:1529838569;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +28,7 @@
         <header>
             <!-- logo -->
             <div class="am-fl tpl-header-logo">
-                <a href="javascript:;"><img src="/think5/public/static/images/logo.png" alt=""></a>
+                <a href="javascript:;"><img src="/think5/public/static/images/hologo.png" alt=""></a>
             </div>
             <!-- 右侧内容 -->
             <div class="tpl-header-fluid">

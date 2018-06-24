@@ -128,6 +128,12 @@ class AdminhotaiController extends Base
 		return $this->fetch('');
 	}
 	public function update(){
+		$a=explode(',', session('my_user','','my'));
+    	$id=substr($a[0],6);
+		if($id==0||is_null($id)){
+			$this->error('参数有误');
+		}
+
 		echo "<meta charset='UTF-8'>";
 		if(!request()->isPost()){
 			$this->error("非法输入");
@@ -138,13 +144,25 @@ class AdminhotaiController extends Base
 		if(!$validate->scene('edit')->check($input)){
 			$this->error($validate->getError());
 		}
-		
-		$date=[
+
+		$admin=Db::table('admin')
+					->where('id',$id)
+					->select();
+		$pa=$admin[0];	
+		if($pa['password']==$input['password']){
+			$date=[
+				'username'=>$input['username'],
+				'realname'=>$input['realname'],
+				'logo'=>$input['logo']
+			];
+		}else{
+			$date=[
 				'username'=>$input['username'],
 				'realname'=>$input['realname'],
 				'logo'=>$input['logo'],
 				'password'=>md5($input['password'])
 			];
+		}
 
 		$xuhao=model('Admin')->save($date,['id'=>intval($input['id'])]);
 		if($xuhao){

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:74:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\edit.html";i:1529757433;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:74:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\edit.html";i:1529847823;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +28,7 @@
         <header>
             <!-- logo -->
             <div class="am-fl tpl-header-logo">
-                <a href="javascript:;"><img src="/think5/public/static/images/logo.png" alt=""></a>
+                <a href="javascript:;"><img src="/think5/public/static/images/hologo.png" alt=""></a>
             </div>
             <!-- 右侧内容 -->
             <div class="tpl-header-fluid">
@@ -203,7 +203,7 @@
             <ul class="sidebar-nav">
                 
                 <li class="sidebar-nav-link">
-                    <a href="index.html">
+                    <a href="<?php echo url('userhotai/index'); ?>">
                         <i class="am-icon-home sidebar-nav-link-logo"></i> 首页
                     </a>
                 </li>
@@ -213,12 +213,12 @@
                     </a>
                 </li> -->
                 <li class="sidebar-nav-link">
-                    <a href="all.html">
+                    <a href="<?php echo url('userhotai/all'); ?>">
                         <i class="am-icon-calendar sidebar-nav-link-logo"></i> 我的文章
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="add.html" class="active">
+                    <a href="<?php echo url('userhotai/add'); ?>" class="active">
                         <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 写文章
 
                     </a>

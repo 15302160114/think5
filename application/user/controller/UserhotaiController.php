@@ -15,8 +15,7 @@ class UserhotaiController extends Base
 		}
 		$author=model('Author')->get($id);
 		$this->assign('author',$author);
-		$categorys=model('Category')->getCategorys();
-		$this->assign('categorys',$categorys);
+		
 		$articles=Db::table('article')
 					->where('author_id',$id)
 					->select();
@@ -82,10 +81,10 @@ class UserhotaiController extends Base
 		if($id==0||is_null($id)){
 			$this->error('参数有误');
 		}
+
 		$author=model('Author')->get($id);
 		$this->assign('author',$author);
-		$categorys=model('Category')->getCategorys();
-		$this->assign('categorys',$categorys);
+		
 		$articles=Db::table('article')
 					->where('author_id',$id)
 					->select();
@@ -164,6 +163,12 @@ class UserhotaiController extends Base
 		}
 	}
 	public function update(){
+		$a=explode(',', session('me_user','','me'));
+    	$id=substr($a[0],6);
+		if($id==0||is_null($id)){
+			$this->error('参数有误');
+		}
+
 		echo "<meta charset='UTF-8'>";
 		if(!request()->isPost()){
 			$this->error("非法输入");
@@ -174,8 +179,21 @@ class UserhotaiController extends Base
 		if(!$validate->scene('edit')->check($input)){
 			$this->error($validate->getError());
 		}
-		
-		$date=[
+
+		$author=Db::table('author')
+					->where('id',$id)
+					->select();
+		$pa=$author[0];	
+		if($pa['password']==$input['password']){
+			$date=[
+				'username'=>$input['username'],
+				'realname'=>$input['realname'],
+				'tel'=>$input['tel'],
+				'logo'=>$input['logo'],
+				'email'=>$input['email']
+			];
+		}else{
+			$date=[
 				'username'=>$input['username'],
 				'realname'=>$input['realname'],
 				'tel'=>$input['tel'],
@@ -183,6 +201,7 @@ class UserhotaiController extends Base
 				'email'=>$input['email'],
 				'password'=>md5($input['password'])
 			];
+		}
 
 		$xuhao=model('Author')->save($date,['id'=>intval($input['id'])]);
 		if($xuhao){

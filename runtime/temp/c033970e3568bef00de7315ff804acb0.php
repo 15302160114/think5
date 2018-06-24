@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\all.html";i:1529743113;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\all.html";i:1529847961;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +29,7 @@
         <header>
             <!-- logo -->
             <div class="am-fl tpl-header-logo">
-                <a href="javascript:;"><img src="/think5/public/static/images/logo.png" alt=""></a>
+                <a href="javascript:;"><img src="/think5/public/static/images/hologo.png" alt=""></a>
             </div>
             <!-- 右侧内容 -->
             <div class="tpl-header-fluid">
@@ -240,19 +240,6 @@
 
                             </div>
                             <div class="widget-body  am-fr">
-
-                                <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
-                                    <div class="am-form-group">
-                                        <div class="am-u-sm-12  am-margin-left-xs">
-                                            <select data-am-selected="{searchBox: 1}">
-                                               <option value="all">所有分类</option>
-                                              <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                              <option value="<?php echo $vo['id']; ?>"><?php echo $vo['categoryname']; ?></option>
-                                              <?php endforeach; endif; else: echo "" ;endif; ?>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
 
                                 <div class="am-u-sm-12">
                                     <table width="100%" class="am-table am-table-compact am-table-striped tpl-table-black ">

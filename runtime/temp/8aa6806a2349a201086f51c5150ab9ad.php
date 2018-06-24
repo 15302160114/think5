@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\article.html";i:1529742504;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"D:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\article.html";i:1529838600;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +28,7 @@
         <header>
             <!-- logo -->
             <div class="am-fl tpl-header-logo">
-                <a href="javascript:;"><img src="/think5/public/static/images/logo.png" alt=""></a>
+                <a href="javascript:;"><img src="/think5/public/static/images/hologo.png" alt=""></a>
             </div>
             <!-- 右侧内容 -->
             <div class="tpl-header-fluid">
@@ -269,10 +269,11 @@
                                         </thead>
                                         <tbody>
                                             <?php if(is_array($articles) || $articles instanceof \think\Collection || $articles instanceof \think\Paginator): $num = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($num % 2 );++$num;?>
+                                            
                                             <tr class="gradeX">
                                                 <td class="am-text-middle"><?php echo $num; ?></td>
                                                 <td class="am-text-middle">
-                                                    <img src="/think5/public/uploads/<?php echo $vo['author_id']; ?>/<?php echo $vo['logo']; ?>" class="tpl-table-line-img">
+                                                    <a href="<?php echo url('@index/index/single',['id'=>$vo['id']]); ?>" target="_blank"><img src="/think5/public/uploads/<?php echo $vo['author_id']; ?>/<?php echo $vo['logo']; ?>" class="tpl-table-line-img"></a>
                                                 </td>
                                                 <td class="am-text-middle"><?php echo $vo['title']; ?></td>
                                                 <td class="am-text-middle"><?php echo getUsername($vo['category_id']); ?></td>
@@ -286,6 +287,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
+                                            
                                             <?php endforeach; endif; else: echo "" ;endif; ?>
                                             
                                             <!-- more data -->

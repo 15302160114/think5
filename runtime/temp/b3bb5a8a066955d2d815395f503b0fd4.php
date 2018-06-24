@@ -1,8 +1,8 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"D:\xampp\htdocs\think5\public/../application/user\view\login\index.html";i:1529848370;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"D:\xampp\htdocs\think5\public/../application/user\view\login\signup.html";i:1529848502;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
-<title>sign in</title>
+<title>Sign up</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Internship Sign In & Sign Up Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
@@ -29,24 +29,22 @@
 			</div>
 
 <div class="top-buttons-agileinfo">
-<a href="<?php echo url('@index/index/index'); ?>">HOME</a><a href="index.html" class="active">Sign In</a><a href="signup.html">Sign Up</a>
+<a href="<?php echo url('@index/index/index'); ?>">HOME</a><a href="index.html">Sign In</a><a href="signup.html" class="active">Sign Up</a>
 </div>
 <h1>Internship Sign In & Sign Up Form</h1>
 <div class="main-agileits">
 <!--form-stars-here-->
 		<div class="form-w3-agile">
-			<h2 class="sub-agileits">Sign In</h2>
-			<form class="form-horizontal" method="post" name="form1" action="<?php echo url('login/check'); ?>">
+			<h2 class="sub-agileits">Sign Up</h2>
+			<form class="form-horizontal" method="post" name="form1" action="<?php echo url('login/save'); ?>" onsubmit="return Form_Submit()">
 					<input type="text" name="username" placeholder="Username" required="" />
+					<input type="email" name="email" placeholder="Email" required="" />
 					<input type="password" name="password" placeholder="Password" required="" />
-
 					<input type="text" placeholder="请输入验证码" class="form-control" name="captcha">
-                    <img src="<?php echo captcha_src(); ?>" alt="captcha" onclick="javascript:this.src='<?php echo captcha_src(); ?>?tm='+Math.random();" style="cursor: pointer"/>
-					<a href="#" class="forgot">Forgot Password ?</a>
+					<img src="<?php echo captcha_src(); ?>" alt="captcha" onclick="javascript:this.src='<?php echo captcha_src(); ?>?tm='+Math.random();" style="cursor: pointer"/>
 				<div class="submit-w3l">
-					<input type="submit" onclick="myFunction()" value="Sign in">
+					<input type="submit" onclick="myFunction()" value="Sign up">
 				</div>
-				<p style="margin-top:20px;"><a style="color:#fff;" href="<?php echo url('@admin/login/index'); ?>">Administrator Login</a></p>
 			</form>
 		</div>
 		</div>

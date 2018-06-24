@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\index.html";i:1529736636;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\index.html";i:1529847981;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +29,7 @@
         <header>
             <!-- logo -->
             <div class="am-fl tpl-header-logo">
-                <a href="javascript:;"><img src="/think5/public/static/images/logo.png" alt=""></a>
+                <a href="javascript:;"><img src="/think5/public/static/images/hologo.png" alt=""></a>
             </div>
             <!-- 右侧内容 -->
             <div class="tpl-header-fluid">
@@ -214,7 +214,7 @@
                     </a>
                 </li> -->
                 <li class="sidebar-nav-link">
-                    <a href="all.html">
+                    <a href="all.html?id=1">
                         <i class="am-icon-calendar sidebar-nav-link-logo"></i> 我的文章
                     </a>
                 </li>
@@ -286,19 +286,6 @@
 
                             </div>
                             <div class="widget-body  am-fr">
-
-                                <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
-                                    <div class="am-form-group">
-                                        <div class="am-u-sm-12  am-margin-left-xs">
-                                            <select data-am-selected="{searchBox: 1}">
-                                               <option value="all">无分类</option>
-                                              <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                              <option value="<?php echo $vo['id']; ?>"><?php echo $vo['categoryname']; ?></option>
-                                              <?php endforeach; endif; else: echo "" ;endif; ?>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
 
                                 <div class="am-u-sm-12">
                                     <table width="100%" class="am-table am-table-compact am-table-striped tpl-table-black ">

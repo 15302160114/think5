@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/index\view\index\single.html";i:1529761575;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\think5\public/../application/index\view\index\single.html";i:1529838488;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
@@ -53,28 +53,16 @@
 				<ul class="main-navigation sf-menu">
 					<li><a href="index.html" title="">Home</a></li>									
 					<li class="has-children">
-						<a href="category.html" title="">Categories</a>
+						<a href="" title="">Categories</a>
 						<ul class="sub-menu">
-			            <li><a href="category.html">Wordpress</a></li>
-			            <li><a href="category.html">HTML</a></li>
-			            <li><a href="category.html">Photography</a></li>
-			            <li><a href="category.html">UI</a></li>
-			            <li><a href="category.html">Mockups</a></li>
-			            <li><a href="category.html">Branding</a></li>
-			         </ul>
+			            	<?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+			            	<li><a href="category.html?id=<?php echo $vo['id']; ?>"><?php echo $vo['categoryname']; ?></a></li>
+                  			<?php endforeach; endif; else: echo "" ;endif; ?>
+			         	</ul>
 					</li>
-					<li class="has-children current">
-						<a href="single-standard.html" title="">Blog</a>
-						<ul class="sub-menu">
-			            <li><a href="single-video.html">Video Post</a></li>
-			            <li><a href="single-audio.html">Audio Post</a></li>
-			            <li><a href="single-gallery.html">Gallery Post</a></li>
-			            <li><a href="single-standard.html">Standard Post</a></li>
-			         </ul>
-					</li>
-					<li><a href="style-guide.html" title="">Styles</a></li>
-					<li><a href="about.html" title="">About</a></li>	
-					<li><a href="contact.html" title="">Contact</a></li>										
+					<li class="has-children current"><a href="" title="">Blog</a></li>
+					<li><a href="<?php echo url('@user/login/index'); ?>" title="">Sign in</a></li>	
+					<li><a href="<?php echo url('@user/login/signup'); ?>" title="">Sign up</a></li>									
 				</ul>
 			</nav> <!-- end main-nav-wrap -->
 

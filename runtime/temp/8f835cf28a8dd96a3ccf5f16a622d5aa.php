@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\zhanghao.html";i:1529742631;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\xampp\htdocs\think5\public/../application/user\view\userhotai\zhanghao.html";i:1529838579;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +30,7 @@
         <header>
             <!-- logo -->
             <div class="am-fl tpl-header-logo">
-                <a href="javascript:;"><img src="/think5/public/static/images/logo.png" alt=""></a>
+                <a href="javascript:;"><img src="/think5/public/static/images/hologo.png" alt=""></a>
             </div>
             <!-- 右侧内容 -->
             <div class="tpl-header-fluid">
@@ -260,6 +260,7 @@
                                                     <div id="old" class="file-item thumbnail">
                                                         <img src="/think5/public/uploads/<?php echo $author['id']; ?>/<?php echo $author['logo']; ?>" class="tpl-table-line-img" width="200px">
                                                         <div style="text-align: center;" class="info"><?php echo $author['logo']; ?></div>
+                                                        <input type="text" style="display:none" name="logo" value="<?php echo $author['logo']; ?>">
                                                     </div>
                                                 </div>
                                                 

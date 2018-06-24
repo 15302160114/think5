@@ -28,7 +28,7 @@
         <header>
             <!-- logo -->
             <div class="am-fl tpl-header-logo">
-                <a href="javascript:;"><img src="__STATIC__/images/logo.png" alt=""></a>
+                <a href="javascript:;"><img src="__STATIC__/images/hologo.png" alt=""></a>
             </div>
             <!-- 右侧内容 -->
             <div class="tpl-header-fluid">
@@ -213,7 +213,7 @@
                     </a>
                 </li> -->
                 <li class="sidebar-nav-link">
-                    <a href="all.html">
+                    <a href="all.html?id=1">
                         <i class="am-icon-calendar sidebar-nav-link-logo"></i> 我的文章
                     </a>
                 </li>
@@ -285,19 +285,6 @@
 
                             </div>
                             <div class="widget-body  am-fr">
-
-                                <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
-                                    <div class="am-form-group">
-                                        <div class="am-u-sm-12  am-margin-left-xs">
-                                            <select data-am-selected="{searchBox: 1}">
-                                               <option value="all">无分类</option>
-                                              {volist name="categorys" id="vo"}
-                                              <option value="{$vo.id}">{$vo.categoryname}</option>
-                                              {/volist}
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
 
                                 <div class="am-u-sm-12">
                                     <table width="100%" class="am-table am-table-compact am-table-striped tpl-table-black ">

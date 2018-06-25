@@ -164,6 +164,19 @@ p.lead {
 	font-size:0;
 	overflow:hidden;
 }
+
+/**点赞，分享，评论的样式 开始**/
+.share_pa_box{height:67px;width:300px;line-height:30px;padding:20px 15px;}
+.share_pa_box span{text-decoration:none;color:#3d3d3d;font-size:10px;width:50px;padding-left:25px;}
+		.share_pa_box .share-ico1{background:url(../images/share-ico.gif) no-repeat; margin-right:20px;}
+		.share_pa_box .share-ico2{background:url(../images/share-ico.gif) 0px -17px no-repeat; margin-right:20px;}
+		.share_pa_box .share-ico3{background:url(../images/share-ico.gif) 0px -34px no-repeat;}
+		.share_pa_box span:hover{color:#ff6700;}
+		.share-ico1:hover{background:url(../images/share-ico.gif) 0px -52px no-repeat;}
+		.share-ico2:hover{background:url(../images/share-ico.gif) 0px -70px no-repeat;}
+		.share-ico3:hover{background:url(../images/share-ico.gif) 0px -87px no-repeat;}
+/**点赞，分享，评论的样式 结束**/
+
 @media only screen and (max-width:768px) {
 	p.lead {
 		font-size: 2.1rem;

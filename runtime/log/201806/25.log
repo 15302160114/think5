@@ -1,0 +1,4359 @@
+---------------------------------------------------------------
+[ 2018-06-25T14:34:11+08:00 ] 127.0.0.1 GET /think5/public/user/login/index.html
+[ info ] localhost/think5/public/user/login/index.html [运行时间：0.125276s][吞吐率：7.98req/s] [内存消耗：1,526.80kb] [文件加载：43]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 2.0.50727)',
+  'host' => 'localhost',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\user\controller\LoginController->index[ D:\xampp\htdocs\think5\application\user\controller\LoginController.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/user\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:34:55+08:00 ] 0.0.0.0 GET /think5/public/index/index/index.html
+[ info ] localhost/think5/public/index/index/index.html [运行时间：0.348895s][吞吐率：2.87req/s] [内存消耗：2,587.27kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033280s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.034842s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.002704s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.071664s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.008461s ]
+---------------------------------------------------------------
+[ 2018-06-25T14:34:56+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.129950s][吞吐率：7.70req/s] [内存消耗：1,246.56kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:34:57+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.164847s][吞吐率：6.07req/s] [内存消耗：1,495.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:34:57+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.099039s][吞吐率：10.10req/s] [内存消耗：1,246.56kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:34:58+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.115134s][吞吐率：8.69req/s] [内存消耗：1,495.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:35:17+08:00 ] 0.0.0.0 GET /think5/public/index/index/category.html?id=3
+[ info ] localhost/think5/public/index/index/category.html?id=3 [运行时间：0.226777s][吞吐率：4.41req/s] [内存消耗：2,575.48kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'category',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->category[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\category.html [ array (
+  0 => 'categorys',
+  1 => 'category',
+  2 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006278s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.029891s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.016871s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.014047s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.021225s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `category_id` = 3 [ RunTime:0.005076s ]
+---------------------------------------------------------------
+[ 2018-06-25T14:35:17+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.146860s][吞吐率：6.81req/s] [内存消耗：1,495.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/category.html?id=3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:35:17+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.123465s][吞吐率：8.10req/s] [内存消耗：1,495.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/category.html?id=3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:35:25+08:00 ] 0.0.0.0 GET /think5/public/index/index/single.html?id=16
+[ info ] localhost/think5/public/index/index/single.html?id=16 [运行时间：0.243362s][吞吐率：4.11req/s] [内存消耗：2,577.21kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'single',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/index/index/category.html?id=3',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'id' => '16',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->single[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\single.html [ array (
+  0 => 'articles',
+  1 => 'categorys',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008725s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.020521s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.001975s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.017610s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001856s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `author` [ RunTime:0.018959s ]
+[ sql ] [ SQL ] SELECT * FROM `author` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001433s ]
+[ sql ] [ SQL ] SELECT * FROM `author` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001616s ]
+[ sql ] [ SQL ] SELECT * FROM `author` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.003291s ]
+---------------------------------------------------------------
+[ 2018-06-25T14:35:25+08:00 ] 0.0.0.0 GET /think5/public/index/index/images/avatars/user-01.jpg
+[ info ] localhost/think5/public/index/index/images/avatars/user-01.jpg [运行时间：0.247470s][吞吐率：4.04req/s] [内存消耗：1,495.43kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/index/index/single.html?id=16',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'avatars' => 'user-01.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:35:25+08:00 ] 0.0.0.0 GET /think5/public/index/index/images/avatars/user-04.jpg
+[ info ] localhost/think5/public/index/index/images/avatars/user-04.jpg [运行时间：0.253861s][吞吐率：3.94req/s] [内存消耗：1,495.43kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/index/index/single.html?id=16',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'avatars' => 'user-04.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:35:26+08:00 ] 0.0.0.0 GET /think5/public/index/index/images/avatars/user-03.jpg
+[ info ] localhost/think5/public/index/index/images/avatars/user-03.jpg [运行时间：0.362710s][吞吐率：2.76req/s] [内存消耗：1,495.43kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/index/index/single.html?id=16',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'avatars' => 'user-03.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:35:26+08:00 ] 0.0.0.0 GET /think5/public/index/index/images/avatars/user-02.jpg
+[ info ] localhost/think5/public/index/index/images/avatars/user-02.jpg [运行时间：0.343104s][吞吐率：2.91req/s] [内存消耗：1,495.43kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/index/index/single.html?id=16',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'avatars' => 'user-02.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:35:31+08:00 ] 0.0.0.0 GET /think5/public/index/index/index.html
+[ info ] localhost/think5/public/index/index/index.html [运行时间：0.192395s][吞吐率：5.20req/s] [内存消耗：2,587.71kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/index/index/single.html?id=16',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005388s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.020077s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.003085s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.017801s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.002393s ]
+---------------------------------------------------------------
+[ 2018-06-25T14:35:31+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.099503s][吞吐率：10.05req/s] [内存消耗：1,246.56kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:35:31+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.141580s][吞吐率：7.06req/s] [内存消耗：1,495.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:35:31+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.119810s][吞吐率：8.35req/s] [内存消耗：1,246.56kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:35:32+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.142460s][吞吐率：7.02req/s] [内存消耗：1,495.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:45:50+08:00 ] 0.0.0.0 GET /think5/public/index/aa/index.html
+[ info ] localhost/think5/public/index/aa/index.html [运行时间：0.168702s][吞吐率：5.93req/s] [内存消耗：1,249.63kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'aa',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected 'model' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)[D:\xampp\htdocs\think5\application\index\controller\AaController.php:45]
+---------------------------------------------------------------
+[ 2018-06-25T14:46:25+08:00 ] 0.0.0.0 GET /think5/public/index/aa/index.html
+[ info ] localhost/think5/public/index/aa/index.html [运行时间：0.074180s][吞吐率：13.48req/s] [内存消耗：1,258.07kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'aa',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'Controller' not found[D:\xampp\htdocs\think5\application\index\controller\AaController.php:2]
+---------------------------------------------------------------
+[ 2018-06-25T14:46:45+08:00 ] 0.0.0.0 GET /think5/public/index/aa/index.html
+[ info ] localhost/think5/public/index/aa/index.html [运行时间：0.075722s][吞吐率：13.21req/s] [内存消耗：1,465.69kb] [文件加载：41]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'aa',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\AaController->index[ D:\xampp\htdocs\think5\application\index\controller\AaController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:46:47+08:00 ] 0.0.0.0 GET /think5/public/index/aa/index.html
+[ info ] localhost/think5/public/index/aa/index.html [运行时间：0.089579s][吞吐率：11.16req/s] [内存消耗：1,465.69kb] [文件加载：41]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'aa',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\AaController->index[ D:\xampp\htdocs\think5\application\index\controller\AaController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:46:48+08:00 ] 0.0.0.0 GET /think5/public/index/aa/index.html
+[ info ] localhost/think5/public/index/aa/index.html [运行时间：0.090041s][吞吐率：11.11req/s] [内存消耗：1,465.69kb] [文件加载：41]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'aa',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\AaController->index[ D:\xampp\htdocs\think5\application\index\controller\AaController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:50:53+08:00 ] 0.0.0.0 GET /think5/public/index/index/index.html
+[ info ] localhost/think5/public/index/index/index.html [运行时间：0.234032s][吞吐率：4.27req/s] [内存消耗：2,772.15kb] [文件加载：55]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/index/index/single.html?id=16',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005598s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.022997s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001595s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.022085s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.003212s ]
+---------------------------------------------------------------
+[ 2018-06-25T14:50:53+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.092650s][吞吐率：10.79req/s] [内存消耗：1,246.56kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:50:53+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.140701s][吞吐率：7.11req/s] [内存消耗：1,495.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:50:54+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.109258s][吞吐率：9.15req/s] [内存消耗：1,246.56kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:50:54+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.132026s][吞吐率：7.57req/s] [内存消耗：1,495.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:53:43+08:00 ] 0.0.0.0 GET /think5/public/index/index/index.html
+[ info ] localhost/think5/public/index/index/index.html [运行时间：0.205872s][吞吐率：4.86req/s] [内存消耗：2,588.38kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/index/index/single.html?id=16',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014340s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.027217s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.002611s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.019508s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.002690s ]
+---------------------------------------------------------------
+[ 2018-06-25T14:53:43+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.104702s][吞吐率：9.55req/s] [内存消耗：1,246.56kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:53:44+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.100305s][吞吐率：9.97req/s] [内存消耗：1,495.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:53:44+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.107030s][吞吐率：9.34req/s] [内存消耗：1,246.56kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:53:44+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.161031s][吞吐率：6.21req/s] [内存消耗：1,495.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:54:01+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.488590s][吞吐率：2.05req/s] [内存消耗：2,587.66kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025870s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.129778s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.041166s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.059682s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.002841s ]
+---------------------------------------------------------------
+[ 2018-06-25T14:54:02+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.176526s][吞吐率：5.66req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=81',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:54:02+08:00 ] 0.0.0.0 GET /think5/public/static/images/share-ico.gif
+[ info ] localhost/think5/public/static/images/share-ico.gif [运行时间：0.091055s][吞吐率：10.98req/s] [内存消耗：1,247.43kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'images',
+    2 => 'share-ico.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/static/css/main.css',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=81',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:54:03+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.138762s][吞吐率：7.21req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=81',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:54:03+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.086981s][吞吐率：11.50req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=81',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:54:04+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.117488s][吞吐率：8.51req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=81',
+  'range' => 'bytes=0-38932',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:54:10+08:00 ] 0.0.0.0 GET /think5/public/static/images/share-ico.gif
+[ info ] localhost/think5/public/static/images/share-ico.gif [运行时间：0.119373s][吞吐率：8.38req/s] [内存消耗：1,247.43kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'images',
+    2 => 'share-ico.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/static/css/main.css',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=81',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:54:12+08:00 ] 0.0.0.0 GET /think5/public/static/images/share-ico.gif
+[ info ] localhost/think5/public/static/images/share-ico.gif [运行时间：0.093834s][吞吐率：10.66req/s] [内存消耗：1,247.43kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'images',
+    2 => 'share-ico.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/static/css/main.css',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=81',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:56:38+08:00 ] 0.0.0.0 GET /think5/public/index/index/index.html
+[ info ] localhost/think5/public/index/index/index.html [运行时间：0.205916s][吞吐率：4.86req/s] [内存消耗：2,588.38kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/index/index/single.html?id=16',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006062s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.024799s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001941s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.019343s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.001883s ]
+---------------------------------------------------------------
+[ 2018-06-25T14:56:39+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.107115s][吞吐率：9.34req/s] [内存消耗：1,246.56kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:56:39+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.157020s][吞吐率：6.37req/s] [内存消耗：1,495.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:56:39+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.159296s][吞吐率：6.28req/s] [内存消耗：1,246.56kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:56:39+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.131128s][吞吐率：7.63req/s] [内存消耗：1,495.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:56:46+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.201311s][吞吐率：4.97req/s] [内存消耗：2,588.33kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=81',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008822s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.022007s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.002254s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.019715s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.002502s ]
+---------------------------------------------------------------
+[ 2018-06-25T14:56:46+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.080455s][吞吐率：12.43req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=81',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:56:46+08:00 ] 0.0.0.0 GET /think5/public/static/images/share-ico.gif
+[ info ] localhost/think5/public/static/images/share-ico.gif [运行时间：0.102342s][吞吐率：9.77req/s] [内存消耗：1,247.43kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'images',
+    2 => 'share-ico.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/static/css/main.css',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=82',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:56:46+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.101287s][吞吐率：9.87req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=82',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:56:46+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.126232s][吞吐率：7.92req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=82',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:56:47+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.175769s][吞吐率：5.69req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=82',
+  'range' => 'bytes=0-38932',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:56:52+08:00 ] 0.0.0.0 GET /think5/public/static/images/share-ico.gif
+[ info ] localhost/think5/public/static/images/share-ico.gif [运行时间：0.119579s][吞吐率：8.36req/s] [内存消耗：1,247.43kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'images',
+    2 => 'share-ico.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/static/css/main.css',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=82',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:56:53+08:00 ] 0.0.0.0 GET /think5/public/static/images/share-ico.gif
+[ info ] localhost/think5/public/static/images/share-ico.gif [运行时间：0.135267s][吞吐率：7.39req/s] [内存消耗：1,247.43kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'images',
+    2 => 'share-ico.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/static/css/main.css',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=82',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:56:53+08:00 ] 0.0.0.0 GET /think5/public/static/images/share-ico.gif
+[ info ] localhost/think5/public/static/images/share-ico.gif [运行时间：0.142248s][吞吐率：7.03req/s] [内存消耗：1,247.43kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'images',
+    2 => 'share-ico.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/static/css/main.css',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=82',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:58:06+08:00 ] 0.0.0.0 GET /think5/public/index/index/index.html
+[ info ] localhost/think5/public/index/index/index.html [运行时间：0.201027s][吞吐率：4.97req/s] [内存消耗：2,772.50kb] [文件加载：55]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/index/index/single.html?id=16',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004686s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.021826s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.019716s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.001882s ]
+---------------------------------------------------------------
+[ 2018-06-25T14:58:06+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.101429s][吞吐率：9.86req/s] [内存消耗：1,246.56kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:58:06+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.128978s][吞吐率：7.75req/s] [内存消耗：1,495.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:58:06+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.124708s][吞吐率：8.02req/s] [内存消耗：1,246.56kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:58:07+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.203478s][吞吐率：4.91req/s] [内存消耗：1,495.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:58:23+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.177145s][吞吐率：5.65req/s] [内存消耗：2,588.33kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=82',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005205s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.024012s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.002363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.018839s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.001884s ]
+---------------------------------------------------------------
+[ 2018-06-25T14:58:23+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.090809s][吞吐率：11.01req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=82',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:58:24+08:00 ] 0.0.0.0 GET /think5/public/static/images/share-ico.gif
+[ info ] localhost/think5/public/static/images/share-ico.gif [运行时间：0.091693s][吞吐率：10.91req/s] [内存消耗：1,247.43kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'images',
+    2 => 'share-ico.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/static/css/main.css',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=83',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:58:24+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.112627s][吞吐率：8.88req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=83',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:58:24+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.103170s][吞吐率：9.69req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=83',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T14:58:25+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.109457s][吞吐率：9.14req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=83',
+  'range' => 'bytes=0-38932',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:02:24+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.212085s][吞吐率：4.72req/s] [内存消耗：2,588.33kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=83',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005076s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.018339s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001676s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.019154s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.004927s ]
+---------------------------------------------------------------
+[ 2018-06-25T15:02:24+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.107960s][吞吐率：9.26req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=83',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:02:25+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.099217s][吞吐率：10.08req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=84',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:02:25+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.085791s][吞吐率：11.66req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=84',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:02:25+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.120622s][吞吐率：8.29req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=84',
+  'range' => 'bytes=0-38932',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:04:30+08:00 ] 0.0.0.0 GET /think5/public/index/index/index.html
+[ info ] localhost/think5/public/index/index/index.html [运行时间：0.233914s][吞吐率：4.28req/s] [内存消耗：2,784.50kb] [文件加载：55]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/index/index/single.html?id=16',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014181s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.029149s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.022176s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.001950s ]
+---------------------------------------------------------------
+[ 2018-06-25T15:04:30+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.097831s][吞吐率：10.22req/s] [内存消耗：1,246.56kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:04:30+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.123439s][吞吐率：8.10req/s] [内存消耗：1,495.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:04:30+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.103894s][吞吐率：9.63req/s] [内存消耗：1,246.56kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:04:30+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.129557s][吞吐率：7.72req/s] [内存消耗：1,495.24kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3423.2 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index.html',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:04:39+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.210544s][吞吐率：4.75req/s] [内存消耗：2,592.33kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=84',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005943s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.020998s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.002328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.021409s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.003101s ]
+---------------------------------------------------------------
+[ 2018-06-25T15:04:39+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.203712s][吞吐率：4.91req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=84',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:04:40+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.112330s][吞吐率：8.90req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=85',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:04:40+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.088064s][吞吐率：11.36req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=85',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:04:40+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.118629s][吞吐率：8.43req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=85',
+  'range' => 'bytes=0-38932',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:05:29+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.196905s][吞吐率：5.08req/s] [内存消耗：2,592.33kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=85',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009277s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.022942s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.006352s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.021575s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.002282s ]
+---------------------------------------------------------------
+[ 2018-06-25T15:05:29+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.093910s][吞吐率：10.65req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=85',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:05:30+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.095475s][吞吐率：10.47req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=86',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:05:30+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.090365s][吞吐率：11.07req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=86',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:05:30+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.112477s][吞吐率：8.89req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=86',
+  'range' => 'bytes=0-38932',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:06:02+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.199714s][吞吐率：5.01req/s] [内存消耗：2,592.33kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=86',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005661s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.022735s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.020294s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.003729s ]
+---------------------------------------------------------------
+[ 2018-06-25T15:06:02+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.077420s][吞吐率：12.92req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=86',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:06:02+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.101278s][吞吐率：9.87req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=87',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:06:03+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.085696s][吞吐率：11.67req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=87',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:06:03+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.106318s][吞吐率：9.41req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=87',
+  'range' => 'bytes=0-38932',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:06:24+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.227036s][吞吐率：4.40req/s] [内存消耗：2,592.33kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=87',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008293s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.024617s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.002545s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.025039s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.002800s ]
+---------------------------------------------------------------
+[ 2018-06-25T15:06:25+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.099542s][吞吐率：10.05req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=87',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:06:25+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.108308s][吞吐率：9.23req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=88',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:06:25+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.093006s][吞吐率：10.75req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:06:26+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.103305s][吞吐率：9.68req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=88',
+  'range' => 'bytes=0-38932',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:06:47+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.210697s][吞吐率：4.75req/s] [内存消耗：2,592.33kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004989s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.022715s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.022930s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.003796s ]
+---------------------------------------------------------------
+[ 2018-06-25T15:06:47+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.113948s][吞吐率：8.78req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=88',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:06:48+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.108244s][吞吐率：9.24req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=89',
+  'range' => 'bytes=0-38937',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:06:48+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.084760s][吞吐率：11.80req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=89',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:06:48+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.110287s][吞吐率：9.07req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=89',
+  'range' => 'bytes=0-38937',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:07:39+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.185970s][吞吐率：5.38req/s] [内存消耗：2,592.33kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=89',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006049s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.020987s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.021136s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.002038s ]
+---------------------------------------------------------------
+[ 2018-06-25T15:07:39+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.199062s][吞吐率：5.02req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=89',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:07:40+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.133659s][吞吐率：7.48req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=90',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:07:40+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.088268s][吞吐率：11.33req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:07:40+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.106624s][吞吐率：9.38req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=90',
+  'range' => 'bytes=0-38931',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:09:32+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.202412s][吞吐率：4.94req/s] [内存消耗：2,592.33kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008150s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.021707s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.002426s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.020138s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.001955s ]
+---------------------------------------------------------------
+[ 2018-06-25T15:09:32+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.097062s][吞吐率：10.30req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=90',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:09:33+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.120889s][吞吐率：8.27req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=91',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:09:33+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.102219s][吞吐率：9.78req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=91',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:09:34+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.137506s][吞吐率：7.27req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=91',
+  'range' => 'bytes=0-38932',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:11:28+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.235302s][吞吐率：4.25req/s] [内存消耗：2,784.50kb] [文件加载：55]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005226s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.025292s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.018381s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.001906s ]
+---------------------------------------------------------------
+[ 2018-06-25T15:11:28+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.159597s][吞吐率：6.27req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=92',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:11:29+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.094126s][吞吐率：10.62req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=93',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:11:29+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.095552s][吞吐率：10.47req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=93',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:11:29+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.127090s][吞吐率：7.87req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=93',
+  'range' => 'bytes=0-38932',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:26:19+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.237449s][吞吐率：4.21req/s] [内存消耗：2,784.50kb] [文件加载：55]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=93',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005867s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.021291s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.018056s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.003146s ]
+---------------------------------------------------------------
+[ 2018-06-25T15:26:19+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.096636s][吞吐率：10.35req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=93',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:26:20+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.098395s][吞吐率：10.16req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=94',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:26:20+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.095067s][吞吐率：10.52req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=94',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:26:21+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.112186s][吞吐率：8.91req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=94',
+  'range' => 'bytes=0-38932',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:30:07+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.200675s][吞吐率：4.98req/s] [内存消耗：2,784.50kb] [文件加载：55]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=94',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004813s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.022773s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.019596s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.002271s ]
+---------------------------------------------------------------
+[ 2018-06-25T15:30:07+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.078195s][吞吐率：12.79req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=94',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:30:08+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.155181s][吞吐率：6.44req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=95',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:30:08+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.087658s][吞吐率：11.41req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=95',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:30:08+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.124845s][吞吐率：8.01req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=95',
+  'range' => 'bytes=0-38932',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:30:15+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.252222s][吞吐率：3.96req/s] [内存消耗：2,592.45kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=95',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010214s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.027071s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001916s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.024537s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.003304s ]
+---------------------------------------------------------------
+[ 2018-06-25T15:30:16+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.075203s][吞吐率：13.30req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=95',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:30:16+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.124513s][吞吐率：8.03req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=96',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:30:16+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.128217s][吞吐率：7.80req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=96',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:30:17+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.143782s][吞吐率：6.95req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=96',
+  'range' => 'bytes=0-38932',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:30:21+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.257492s][吞吐率：3.88req/s] [内存消耗：2,592.45kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=96',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008464s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.029779s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.002116s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.023485s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.004605s ]
+---------------------------------------------------------------
+[ 2018-06-25T15:30:22+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.081159s][吞吐率：12.32req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=96',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:30:22+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.107580s][吞吐率：9.30req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=97',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:30:22+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.103958s][吞吐率：9.62req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=97',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:30:22+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.125405s][吞吐率：7.97req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=97',
+  'range' => 'bytes=0-38932',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:31:09+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.189729s][吞吐率：5.27req/s] [内存消耗：2,784.82kb] [文件加载：55]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=97',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004652s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.021731s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.019033s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.002692s ]
+---------------------------------------------------------------
+[ 2018-06-25T15:31:09+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.155392s][吞吐率：6.44req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=97',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:31:10+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.113184s][吞吐率：8.84req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=98',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:31:10+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.088139s][吞吐率：11.35req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=98',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:31:10+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.123879s][吞吐率：8.07req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=98',
+  'range' => 'bytes=0-38932',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:31:56+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.208829s][吞吐率：4.79req/s] [内存消耗：2,592.65kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=98',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006688s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.024329s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.003159s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.019945s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.002400s ]
+---------------------------------------------------------------
+[ 2018-06-25T15:31:56+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.090056s][吞吐率：11.10req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=98',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:31:57+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.126231s][吞吐率：7.92req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=99',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:31:57+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.082654s][吞吐率：12.10req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=99',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:31:57+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.124516s][吞吐率：8.03req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=99',
+  'range' => 'bytes=0-38932',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:33:15+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.206282s][吞吐率：4.85req/s] [内存消耗：2,592.65kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=99',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004827s ] mysql:host=127.0.0.1;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.021334s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001599s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.018836s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.002780s ]
+---------------------------------------------------------------
+[ 2018-06-25T15:33:15+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.077748s][吞吐率：12.86req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=99',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:33:16+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.106117s][吞吐率：9.42req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=100',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:33:16+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.130416s][吞吐率：7.67req/s] [内存消耗：1,247.24kb] [文件加载：37]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=100',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-25T15:33:17+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.137650s][吞吐率：7.26req/s] [内存消耗：1,496.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'chrome-proxy' => 'frfr',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.1001021412962947200.1527498141473.2146; monitor_count=100',
+  'range' => 'bytes=0-38934',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

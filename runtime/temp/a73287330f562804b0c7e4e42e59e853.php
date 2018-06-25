@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"D:\xampp\htdocs\think5\public/../application/index\view\index\index.html";i:1529838479;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"D:\xampp\htdocs\think5\public/../application/index\view\index\index.html";i:1529911867;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
@@ -189,8 +189,13 @@
                		
                	</div>
 						<div class="entry-excerpt">
-							<?php echo $vo['content']; ?>
+							<?php echo html_entity_decode($vo['content']); ?>
 						</div>
+                  <div class="share_pa_box">
+                     <span class="share-ico1" href="#"  >1546</a>
+                     <span class="share-ico2" id="danji" href="" ><?php echo $vo['up']; ?></span>
+                     <span class="share-ico3" href="#" >7</span>
+                  </div>
                </div>
 
         	</article> <!-- end article -->
@@ -219,6 +224,11 @@
 						<div class="entry-excerpt">
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
+                  <div class="share_pa_box">
+                     <a class="share-ico1" href="#"  >1546</a>
+                     <a class="share-ico2" href="#" >7</a>
+                     <a class="share-ico3" href="#" >7</a>
+                  </div>   
                </div>
 
         		</article> <!-- end article -->
@@ -247,6 +257,11 @@
 						<div class="entry-excerpt">
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
+                  <div class="share_pa_box">
+                     <a class="share-ico1" href="#"  >1546</a>
+                     <a class="share-ico2" href="#" >7</a>
+                     <a class="share-ico3" href="#" >7</a>
+                  </div>
                </div>
                
         		</article> <!-- end article -->
@@ -280,6 +295,11 @@
 						<div class="entry-excerpt">
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
+                  <div class="share_pa_box">
+                     <a class="share-ico1" href="#"  >1546</a>
+                     <a class="share-ico2" href="#" >7</a>
+                     <a class="share-ico3" href="#" >7</a>
+                  </div>
                </div>
                
         		</article> <!-- /article -->
@@ -320,6 +340,11 @@
 						<div class="entry-excerpt">
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
+                  <div class="share_pa_box">
+                     <a class="share-ico1" href="#"  >1546</a>
+                     <a class="share-ico2" href="#" >7</a>
+                     <a class="share-ico3" href="#" >7</a>
+                  </div>
                </div>
                
         		</article> <!-- end article -->
@@ -348,6 +373,11 @@
 						<div class="entry-excerpt">
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
+                  <div class="share_pa_box">
+                     <a class="share-ico1" href="#"  >1546</a>
+                     <a class="share-ico2" href="#" >7</a>
+                     <a class="share-ico3" href="#" >7</a>
+                  </div>
                </div>
                
         		</article> <!-- end article -->        	
@@ -388,6 +418,11 @@
 						<div class="entry-excerpt">
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
+                  <div class="share_pa_box">
+                     <a class="share-ico1" href="#"  >1546</a>
+                     <a class="share-ico2" href="#" >7</a>
+                     <a class="share-ico3" href="#" >7</a>
+                  </div>
                </div>
                
         		</article> <!-- end article -->
@@ -430,6 +465,11 @@
 						<div class="entry-excerpt">
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
+                  <div class="share_pa_box">
+                     <a class="share-ico1" href="#"  >1546</a>
+                     <a class="share-ico2" href="#" >7</a>
+                     <a class="share-ico3" href="#" >7</a>
+                  </div>
                </div>
                
         		</article> <!-- end article -->
@@ -458,6 +498,11 @@
 						<div class="entry-excerpt">
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
+                  <div class="share_pa_box">
+                     <a class="share-ico1" href="#"  >1546</a>
+                     <a class="share-ico2" href="#" >7</a>
+                     <a class="share-ico3" href="#" >7</a>
+                  </div>
                </div>
                
         		</article> <!-- end article -->
@@ -486,6 +531,11 @@
 						<div class="entry-excerpt">
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
+                  <div class="share_pa_box">
+                     <a class="share-ico1" href="#"  >1546</a>
+                     <a class="share-ico2" href="#" >7</a>
+                     <a class="share-ico3" href="#" >7</a>
+                  </div>
                </div>
                
         		</article> <!-- end article -->
@@ -514,6 +564,11 @@
 						<div class="entry-excerpt">
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
+                  <div class="share_pa_box">
+                     <a class="share-ico1" href="#"  >1546</a>
+                     <a class="share-ico2" href="#" >7</a>
+                     <a class="share-ico3" href="#" >7</a>
+                  </div>
                </div>
                
         		</article> <!-- end article -->
@@ -645,5 +700,13 @@
    <script src="/think5/public/static/js/main.js"></script>
 
 </body>
-
+<script type="text/javascript">
+   $(document).ready(function() {            
+      $('#danji').click(function(){
+         $m=$("#danji")+1;
+         $("#danji").replaceWith("<a class='share-ico2' id='danji' href=''></a>");
+         $("#danji").append($m);
+      });
+   });
+</script>
 </html>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"D:\xampp\htdocs\think5\public/../application/index\view\index\index.html";i:1529911867;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"D:\xampp\htdocs\think5\public/../application/index\view\index\index.html";i:1529935963;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
@@ -167,6 +167,7 @@
 				   	</div> <!-- end featured-post-slider -->        			
          		</div> <!-- end entry content -->         		
          	</div>
+
 			<?php if(is_array($articles) || $articles instanceof \think\Collection || $articles instanceof \think\Paginator): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
          	<article class="brick entry format-standard animate-this">
 		
@@ -192,12 +193,12 @@
 							<?php echo html_entity_decode($vo['content']); ?>
 						</div>
                   <div class="share_pa_box">
-                     <span class="share-ico1" href="#"  >1546</a>
-                     <span class="share-ico2" id="danji" href="" ><?php echo $vo['up']; ?></span>
+                     <span class="share-ico1" href="#"  >1546</span>
+                     <span class="share-ico2 up" id="<?php echo $vo['id']; ?>"><?php echo $vo['up']; ?></span>
+
                      <span class="share-ico3" href="#" >7</span>
                   </div>
                </div>
-
         	</article> <!-- end article -->
 			<?php endforeach; endif; else: echo "" ;endif; ?>
          	<article class="brick entry format-standard animate-this">
@@ -225,9 +226,9 @@
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
                   <div class="share_pa_box">
-                     <a class="share-ico1" href="#"  >1546</a>
-                     <a class="share-ico2" href="#" >7</a>
-                     <a class="share-ico3" href="#" >7</a>
+                     <span class="share-ico1">1546</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
+                     <span class="share-ico3">7</span>
                   </div>   
                </div>
 
@@ -258,9 +259,9 @@
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
                   <div class="share_pa_box">
-                     <a class="share-ico1" href="#"  >1546</a>
-                     <a class="share-ico2" href="#" >7</a>
-                     <a class="share-ico3" href="#" >7</a>
+                     <span class="share-ico1">1546</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
+                     <span class="share-ico3">7</span>
                   </div>
                </div>
                
@@ -296,9 +297,9 @@
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
                   <div class="share_pa_box">
-                     <a class="share-ico1" href="#"  >1546</a>
-                     <a class="share-ico2" href="#" >7</a>
-                     <a class="share-ico3" href="#" >7</a>
+                     <span class="share-ico1">1546</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
+                     <span class="share-ico3">7</span>
                   </div>
                </div>
                
@@ -341,9 +342,9 @@
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
                   <div class="share_pa_box">
-                     <a class="share-ico1" href="#"  >1546</a>
-                     <a class="share-ico2" href="#" >7</a>
-                     <a class="share-ico3" href="#" >7</a>
+                     <span class="share-ico1">1546</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
+                     <span class="share-ico3">7</span>
                   </div>
                </div>
                
@@ -374,9 +375,9 @@
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
                   <div class="share_pa_box">
-                     <a class="share-ico1" href="#"  >1546</a>
-                     <a class="share-ico2" href="#" >7</a>
-                     <a class="share-ico3" href="#" >7</a>
+                     <span class="share-ico1">1546</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
+                     <span class="share-ico3">7</span>
                   </div>
                </div>
                
@@ -419,9 +420,9 @@
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
                   <div class="share_pa_box">
-                     <a class="share-ico1" href="#"  >1546</a>
-                     <a class="share-ico2" href="#" >7</a>
-                     <a class="share-ico3" href="#" >7</a>
+                     <span class="share-ico1">1546</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
+                     <span class="share-ico3">7</span>
                   </div>
                </div>
                
@@ -466,9 +467,9 @@
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
                   <div class="share_pa_box">
-                     <a class="share-ico1" href="#"  >1546</a>
-                     <a class="share-ico2" href="#" >7</a>
-                     <a class="share-ico3" href="#" >7</a>
+                     <span class="share-ico1">1546</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
+                     <span class="share-ico3">7</span>
                   </div>
                </div>
                
@@ -499,9 +500,9 @@
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
                   <div class="share_pa_box">
-                     <a class="share-ico1" href="#"  >1546</a>
-                     <a class="share-ico2" href="#" >7</a>
-                     <a class="share-ico3" href="#" >7</a>
+                     <span class="share-ico1">1546</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
+                     <span class="share-ico3">7</span>
                   </div>
                </div>
                
@@ -532,9 +533,9 @@
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
                   <div class="share_pa_box">
-                     <a class="share-ico1" href="#"  >1546</a>
-                     <a class="share-ico2" href="#" >7</a>
-                     <a class="share-ico3" href="#" >7</a>
+                     <span class="share-ico1">1546</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
+                     <span class="share-ico3">7</span>
                   </div>
                </div>
                
@@ -565,9 +566,9 @@
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
                   <div class="share_pa_box">
-                     <a class="share-ico1" href="#"  >1546</a>
-                     <a class="share-ico2" href="#" >7</a>
-                     <a class="share-ico3" href="#" >7</a>
+                     <span class="share-ico1">1546</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
+                     <span class="share-ico3">7</span>
                   </div>
                </div>
                
@@ -694,19 +695,42 @@
 
    <!-- Java Script
    ================================================== --> 
-   <script src="/think5/public/static/js/jquery-2.1.3.min.js"></script>
+   <script src="/think5/public/static/js/jquery-1.11.1.min.js"></script>
    <script src="/think5/public/static/js/plugins.js"></script>
    <script src="/think5/public/static/js/jquery.appear.js"></script>
    <script src="/think5/public/static/js/main.js"></script>
+   <script type="text/javascript" src="/think5/public/static/js/bootbox.js"></script>
 
 </body>
 <script type="text/javascript">
-   $(document).ready(function() {            
-      $('#danji').click(function(){
-         $m=$("#danji")+1;
-         $("#danji").replaceWith("<a class='share-ico2' id='danji' href=''></a>");
-         $("#danji").append($m);
+   $(document).ready(function() { 
+      $(".up").click(function() {
+         var Oa=$(this);
+         var id=Oa.attr('id');//获取id属性
+         var vl= $('#'+id).text();
+
+         var m=parseInt(vl)+1;
+         
+         
+         $.ajax({
+            url: "<?php echo url('index/up'); ?>",
+               data: {
+               up:m,
+               id:id,
+            },
+            async: true,   //是否为异步请求
+            cache: false,  //是否缓存结果
+            type: "POST", //请求方式为POST
+            dataType: "json",   //服务器返回的数据是什么类型
+            success: function(data){  
+               $('#'+id).empty();
+               $('#'+id).append(m);
+               $('#'+id).removeAttr("onclick");
+               alert('点赞成功');
+            }
+         });
       });
    });
+
 </script>
 </html>

@@ -166,6 +166,7 @@
 				   	</div> <!-- end featured-post-slider -->        			
          		</div> <!-- end entry content -->         		
          	</div>
+
 			{volist name="articles" id="vo"}
          	<article class="brick entry format-standard animate-this">
 		
@@ -192,11 +193,11 @@
 						</div>
                   <div class="share_pa_box">
                      <span class="share-ico1" href="#"  >1546</span>
-                     <span class="share-ico2" id="danji" href="" >{$vo.up}</span>
+                     <span class="share-ico2 up" id="{$vo.id}">{$vo.up}</span>
+
                      <span class="share-ico3" href="#" >7</span>
                   </div>
                </div>
-
         	</article> <!-- end article -->
 			{/volist}
          	<article class="brick entry format-standard animate-this">
@@ -693,19 +694,42 @@
 
    <!-- Java Script
    ================================================== --> 
-   <script src="__STATIC__/js/jquery-2.1.3.min.js"></script>
+   <script src="__STATIC__/js/jquery-1.11.4.min.js"></script>
    <script src="__STATIC__/js/plugins.js"></script>
    <script src="__STATIC__/js/jquery.appear.js"></script>
    <script src="__STATIC__/js/main.js"></script>
+   <script type="text/javascript" src="__STATIC__/js/bootbox.js"></script>
 
 </body>
 <script type="text/javascript">
-   $(document).ready(function() {            
-      $('#danji').click(function(){
-         $m=$("#danji")+1;
-         $("#danji").replaceWith("<span class='share-ico2' id='danji'></span>");
-         $("#danji").append($m);
+   $(document).ready(function() { 
+      $(".up").click(function() {
+         var Oa=$(this);
+         var id=Oa.attr('id');//获取id属性
+         var vl= $('#'+id).text();
+
+         var m=parseInt(vl)+1;
+         
+         
+         $.ajax({
+            url: "{:url('index/up')}",
+               data: {
+               up:m,
+               id:id,
+            },
+            async: true,   //是否为异步请求
+            cache: false,  //是否缓存结果
+            type: "POST", //请求方式为POST
+            dataType: "json",   //服务器返回的数据是什么类型
+            success: function(data){  
+               $('#'+id).empty();
+               $('#'+id).append(m);
+               $('#'+id).removeAttr("onclick");
+               alert('点赞成功');
+            }
+         });
       });
    });
+
 </script>
 </html>

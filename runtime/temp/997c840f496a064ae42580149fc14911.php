@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"C:\xampp\htdocs\think5\public/../application/index\view\index\index.html";i:1529913850;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
@@ -17,20 +18,20 @@
 
  	<!-- CSS
    ================================================== -->
-   <link rel="stylesheet" href="__STATIC__/css/base.css">
-   <link rel="stylesheet" href="__STATIC__/css/vendor.css">  
-   <link rel="stylesheet" href="__STATIC__/css/main.css">
+   <link rel="stylesheet" href="/think5/public/static/css/base.css">
+   <link rel="stylesheet" href="/think5/public/static/css/vendor.css">  
+   <link rel="stylesheet" href="/think5/public/static/css/main.css">
         
 
    <!-- script
    ================================================== -->
-	<script src="__STATIC__/js/modernizr.js"></script>
-	<script src="__STATIC__/js/pace.min.js"></script>
+	<script src="/think5/public/static/js/modernizr.js"></script>
+	<script src="/think5/public/static/js/pace.min.js"></script>
 
    <!-- favicons
 	================================================== -->
-	<link rel="shortcut icon" href="__STATIC__/images/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="__STATIC__/images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/think5/public/static/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/think5/public/static/images/favicon.ico" type="image/x-icon">
 
 </head>
 
@@ -54,14 +55,14 @@
 					<li class="has-children">
 						<a href="" title="">Categories</a>
 						<ul class="sub-menu">
-                  {volist name="categorys" id="vo"}
-			            <li><a href="category.html?id={$vo.id}">{$vo.categoryname}</a></li>
-                  {/volist}
+                  <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+			            <li><a href="category.html?id=<?php echo $vo['id']; ?>"><?php echo $vo['categoryname']; ?></a></li>
+                  <?php endforeach; endif; else: echo "" ;endif; ?>
 			         </ul>
 					</li>
 					<li class="has-children"><a href="" title="">Blog</a></li>
-					<li><a href="{:url('@user/login/index')}" title="">Sign in</a></li>	
-					<li><a href="{:url('@user/login/signup')}" title="">Sign up</a></li>										
+					<li><a href="<?php echo url('@user/login/index'); ?>" title="">Sign in</a></li>	
+					<li><a href="<?php echo url('@user/login/signup'); ?>" title="">Sign up</a></li>										
 				</ul>
 			</nav> <!-- end main-nav-wrap -->
 
@@ -108,7 +109,7 @@
 				   			<li>
 				   				<div class="featured-post-slide">
 
-						   			<div class="post-background" style="background-image:url('__STATIC__/images/thumbs/featured/featured-1.jpg');"></div>
+						   			<div class="post-background" style="background-image:url('/think5/public/static/images/thumbs/featured/featured-1.jpg');"></div>
 
 								   	<div class="overlay"></div>			   		
 
@@ -127,7 +128,7 @@
 				   			<li>
 				   				<div class="featured-post-slide">
 
-						   			<div class="post-background" style="background-image:url('__STATIC__/images/thumbs/featured/featured-2.jpg');"></div>
+						   			<div class="post-background" style="background-image:url('/think5/public/static/images/thumbs/featured/featured-2.jpg');"></div>
 
 								   	<div class="overlay"></div>			   		
 
@@ -146,7 +147,7 @@
 				   			<li>
 				   				<div class="featured-post-slide">
 
-						   			<div class="post-background" style="background-image:url('__STATIC__/images/thumbs/featured/featured-3.jpg');;"></div>
+						   			<div class="post-background" style="background-image:url('/think5/public/static/images/thumbs/featured/featured-3.jpg');;"></div>
 
 								   	<div class="overlay"></div>			   		
 
@@ -166,12 +167,12 @@
 				   	</div> <!-- end featured-post-slider -->        			
          		</div> <!-- end entry content -->         		
          	</div>
-			{volist name="articles" id="vo"}
+			<?php if(is_array($articles) || $articles instanceof \think\Collection || $articles instanceof \think\Paginator): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
          	<article class="brick entry format-standard animate-this">
 		
                <div class="entry-thumb">
-                  <a href="single.html?id={$vo.id}" class="thumb-link">
-	                  <img src="/think5/public/uploads/{$vo.author_id}/{$vo.logo}" alt="building">             
+                  <a href="single.html?id=<?php echo $vo['id']; ?>" class="thumb-link">
+	                  <img src="/think5/public/uploads/<?php echo $vo['author_id']; ?>/<?php echo $vo['logo']; ?>" alt="building">             
                   </a>
                </div>
 
@@ -180,30 +181,30 @@
 
                		<div class="entry-meta">
                			<span class="cat-links">
-               				{$vo.description}   				
+               				<?php echo $vo['description']; ?>   				
                			</span>			
                		</div>
 
-               		<h1 class="entry-title"><a href="single-standard.html">{$vo.title}</a></h1>
+               		<h1 class="entry-title"><a href="single-standard.html"><?php echo $vo['title']; ?></a></h1>
                		
                	</div>
 						<div class="entry-excerpt">
-							{$vo.content|html_entity_decode}
+							<?php echo html_entity_decode($vo['content']); ?>
 						</div>
                   <div class="share_pa_box">
                      <span class="share-ico1" href="#"  >1546</span>
-                     <span class="share-ico2" id="danji" href="" >{$vo.up}</span>
+                     <span class="share-ico2" id="danji" href="" ><?php echo $vo['up']; ?></span>
                      <span class="share-ico3" href="#" >7</span>
                   </div>
                </div>
 
         	</article> <!-- end article -->
-			{/volist}
+			<?php endforeach; endif; else: echo "" ;endif; ?>
          	<article class="brick entry format-standard animate-this">
 
                <div class="entry-thumb">
                   <a href="single-standard.html" class="thumb-link">
-	                  <img src="__STATIC__/images/thumbs/diagonal-building.jpg" alt="building">             
+	                  <img src="/think5/public/static/images/thumbs/diagonal-building.jpg" alt="building">             
                   </a>
                </div>
 
@@ -225,7 +226,7 @@
 						</div>
                   <div class="share_pa_box">
                      <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji">{$vo.up}</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
                      <span class="share-ico3">7</span>
                   </div>   
                </div>
@@ -236,7 +237,7 @@
 
                <div class="entry-thumb">
                   <a href="single.html" class="thumb-link">
-	                  <img src="__STATIC__/images/thumbs/ferris-wheel.jpg" alt="ferris wheel">                   
+	                  <img src="/think5/public/static/images/thumbs/ferris-wheel.jpg" alt="ferris wheel">                   
                   </a>
                </div>
 
@@ -258,7 +259,7 @@
 						</div>
                   <div class="share_pa_box">
                      <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji">{$vo.up}</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
                      <span class="share-ico3">7</span>
                   </div>
                </div>
@@ -270,7 +271,7 @@
 
                <div class="entry-thumb">
                   <a href="single-audio.html" class="thumb-link">
-	                  <img src="__STATIC__/images/thumbs/concert.jpg" alt="concert">                      
+	                  <img src="/think5/public/static/images/thumbs/concert.jpg" alt="concert">                      
                   </a>
 
                   <div class="audio-wrap">
@@ -296,7 +297,7 @@
 						</div>
                   <div class="share_pa_box">
                      <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji">{$vo.up}</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
                      <span class="share-ico3">7</span>
                   </div>
                </div>
@@ -319,7 +320,7 @@
 
                <div class="entry-thumb">
                   <a href="single-standard.html" class="thumb-link">
-	                  <img src="__STATIC__/images/thumbs/shutterbug.jpg" alt="Shutterbug">                      
+	                  <img src="/think5/public/static/images/thumbs/shutterbug.jpg" alt="Shutterbug">                      
                   </a>
                </div>
 
@@ -341,7 +342,7 @@
 						</div>
                   <div class="share_pa_box">
                      <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji">{$vo.up}</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
                      <span class="share-ico3">7</span>
                   </div>
                </div>
@@ -352,7 +353,7 @@
 
                <div class="entry-thumb">
                   <a href="single-standard.html" class="thumb-link">
-	                  <img src="__STATIC__/images/thumbs/usaf-rocket.jpg" alt="USAF rocket">                      
+	                  <img src="/think5/public/static/images/thumbs/usaf-rocket.jpg" alt="USAF rocket">                      
                   </a>
                </div>
 
@@ -374,7 +375,7 @@
 						</div>
                   <div class="share_pa_box">
                      <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji">{$vo.up}</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
                      <span class="share-ico3">7</span>
                   </div>
                </div>
@@ -388,13 +389,13 @@
                   <div class="post-slider flexslider">
 							<ul class="slides">
 								<li>
-									<img src="__STATIC__/images/thumbs/gallery/work1.jpg"> 
+									<img src="/think5/public/static/images/thumbs/gallery/work1.jpg"> 
 								</li>
 								<li>
-									<img src="__STATIC__/images/thumbs/gallery/work2.jpg"> 
+									<img src="/think5/public/static/images/thumbs/gallery/work2.jpg"> 
 								</li>
 								<li>
-									<img src="__STATIC__/images/thumbs/gallery/work3.jpg"> 
+									<img src="/think5/public/static/images/thumbs/gallery/work3.jpg"> 
 								</li>
 							</ul>							
 						</div> 
@@ -419,7 +420,7 @@
 						</div>
                   <div class="share_pa_box">
                      <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji">{$vo.up}</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
                      <span class="share-ico3">7</span>
                   </div>
                </div>
@@ -444,7 +445,7 @@
 
                <div class="entry-thumb">
                   <a href="single-standard.html" class="thumb-link">
-	                  <img src="__STATIC__/images/thumbs/diagonal-pattern.jpg" alt="Pattern">              
+	                  <img src="/think5/public/static/images/thumbs/diagonal-pattern.jpg" alt="Pattern">              
                   </a>
                </div>
 
@@ -466,7 +467,7 @@
 						</div>
                   <div class="share_pa_box">
                      <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji">{$vo.up}</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
                      <span class="share-ico3">7</span>
                   </div>
                </div>
@@ -477,7 +478,7 @@
 
                <div class="entry-thumb video-image">
                   <a href="" data-lity>
-	                  <img src="__STATIC__/images/thumbs/ottawa-bokeh.jpg" alt="bokeh">                   
+	                  <img src="/think5/public/static/images/thumbs/ottawa-bokeh.jpg" alt="bokeh">                   
                   </a>
                </div>
 
@@ -499,7 +500,7 @@
 						</div>
                   <div class="share_pa_box">
                      <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji">{$vo.up}</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
                      <span class="share-ico3">7</span>
                   </div>
                </div>
@@ -510,7 +511,7 @@
 
                <div class="entry-thumb">
                   <a href="single-standard.html" class="thumb-link">
-	                  <img src="__STATIC__/images/thumbs/lighthouse.jpg" alt="Lighthouse">                      
+	                  <img src="/think5/public/static/images/thumbs/lighthouse.jpg" alt="Lighthouse">                      
                   </a>
                </div>
 
@@ -532,7 +533,7 @@
 						</div>
                   <div class="share_pa_box">
                      <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji">{$vo.up}</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
                      <span class="share-ico3">7</span>
                   </div>
                </div>
@@ -543,7 +544,7 @@
 
                <div class="entry-thumb">
                   <a href="single-standard.html" class="thumb-link">
-	                  <img src="__STATIC__/images/thumbs/liberty.jpg" alt="Liberty">                      
+	                  <img src="/think5/public/static/images/thumbs/liberty.jpg" alt="Liberty">                      
                   </a>
                </div>
 
@@ -565,7 +566,7 @@
 						</div>
                   <div class="share_pa_box">
                      <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji">{$vo.up}</span>
+                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
                      <span class="share-ico3">7</span>
                   </div>
                </div>
@@ -693,10 +694,10 @@
 
    <!-- Java Script
    ================================================== --> 
-   <script src="__STATIC__/js/jquery-2.1.3.min.js"></script>
-   <script src="__STATIC__/js/plugins.js"></script>
-   <script src="__STATIC__/js/jquery.appear.js"></script>
-   <script src="__STATIC__/js/main.js"></script>
+   <script src="/think5/public/static/js/jquery-2.1.3.min.js"></script>
+   <script src="/think5/public/static/js/plugins.js"></script>
+   <script src="/think5/public/static/js/jquery.appear.js"></script>
+   <script src="/think5/public/static/js/main.js"></script>
 
 </body>
 <script type="text/javascript">

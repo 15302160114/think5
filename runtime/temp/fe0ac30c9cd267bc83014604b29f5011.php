@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"C:\xampp\htdocs\think5\public/../application/user\view\login\signup.html";i:1529913270;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"C:\xampp\htdocs\think5\public/../application/user\view\login\signup.html";i:1529974500;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>

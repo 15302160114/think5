@@ -34,9 +34,9 @@ class IndexController extends Controller
                 'info'=>'点赞成功',
                 'status'=>1,
             ];  
-            return json_encode($data);
+            return $data;
         }else{
-            return json_encode('更新失败');
+            return '更新失败';
         }
          
     }

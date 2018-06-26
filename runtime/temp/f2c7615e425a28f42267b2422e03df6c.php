@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"C:\xampp\htdocs\think5\public/../application/index\view\index\index.html";i:1529973989;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"C:\xampp\htdocs\think5\public/../application/index\view\index\category.html";i:1529973448;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
@@ -8,7 +8,7 @@
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Home</title>
+	<title>Category Page - Abstract</title>
 	<meta name="description" content="">  
 	<meta name="author" content="">
 
@@ -51,18 +51,18 @@
 
 	   	<nav id="main-nav-wrap">
 				<ul class="main-navigation sf-menu">
-					<li class="current"><a href="index.html" title="">Home</a></li>									
-					<li class="has-children">
+					<li><a href="index.html" title="">Home</a></li>									
+					<li class="has-children current">
 						<a href="" title="">Categories</a>
-						<ul class="sub-menu">
-                  <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-			            <li><a href="category.html?id=<?php echo $vo['id']; ?>"><?php echo $vo['categoryname']; ?></a></li>
-                  <?php endforeach; endif; else: echo "" ;endif; ?>
-			         </ul>
+                  <ul class="sub-menu">
+                     <?php if(is_array($category) || $category instanceof \think\Collection || $category instanceof \think\Paginator): $i = 0; $__LIST__ = $category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                     <li><a href="category.html?id=<?php echo $vo['id']; ?>"><?php echo $vo['categoryname']; ?></a></li>
+                     <?php endforeach; endif; else: echo "" ;endif; ?>
+                  </ul>
 					</li>
 					<li class="has-children"><a href="" title="">Blog</a></li>
-					<li><a href="<?php echo url('@user/login/index'); ?>" title="">Sign in</a></li>	
-					<li><a href="<?php echo url('@user/login/signup'); ?>" title="">Sign up</a></li>										
+               <li><a href="<?php echo url('@user/login/index'); ?>" title="">Sign in</a></li>  
+               <li><a href="<?php echo url('@user/login/signup'); ?>" title="">Sign up</a></li>									
 				</ul>
 			</nav> <!-- end main-nav-wrap -->
 
@@ -90,9 +90,20 @@
    </header> <!-- end header -->
 
 
+   <!-- page header
+   ================================================== -->
+   <section id="page-header">
+   	<div class="row current-cat">
+   		<div class="col-full">
+   			<h1>Category: <?php echo $categorys['categoryname']; ?></h1>
+   		</div>   		
+   	</div>
+   </section>
+
+   
    <!-- masonry
    ================================================== -->
-   <section id="bricks">
+   <section id="bricks" class="with-top-sep">
 
    	<div class="row masonry">
 
@@ -101,143 +112,39 @@
 
          	<div class="grid-sizer"></div>
 
-         	<div class="brick entry featured-grid animate-this">
-         		<div class="entry-content">
-         			<div id="featured-post-slider" class="flexslider">
-			   			<ul class="slides">
-
-				   			<li>
-				   				<div class="featured-post-slide">
-
-						   			<div class="post-background" style="background-image:url('/think5/public/static/images/thumbs/featured/featured-1.jpg');"></div>
-
-								   	<div class="overlay"></div>			   		
-
-								   	<div class="post-content">
-								   		<ul class="entry-meta">
-												<li>September 06, 2016</li> 
-												<li><a href="#" >Naruto Uzumaki</a></li>				
-											</ul>	
-
-								   		<h1 class="slide-title"><a href="single-standard.html" title="">Minimalism Never Goes Out of Style</a></h1> 
-								   	</div> 				   					  
-				   			
-				   				</div>
-				   			</li> <!-- /slide -->
-
-				   			<li>
-				   				<div class="featured-post-slide">
-
-						   			<div class="post-background" style="background-image:url('/think5/public/static/images/thumbs/featured/featured-2.jpg');"></div>
-
-								   	<div class="overlay"></div>			   		
-
-								   	<div class="post-content">
-								   		<ul class="entry-meta">
-												<li>August 29, 2016</li>
-												<li><a href="#">Sasuke Uchiha</a></li>					
-											</ul>	
-
-								   		<h1 class="slide-title"><a href="single-standard.html" title="">Enhancing Your Designs with Negative Space</a></h1>
-						   			</div>		   				   					  
-				   			
-				   				</div>
-				   			</li> <!-- /slide -->
-
-				   			<li>
-				   				<div class="featured-post-slide">
-
-						   			<div class="post-background" style="background-image:url('/think5/public/static/images/thumbs/featured/featured-3.jpg');;"></div>
-
-								   	<div class="overlay"></div>			   		
-
-								   	<div class="post-content">
-								   		<ul class="entry-meta">
-												<li>August 27, 2016</li>
-												<li><a href="#" class="author">Naruto Uzumaki</a></li>					
-											</ul>	
-
-								   		<h1 class="slide-title"><a href="single-standard.html" title="">Music Album Cover Designs for Inspiration</a></h1>
-						   			</div>
-
-				   				</div>
-				   			</li> <!-- end slide -->
-
-				   		</ul> <!-- end slides -->
-				   	</div> <!-- end featured-post-slider -->        			
-         		</div> <!-- end entry content -->         		
-         	</div>
-
-			<?php if(is_array($articles) || $articles instanceof \think\Collection || $articles instanceof \think\Paginator): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-         	<article class="brick entry format-standard animate-this">
-		
+         	<?php if(is_array($articles) || $articles instanceof \think\Collection || $articles instanceof \think\Paginator): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+            <article class="brick entry format-standard animate-this">
+      
                <div class="entry-thumb">
                   <a href="single.html?id=<?php echo $vo['id']; ?>" class="thumb-link">
-	                  <img src="/think5/public/uploads/<?php echo $vo['author_id']; ?>/<?php echo $vo['logo']; ?>" alt="building">             
+                     <img src="/think5/public/uploads/<?php echo $vo['author_id']; ?>/<?php echo $vo['logo']; ?>" alt="building">             
                   </a>
                </div>
 
                <div class="entry-text">
-               	<div class="entry-header">
+                  <div class="entry-header">
 
-               		<div class="entry-meta">
-               			<span class="cat-links">
-               				<?php echo $vo['description']; ?>   				
-               			</span>			
-               		</div>
+                     <div class="entry-meta">
+                        <span class="cat-links">
+                           <?php echo $vo['description']; ?>             
+                        </span>        
+                     </div>
 
-               		<h1 class="entry-title"><a href="single-standard.html"><?php echo $vo['title']; ?></a></h1>
-               		
-               	</div>
-						<div class="entry-excerpt">
-							<?php echo html_entity_decode($vo['content']); ?>
-						</div>
-                  <div class="share_pa_box">
-                     <span class="share-ico1" href="#"  >1546</span>
-                     <span class="share-ico2 up" id="<?php echo $vo['id']; ?>"><?php echo $vo['up']; ?></span>
-
-                     <span class="share-ico3" href="#" >7</span>
+                     <h1 class="entry-title"><a href="single-standard.html"><?php echo $vo['title']; ?></a></h1>
+                     
+                  </div>
+                  <div class="entry-excerpt">
+                     <?php echo $vo['content']; ?>
                   </div>
                </div>
-        	</article> <!-- end article -->
-			<?php endforeach; endif; else: echo "" ;endif; ?>
-         	<article class="brick entry format-standard animate-this">
 
-               <div class="entry-thumb">
-                  <a href="single-standard.html" class="thumb-link">
-	                  <img src="/think5/public/static/images/thumbs/diagonal-building.jpg" alt="building">             
-                  </a>
-               </div>
-
-               <div class="entry-text">
-               	<div class="entry-header">
-
-               		<div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">Design</a> 
-               				<a href="#">Photography</a>               				
-               			</span>			
-               		</div>
-
-               		<h1 class="entry-title"><a href="single-standard.html">Just a Standard Format Post.</a></h1>
-               		
-               	</div>
-						<div class="entry-excerpt">
-							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-						</div>
-                  <div class="share_pa_box">
-                     <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
-                     <span class="share-ico3">7</span>
-                  </div>   
-               </div>
-
-        		</article> <!-- end article -->
+            </article> <!-- end article -->
+            <?php endforeach; endif; else: echo "" ;endif; ?>
 
             <article class="brick entry format-standard animate-this">
 
                <div class="entry-thumb">
-                  <a href="single.html" class="thumb-link">
+                  <a href="single-standard.html" class="thumb-link">
 	                  <img src="/think5/public/static/images/thumbs/ferris-wheel.jpg" alt="ferris wheel">                   
                   </a>
                </div>
@@ -258,16 +165,10 @@
 						<div class="entry-excerpt">
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
-                  <div class="share_pa_box">
-                     <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
-                     <span class="share-ico3">7</span>
-                  </div>
                </div>
                
         		</article> <!-- end article -->
-                
-            <!-- format audio here -->
+
             <article class="brick entry format-audio animate-this">
 
                <div class="entry-thumb">
@@ -276,7 +177,7 @@
                   </a>
 
                   <div class="audio-wrap">
-                  	<audio id="player" src="media/AirReview-Landmarks-02-ChasingCorporate.mp3" width="100%" height="42" controls="controls"></audio>                  	
+                  	<audio id="player2" src="media/AirReview-Landmarks-02-ChasingCorporate.mp3" width="100%" height="42" controls="controls"></audio>                  	
                   </div>
                </div>
 
@@ -296,16 +197,11 @@
 						<div class="entry-excerpt">
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
-                  <div class="share_pa_box">
-                     <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
-                     <span class="share-ico3">7</span>
-                  </div>
                </div>
                
         		</article> <!-- /article -->
 
-         	<article class="brick entry format-quote animate-this" >
+         	<article class="brick entry format-quote animate-this">
 
                <div class="entry-thumb">                  
 	               <blockquote>
@@ -316,72 +212,6 @@
                </div>   
 
         		</article> <!-- end article -->
-
-         	<article class="brick entry animate-this">
-
-               <div class="entry-thumb">
-                  <a href="single-standard.html" class="thumb-link">
-	                  <img src="/think5/public/static/images/thumbs/shutterbug.jpg" alt="Shutterbug">                      
-                  </a>
-               </div>
-
-               <div class="entry-text">
-               	<div class="entry-header">
-
-               		<div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">Photography</a> 
-               				<a href="#">html</a>                				
-               			</span>			
-               		</div>
-
-               		<h1 class="entry-title"><a href="single-standard.html">Photography Skills Can Improve Your Graphic Design.</a></h1>
-               		
-               	</div>
-						<div class="entry-excerpt">
-							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-						</div>
-                  <div class="share_pa_box">
-                     <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
-                     <span class="share-ico3">7</span>
-                  </div>
-               </div>
-               
-        		</article> <!-- end article -->
-
-            <article class="brick entry animate-this" >
-
-               <div class="entry-thumb">
-                  <a href="single-standard.html" class="thumb-link">
-	                  <img src="/think5/public/static/images/thumbs/usaf-rocket.jpg" alt="USAF rocket">                      
-                  </a>
-               </div>
-
-               <div class="entry-text">
-               	<div class="entry-header">
-
-               		<div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">Branding</a> 
-               				<a href="#">Mockup</a>               				
-               			</span>			
-               		</div>
-
-               		<h1 class="entry-title"><a href="single-standard.html">The 10 Golden Rules of Clean Simple Design.</a></h1>
-               		
-               	</div>
-						<div class="entry-excerpt">
-							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-						</div>
-                  <div class="share_pa_box">
-                     <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
-                     <span class="share-ico3">7</span>
-                  </div>
-               </div>
-               
-        		</article> <!-- end article -->        	
 
         		<article class="brick entry format-gallery group animate-this">
 
@@ -419,11 +249,6 @@
 						<div class="entry-excerpt">
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
-                  <div class="share_pa_box">
-                     <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
-                     <span class="share-ico3">7</span>
-                  </div>
                </div>
                
         		</article> <!-- end article -->
@@ -466,11 +291,6 @@
 						<div class="entry-excerpt">
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
-                  <div class="share_pa_box">
-                     <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
-                     <span class="share-ico3">7</span>
-                  </div>
                </div>
                
         		</article> <!-- end article -->
@@ -499,16 +319,11 @@
 						<div class="entry-excerpt">
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
-                  <div class="share_pa_box">
-                     <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
-                     <span class="share-ico3">7</span>
-                  </div>
                </div>
                
         		</article> <!-- end article -->
 
-        		<article class="brick entry animate-this">
+        		<article class="brick entry format-standard animate-this">
 
                <div class="entry-thumb">
                   <a href="single-standard.html" class="thumb-link">
@@ -532,44 +347,6 @@
 						<div class="entry-excerpt">
 							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
 						</div>
-                  <div class="share_pa_box">
-                     <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
-                     <span class="share-ico3">7</span>
-                  </div>
-               </div>
-               
-        		</article> <!-- end article -->
-
-        		<article class="brick entry animate-this">
-
-               <div class="entry-thumb">
-                  <a href="single-standard.html" class="thumb-link">
-	                  <img src="/think5/public/static/images/thumbs/liberty.jpg" alt="Liberty">                      
-                  </a>
-               </div>
-
-               <div class="entry-text">
-               	<div class="entry-header">
-
-               		<div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">Branding</a> 
-               				<a href="#">html</a>                	
-               			</span>			
-               		</div>
-
-               		<h1 class="entry-title"><a href="single-standard.html">Designing With Black and White.</a></h1>
-               		
-               	</div>
-						<div class="entry-excerpt">
-							Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.
-						</div>
-                  <div class="share_pa_box">
-                     <span class="share-ico1">1546</span>
-                     <span class="share-ico2" id="danji"><?php echo $vo['up']; ?></span>
-                     <span class="share-ico3">7</span>
-                  </div>
                </div>
                
         		</article> <!-- end article -->
@@ -596,7 +373,7 @@
 
    	</div>
 
-   </section> <!-- end bricks -->
+   </section> <!-- bricks -->
 
    
    <!-- footer
@@ -695,42 +472,10 @@
 
    <!-- Java Script
    ================================================== --> 
-   <script src="/think5/public/static/js/jquery-2.1.4.min.js"></script>
+   <script src="/think5/public/static/js/jquery-2.1.3.min.js"></script>
    <script src="/think5/public/static/js/plugins.js"></script>
-   <script src="/think5/public/static/js/jquery.appear.js"></script>
    <script src="/think5/public/static/js/main.js"></script>
-   <script type="text/javascript" src="/think5/public/static/js/bootbox.js"></script>
 
 </body>
-<script type="text/javascript">
-   $(document).ready(function() { 
-      $(".up").click(function() {
-         var Oa=$(this);
-         var id=Oa.attr('id');//获取id属性
-         var vl= $('#'+id).text();
 
-         var m=parseInt(vl)+1;
-         $('#'+id).empty();
-         $('#'+id).append(m);
-         $('#'+id).removeAttr("onclick");
-         
-         $.ajax({
-            url: "<?php echo url('index/up'); ?>",
-               data: {
-               up:m,
-               id:id,
-            },
-            async: true,   //是否为异步请求
-            cache: false,  //是否缓存结果
-            type: "POST", //请求方式为POST
-            dataType: "json",   //服务器返回的数据是什么类型
-            success: function(data){  
-               
-               alert('点赞成功');
-            }
-         });
-      });
-   });
-
-</script>
 </html>

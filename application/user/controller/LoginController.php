@@ -33,9 +33,12 @@ class LoginController extends Controller
         if(!$validate->scene('add')->check($input)){
             $this->error($validate->getError());
         }
+
+        $suiji=rand(1000,9999);
         
         $date=[
                 'email'=>$input['email'],
+                'code'=>$suiji,
                 'username'=>$input['username'],
                 'password'=>md5($input['password']),
             ];

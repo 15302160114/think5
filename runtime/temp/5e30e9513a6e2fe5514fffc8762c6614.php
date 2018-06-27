@@ -1,11 +1,11 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"C:\xampp\htdocs\think5\public/../application/user\view\userhotai\index.html";i:1530059785;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:74:"C:\xampp\htdocs\think5\public/../application/user\view\userhotai\edit.html";i:1530059785;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>首页</title>
+    <title>编辑文章</title>
     <meta name="description" content="这是一个 index 页面">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,10 +19,9 @@
     <link rel="stylesheet" href="/think5/public/static/css/amazeui.datatables.min.css" />
     <link rel="stylesheet" href="/think5/public/static/css/app.css">
     <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-
 </head>
 
-<body data-type="index">
+<body data-type="widgets">
     <script src="/think5/public/static/js/theme.js"></script>
     <div class="am-g tpl-g">
         <!-- 头部 -->
@@ -84,7 +83,7 @@
                                 <li class="tpl-dropdown-menu-messages">
                                     <a href="javascript:;" class="tpl-dropdown-menu-messages-item am-cf">
                                         <div class="menu-messages-ico">
-                                            <img src="assets/img/user02.png" alt="">
+                                            <img src="/think5/public/static/images/user02.png" alt="">
                                         </div>
                                         <div class="menu-messages-time">
                                             5天前
@@ -162,7 +161,7 @@
                         <!-- 退出 -->
                         <li class="am-text-sm">
                             <a href="<?php echo url('userhotai/logout'); ?>">
-                                <span class="am-icon-sign-out"></span>退出
+                                <span class="am-icon-sign-out"></span> 退出
                             </a>
                         </li>
                     </ul>
@@ -204,7 +203,7 @@
             <ul class="sidebar-nav">
                 
                 <li class="sidebar-nav-link">
-                    <a href="index.html" class="active">
+                    <a href="<?php echo url('userhotai/index'); ?>">
                         <i class="am-icon-home sidebar-nav-link-logo"></i> 首页
                     </a>
                 </li>
@@ -214,12 +213,12 @@
                     </a>
                 </li> -->
                 <li class="sidebar-nav-link">
-                    <a href="all.html?id=1">
+                    <a href="<?php echo url('userhotai/all'); ?>">
                         <i class="am-icon-calendar sidebar-nav-link-logo"></i> 我的文章
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="add.html">
+                    <a href="<?php echo url('userhotai/add'); ?>" class="active">
                         <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 写文章
 
                     </a>
@@ -227,109 +226,95 @@
             </ul>
         </div>
 
-
         <!-- 内容区域 -->
         <div class="tpl-content-wrapper">
 
-            <div class="row-content am-cf">
-
-                <div class="row am-cf">
-                    <div class="am-u-sm-12 am-u-md-8">
-                        <div class="widget am-cf">
-                            <div class="widget-head am-cf">
-                                <div class="widget-title am-fl">文章发表规律</div>
-                                <div class="widget-function am-fr">
-                                    <a href="javascript:;" class="am-icon-cog"></a>
-                                </div>
-                            </div>
-                            <div class="widget-body-md widget-body tpl-amendment-echarts am-fr" id="tpl-echarts">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="am-u-sm-12 am-u-md-4">
-                        <div class="widget am-cf">
-                            <div class="widget-head am-cf">
-                                <div class="widget-title am-fl">专用服务器负载</div>
-                                <div class="widget-function am-fr">
-                                    <a href="javascript:;" class="am-icon-cog"></a>
-                                </div>
-                            </div>
-                            <div class="widget-body widget-body-md am-fr">
-
-                                <div class="am-progress-title">CPU Load <span class="am-fr am-progress-title-more">28% / 100%</span></div>
-                                <div class="am-progress">
-                                    <div class="am-progress-bar" style="width: 15%"></div>
-                                </div>
-                                <div class="am-progress-title">CPU Load <span class="am-fr am-progress-title-more">28% / 100%</span></div>
-                                <div class="am-progress">
-                                    <div class="am-progress-bar  am-progress-bar-warning" style="width: 75%"></div>
-                                </div>
-                                <div class="am-progress-title">CPU Load <span class="am-fr am-progress-title-more">28% / 100%</span></div>
-                                <div class="am-progress">
-                                    <div class="am-progress-bar am-progress-bar-danger" style="width: 35%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row-content am-cf">
+            <div class="container-fluid am-cf">
                 <div class="row">
+
                     <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
                         <div class="widget am-cf">
                             <div class="widget-head am-cf">
-                                <div class="widget-title  am-cf">文章列表</div>
-
-
-                            </div>
-                            <div class="widget-body  am-fr">
-
-                                <div class="am-u-sm-12">
-                                    <table width="100%" class="am-table am-table-compact am-table-striped tpl-table-black ">
-                                        <thead>
-                                            <tr>
-                                                <th>文章缩略图</th>
-                                                <th>文章标题</th>
-                                                <th>分类</th>
-                                                <th>作者</th>
-                                                <th>时间</th>
-                                                <th>操作</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                        <?php if(is_array($articles) || $articles instanceof \think\Collection || $articles instanceof \think\Paginator): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                            <tr class="gradeX">
-                                                <td>
-                                                    <img src="/think5/public/uploads/<?php if($user): ?><?php echo $user->id; endif; ?>/<?php echo $vo['logo']; ?>" class="tpl-table-line-img" alt="">
-                                                </td>
-                                                <td class="am-text-middle"><?php echo $vo['title']; ?></td>
-                                                <td class="am-text-middle"><?php echo getUsername($vo['category_id']); ?></td>
-                                                <td class="am-text-middle"><?php echo getAuthorname($vo['author_id']); ?></td>
-                                                <td class="am-text-middle"><?php echo $vo['create_time']; ?></td>
-                                                <td class="am-text-middle">
-                                                    <div class="tpl-table-black-operation">
-                                                        <a href="<?php echo url('userhotai/edit',['id'=>$vo['id']]); ?>">
-                                                            <i class="am-icon-pencil"></i> 编辑
-                                                        </a>
-                                                        <a href="<?php echo url('userhotai/delete',['id'=>$vo['id']]); ?>" class="tpl-table-black-operation-del">
-                                                            <i class="am-icon-trash"></i> 删除
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        <?php endforeach; endif; else: echo "" ;endif; ?>
-                                            <!-- more data -->
-                                        </tbody>
-                                    </table>
+                                <div class="widget-title am-fl">编辑文章</div>
+                                <div class="widget-function am-fr">
+                                    <a href="javascript:;" class="am-icon-cog"></a>
                                 </div>
+                            </div>
+                            <div class="widget-body am-fr">
+
+                                <form method="post" class="am-form tpl-form-border-form" action="<?php echo url('userhotai/wenzhangupdate'); ?>">
+                                    <div class="form-group">
+                                          <input type="hidden" name="id"placeholder="id" value="<?php echo $article['id']; ?>">
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <label for="user-name" class="am-u-sm-12 am-form-label am-text-left">标题 <span class="tpl-form-line-small-title">Title</span></label>
+                                        <div class="am-u-sm-12">
+                                            <input type="text" name="title" class="tpl-form-input am-margin-top-xs" id="user-name" placeholder="请输入标题文字" value="<?php echo $article['title']; ?>">
+                                            <small>请填写标题文字10-20字左右。</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <label for="user-phone" class="am-u-sm-12 am-form-label am-text-left">文章类别<span class="tpl-form-line-small-title">Category</span></label>
+                                        <div class="am-u-sm-12  am-margin-top-xs">
+                                            <select data-am-selected="{searchBox: 1}" name="category_id" id="select">
+                                               <option value="all">所有分类</option>
+                                              <?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                                              <option value="<?php echo $vo['id']; ?>"><?php echo $vo['categoryname']; ?></option>
+                                              <?php endforeach; endif; else: echo "" ;endif; ?>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <label class="am-u-sm-12 am-form-label  am-text-left">SEO关键字 <span class="tpl-form-line-small-title">SEO</span></label>
+                                        <div class="am-u-sm-12">
+                                            <input type="text" name="description" class="am-margin-top-xs" placeholder="输入SEO关键字" value="<?php echo $article['description']; ?>">
+                                        </div>
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <label for="user-weibo" class="am-u-sm-12 am-form-label  am-text-left">封面图 <span class="tpl-form-line-small-title">Images</span></label>
+
+                                        <div id="uploader-demo" class="am-u-sm-12 am-margin-top-xs">
+                                            <div class="am-form-group am-form-file">
+                                                <div id="fileList" class="tpl-form-file-img uploader-list">
+                                                    <div id="old" class="file-item thumbnail">
+                                                        <img src="/think5/public/uploads/<?php echo $article['author_id']; ?>/<?php echo $article['logo']; ?>" class="tpl-table-line-img">
+                                                        <div class="info"><?php echo $article['logo']; ?></div>
+                                                    </div>
+                                                    <input type="text" style="display:none" name="logo" value="<?php echo $article['logo']; ?>">
+                                                </div>
+                                                
+                                                <button id="filePicker" type="button" class="am-btn am-btn-danger am-btn-sm ">
+                                                <i class="am-icon-cloud-upload"></i> 更改封面图片</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <label for="user-intro" class="am-u-sm-12 am-form-label  am-text-left">文章内容</label>
+                                        <div class="am-u-sm-12 am-margin-top-xs">
+                                            <script id="container" name="content" type="text/plain">
+
+                                            </script>
+                                        </div>
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <div class="am-u-sm-12 am-u-sm-push-12">
+                                            <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success ">提交</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+
+
             </div>
         </div>
     </div>
@@ -337,8 +322,85 @@
     <script src="http://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
     <script src="/think5/public/static/js/amazeui.datatables.min.js"></script>
     <script src="/think5/public/static/js/dataTables.responsive.min.js"></script>
-    <script src="/think5/public/static/js/app.js"></script>
+    <script src="/think5/public/static/js/app.js"></script> 
+    <script type="text/javascript" src="/think5/public/static/webuploader/webuploader.js"></script>    <!-- 引用插件js -->
+
+    <script type="text/javascript" src="/think5/public/static/ueditor/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="/think5/public/static/ueditor/ueditor.all.js"></script>
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+        ue.ready(function(){
+          ue.setContent('<?php echo html_entity_decode($article['content']); ?>');
+        })
+
+        var val="<?php echo $article['category_id']; ?>";   //这里val的值，就是你从数据库中获取的值。
+        var options=document.getElementById("select").options;
+        for(var i=0;i<options.length;i++){
+            if("<?php echo $article['category_id']; ?>"==options[i].value){
+                options[i].selected=true;
+                break;
+            }
+        }
+
+    </script>
+
 
 </body>
 
+<script type="text/javascript">
+           //var $list=$("#fileList");   //这几个初始化全局的百度文档上没说明，好蛋疼
+           var thumbnailWidth = 100;   //缩略图高度和宽度 （单位是像素），当宽高度是0~1的时候，是按照百分比计算，具体可以看api文档  
+           var thumbnailHeight = 100;  
+           var uploader = WebUploader.create({
+            // 选完文件后，是否自动上传。
+           auto: true,
+            // swf文件路径
+           swf: '/think5/public/static/webuploader/uploader.swf', //加载swf文件，路径一定要对
+            // 文件接收服务端。
+            server: '<?php echo url("user/userhotai/upload"); ?>',
+            // 选择文件的按钮。可选。
+            // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+            pick: '#filePicker',
+            // 只允许选择图片文件。
+            accept: {
+                title: 'Images',
+                extensions: 'gif,jpg,jpeg,bmp,png',
+                mimeTypes: 'image/'
+            }
+        });
+      //上传完成事件监听
+        
+        uploader.on( 'fileQueued', function(file) {
+            // var d = new Date();
+            // var curr_date = d.getDate();
+            // var curr_month = d.getMonth() + 1; 
+            // var curr_year = d.getFullYear();
+            // String(curr_month).length < 2 ? (curr_month = "0" + curr_month): curr_month;
+            // String(curr_date).length < 2 ? (curr_date = "0" + curr_date): curr_date;
+            // var yyyyMMdd = curr_year + "" + curr_month +""+ curr_date;
+            var $li = $(
+                    '<div id="old" class="file-item thumbnail">' +
+                        '<img>' +
+                        '<div class="info">' + file.name + '</div>' +
+                    '</div>'+
+                    '<input type="text" style="display:none" name="logo" value="'+ file.name +'">'
+                    ),
+                $img = $li.find('img');
+            // $list为容器jQuery实例
+                $('#old').remove();
+                $("#fileList").append( $li );
+            // 创建缩略图
+            // 如果为非图片文件，可以不用调用此方法。
+            // thumbnailWidth x thumbnailHeight 为 100 x 100
+            uploader.makeThumb( file, function( error, src ) {
+                if ( error ) {
+                    $img.replaceWith('<span>不能预览</span>');
+                    return;
+                }
+                $img.attr( 'src', src );
+            }, thumbnailWidth, thumbnailHeight );
+        });
+</script>
 </html>

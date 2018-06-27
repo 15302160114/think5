@@ -1,0 +1,732 @@
+---------------------------------------------------------------
+[ 2018-06-27T09:58:09+08:00 ] 0.0.0.0 GET /think5/public/index/index/index
+[ info ] localhost/think5/public/index/index/index [运行时间：0.064003s][吞吐率：15.62req/s] [内存消耗：2,763.09kb] [文件加载：55]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ C:\xampp\htdocs\think5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\think5\public/../application/index\view\index\index.html [ array (
+  0 => 'categorys',
+  1 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=mysql;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `article` ORDER BY `id`  desc [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-27T09:58:09+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,246.88kb] [文件加载：37]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-27T09:58:11+08:00 ] 0.0.0.0 GET /think5/public/static/js/jquery.appear.js
+[ info ] localhost/think5/public/static/js/jquery.appear.js [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,246.88kb] [文件加载：37]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'js',
+    2 => 'jquery.appear.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-27T09:58:11+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：1,499.02kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-27T09:58:11+08:00 ] 0.0.0.0 GET /think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3
+[ info ] localhost/think5/public/index/index/media/AirReview-Landmarks-02-ChasingCorporate.mp3 [运行时间：0.029001s][吞吐率：34.48req/s] [内存消耗：1,499.02kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'media',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'identity;q=1, *;q=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+  'range' => 'bytes=0-',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-27T09:58:14+08:00 ] 0.0.0.0 GET /think5/public/user/login/index.html
+[ info ] localhost/think5/public/user/login/index.html [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,664.92kb] [文件加载：45]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\user\controller\LoginController->index[ C:\xampp\htdocs\think5\application\user\controller\LoginController.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\think5\public/../application/user\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-27T09:58:14+08:00 ] 0.0.0.0 GET /think5/public/captcha.html
+[ info ] localhost/think5/public/captcha.html [运行时间：0.044003s][吞吐率：22.73req/s] [内存消耗：1,537.10kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/user/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ C:\xampp\htdocs\think5\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-27T09:58:20+08:00 ] 0.0.0.0 GET /think5/public/captcha.html?tm=0.709336015210041
+[ info ] localhost/think5/public/captcha.html?tm=0.709336015210041 [运行时间：0.068004s][吞吐率：14.71req/s] [内存消耗：1,537.91kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/user/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+)
+[ info ] [ PARAM ] array (
+  'tm' => '0.709336015210041',
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ C:\xampp\htdocs\think5\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-27T09:58:28+08:00 ] 0.0.0.0 POST /think5/public/user/login/check.html
+[ info ] localhost/think5/public/user/login/check.html [运行时间：0.322018s][吞吐率：3.11req/s] [内存消耗：2,756.59kb] [文件加载：57]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '45',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/user/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'qianru',
+  'password' => '123456',
+  'captcha' => 'chanb',
+)
+[ info ] [ RUN ] app\user\controller\LoginController->check[ C:\xampp\htdocs\think5\application\user\controller\LoginController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\think5\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=mysql;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `author` [ RunTime:0.134007s ]
+[ sql ] [ SQL ] SELECT * FROM `author` WHERE  `username` = 'qianru' LIMIT 1 [ RunTime:0.095006s ]
+---------------------------------------------------------------
+[ 2018-06-27T09:58:29+08:00 ] 0.0.0.0 GET /think5/public/user/userhotai/index.html
+[ info ] localhost/think5/public/user/userhotai/index.html [运行时间：0.069004s][吞吐率：14.49req/s] [内存消耗：2,811.94kb] [文件加载：56]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'userhotai',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/user/login/check.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\user\controller\UserhotaiController->index[ C:\xampp\htdocs\think5\application\user\controller\UserhotaiController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\think5\public/../application/user\view\userhotai\index.html [ array (
+  0 => 'user',
+  1 => 'author',
+  2 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=mysql;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `author` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `author` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `author_id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `author` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-06-27T09:58:29+08:00 ] 0.0.0.0 GET /think5/public/user/userhotai/assets/img/user04.png
+[ info ] localhost/think5/public/user/userhotai/assets/img/user04.png [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,811.12kb] [文件加载：48]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'userhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/user/userhotai/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-27T09:58:30+08:00 ] 0.0.0.0 GET /think5/public/user/userhotai/assets/img/user02.png
+[ info ] localhost/think5/public/user/userhotai/assets/img/user02.png [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,811.12kb] [文件加载：48]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'userhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/user/userhotai/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user02.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-27T09:58:31+08:00 ] 0.0.0.0 GET /think5/public/user/userhotai/all.html?id=1
+[ info ] localhost/think5/public/user/userhotai/all.html?id=1 [运行时间：0.088005s][吞吐率：11.36req/s] [内存消耗：2,788.84kb] [文件加载：56]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'userhotai',
+    2 => 'all',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/user/userhotai/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\user\controller\UserhotaiController->all[ C:\xampp\htdocs\think5\application\user\controller\UserhotaiController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\think5\public/../application/user\view\userhotai\all.html [ array (
+  0 => 'user',
+  1 => 'author',
+  2 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=mysql;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `author` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `author` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `author_id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `author` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-27T09:58:32+08:00 ] 0.0.0.0 GET /think5/public/user/userhotai/assets/img/user02.png
+[ info ] localhost/think5/public/user/userhotai/assets/img/user02.png [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,811.12kb] [文件加载：48]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'userhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/user/userhotai/all.html?id=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user02.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-27T09:58:32+08:00 ] 0.0.0.0 GET /think5/public/user/userhotai/assets/img/user04.png
+[ info ] localhost/think5/public/user/userhotai/assets/img/user04.png [运行时间：0.044003s][吞吐率：22.73req/s] [内存消耗：1,811.12kb] [文件加载：48]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'userhotai',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/user/userhotai/all.html?id=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+)
+[ info ] [ PARAM ] array (
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-27T09:58:34+08:00 ] 0.0.0.0 GET /think5/public/user/userhotai/edit/id/1.html
+[ info ] localhost/think5/public/user/userhotai/edit/id/1.html [运行时间：0.082005s][吞吐率：12.19req/s] [内存消耗：2,844.50kb] [文件加载：58]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'userhotai',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/user/userhotai/all.html?id=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\user\controller\UserhotaiController->edit[ C:\xampp\htdocs\think5\application\user\controller\UserhotaiController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\think5\public/../application/user\view\userhotai\edit.html [ array (
+  0 => 'user',
+  1 => 'author',
+  2 => 'article',
+  3 => 'categorys',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=mysql;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `author` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `author` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `id`  desc [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-27T09:58:34+08:00 ] 0.0.0.0 GET /think5/public/user/userhotai/edit/id/assets/img/user04.png
+[ info ] localhost/think5/public/user/userhotai/edit/id/assets/img/user04.png [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：1,788.10kb] [文件加载：47]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'userhotai',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/user/userhotai/edit/id/1.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'assets',
+  'img' => 'user04.png',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\user\controller\UserhotaiController->edit[ C:\xampp\htdocs\think5\application\user\controller\UserhotaiController.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\think5\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'user',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-27T11:11:44+08:00 ] 0.0.0.0 GET /think5/public/user/userhotai/logout.html
+[ info ] localhost/think5/public/user/userhotai/logout.html [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,852.38kb] [文件加载：48]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'userhotai',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/user/userhotai/edit/id/1.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\user\controller\UserhotaiController->logout[ C:\xampp\htdocs\think5\application\user\controller\UserhotaiController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-27T11:11:44+08:00 ] 0.0.0.0 GET /think5/public/user/login/index.html
+[ info ] localhost/think5/public/user/login/index.html [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：1,529.86kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/user/userhotai/edit/id/1.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\user\controller\LoginController->index[ C:\xampp\htdocs\think5\application\user\controller\LoginController.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\think5\public/../application/user\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-27T11:11:44+08:00 ] 0.0.0.0 GET /think5/public/captcha.html
+[ info ] localhost/think5/public/captcha.html [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：1,537.10kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\think5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3377.1 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/think5/public/user/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7h7vr9e38n4php7hrbptt13ci',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ C:\xampp\htdocs\think5\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File

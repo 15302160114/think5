@@ -244,8 +244,9 @@
                             <div class="widget-body am-fr">
 
                                 <div class="am-u-sm-12">
-                                    <form class="form-horizontal" method="post" name="form1" action="{:url('adminhotai/update')}">
+                                    <form class="form-horizontal" method="post" name="form1" action="{:url('adminhotai/authorUpdate')}">
                                       <div class="form-group">
+                                        <input type="hidden" name="id" class="form-control" id="inputEmail3" placeholder="Username" value="{$author.id}">
                                         <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
                                         <div class="col-sm-7">
                                           <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="Username" value="{$author.username}">
@@ -270,6 +271,13 @@
                                         <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
                                         <div class="col-sm-7">
                                           <input type="text" name="email" class="form-control" id="title" placeholder="Email" value="{$author.email}">
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Password</label>
+                                        <div class="col-sm-7">
+                                          <input type="password" name="password" class="form-control" id="title" placeholder="Email" value="{$author.password}">
                                         </div>
                                       </div>
 

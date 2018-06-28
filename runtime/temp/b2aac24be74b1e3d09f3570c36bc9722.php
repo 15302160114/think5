@@ -1,11 +1,11 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"C:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\article.html";i:1530156398;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"C:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\user.html";i:1530156398;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>用户文章</title>
+    <title>用户列表</title>
     <meta name="description" content="这是一个 index 页面">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -207,7 +207,7 @@
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="article.html" class="active">
+                    <a href="article.html">
                         <i class="am-icon-clone sidebar-nav-link-logo"></i> 用户文章
                         <span class="am-badge am-badge-secondary sidebar-nav-link-logo-ico am-round am-fr am-margin-right-sm">6</span>
                     </a>
@@ -219,10 +219,11 @@
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="user.html">
+                    <a href="user.html" class="active">
                         <i class="am-icon-table sidebar-nav-link-logo"></i> 用户列表
                     </a>
                 </li>
+                
             </ul>
         </div>
 
@@ -235,7 +236,7 @@
                     <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
                         <div class="widget am-cf">
                             <div class="widget-head am-cf">
-                                <div class="widget-title am-fl">用户文章</div>
+                                <div class="widget-title am-fl">用户列表</div>
                                 <div class="widget-function am-fr">
                                     <a href="javascript:;" class="am-icon-cog"></a>
                                 </div>
@@ -243,48 +244,42 @@
                             <div class="widget-body am-fr">
 
                                 <div class="am-u-sm-12">
-
-                                    
-
                                     <table width="100%" class="am-table am-table-compact am-table-striped tpl-table-black " id="example-r">
                                         <thead>
                                             <tr>
-                                                <th>序号</th>
-                                                <th>logo</th>
-                                                <th>title</th>
-                                                <th>文章分类</th>
-                                                <th>作者</th>
-                                                <th>发布时间</th>
+                                                <th>ID</th>
+                                                <th>用户名</th>
+                                                <th>真实姓名</th>
+                                                <th>注册时间</th>
                                                 <th>操作</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <?php if(is_array($articles) || $articles instanceof \think\Collection || $articles instanceof \think\Paginator): $num = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($num % 2 );++$num;?>
-                                            
+                                            <?php if(is_array($author) || $author instanceof \think\Collection || $author instanceof \think\Paginator): $num = 0; $__LIST__ = $author;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($num % 2 );++$num;?>
                                             <tr class="gradeX">
-                                                <td class="am-text-middle"><?php echo $num; ?></td>
-                                                <td class="am-text-middle">
-                                                    <a href="<?php echo url('@index/index/single',['id'=>$vo['id']]); ?>" target="_blank"><img src="/think5/public/uploads/<?php echo $vo['author_id']; ?>/<?php echo $vo['logo']; ?>" class="tpl-table-line-img"></a>
-                                                </td>
-                                                <td class="am-text-middle"><?php echo $vo['title']; ?></td>
-                                                <td class="am-text-middle"><?php echo getUsername($vo['category_id']); ?></td>
-                                                <td class="am-text-middle"><?php echo getAuthorname($vo['author_id']); ?></td>
-                                                <td class="am-text-middle"><?php echo $vo['create_time']; ?></td>
-                                                <td class="am-text-middle">
+                                                <td><?php echo $vo['id']; ?></td>
+                                                <td><?php echo $vo['username']; ?></td>
+                                                <td><?php echo $vo['realname']; ?></td>
+                                                <td><?php echo $vo['create_time']; ?></td>
+                                                <td>
                                                     <div class="tpl-table-black-operation">
-                                                        <a href="<?php echo url('adminhotai/articledelete',['id'=>$vo['id']]); ?>" class="tpl-table-black-operation-del">
+                                                        <a href="<?php echo url('adminhotai/edit',['id'=>$vo['id']]); ?>">
+                                                            <i class="am-icon-pencil"></i> 编辑
+                                                        </a>
+                                                        <a href="<?php echo url('adminhotai/authordelete',['id'=>$vo['id']]); ?>" class="tpl-table-black-operation-del">
                                                             <i class="am-icon-trash"></i> 删除
                                                         </a>
                                                     </div>
                                                 </td>
                                             </tr>
-                                            
                                             <?php endforeach; endif; else: echo "" ;endif; ?>
                                             
                                             <!-- more data -->
                                         </tbody>
                                     </table>
+
                                 </div>
+                                <?php echo $author->render(); ?>
                             </div>
                         </div>
                     </div>

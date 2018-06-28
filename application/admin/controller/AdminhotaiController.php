@@ -119,6 +119,14 @@ class AdminhotaiController extends Base
 		}
 	}
 	public function edit(){
+		$a=explode(',', session('my_user','','my'));
+    	$aid=substr($a[0],6);
+		if($aid==0||is_null($aid)){
+			$this->error('参数有误');
+		}
+		$admin=model('Admin')->get($aid);
+		
+		$this->assign('admin',$admin);
 		$id=input('param.id');
 		if($id==0||is_null($id)){
 			$this->error('参数有误');
@@ -167,6 +175,55 @@ class AdminhotaiController extends Base
 		$xuhao=model('Admin')->save($date,['id'=>intval($input['id'])]);
 		if($xuhao){
 			$this->success('更新成功',url('adminhotai/zhanghao'));
+		}else{
+			$this->error('更新失败');
+		}
+	}
+	public function authorUpdate(){
+		$a=explode(',', session('my_user','','my'));
+    	$aid=substr($a[0],6);
+		if($aid==0||is_null($aid)){
+			$this->error('参数有误');
+		}
+		$admin=model('Admin')->get($aid);
+		
+		$this->assign('admin',$admin);
+
+		echo "<meta charset='UTF-8'>";
+		if(!request()->isPost()){
+			$this->error("非法输入");
+		}
+		$input=input('post.');
+
+		$validate=validate('Author');
+		if(!$validate->scene('edit')->check($input)){
+			$this->error($validate->getError());
+		}
+
+		$author=Db::table('author')
+					->where('id',$input['id'])
+					->select();
+		$pa=$author[0];
+		if($pa['password']==$input['password']){
+			$date=[
+				'username'=>$input['username'],
+				'realname'=>$input['realname'],
+				'tel'=>$input['tel'],
+				'email'=>$input['email']
+			];
+		}else{
+			$date=[
+				'username'=>$input['username'],
+				'realname'=>$input['realname'],
+				'tel'=>$input['tel'],
+				'email'=>$input['email'],
+				'password'=>md5($input['password'])
+			];
+		}
+
+		$xuhao=model('Author')->save($date,['id'=>intval($input['id'])]);
+		if($xuhao){
+			$this->success('更新成功',url('adminhotai/user'));
 		}else{
 			$this->error('更新失败');
 		}

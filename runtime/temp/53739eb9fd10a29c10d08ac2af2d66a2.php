@@ -1,11 +1,11 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"C:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\article.html";i:1530156398;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"C:\xampp\htdocs\think5\public/../application/admin\view\adminhotai\edit.html";i:1530157972;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>用户文章</title>
+    <title>用户列表</title>
     <meta name="description" content="这是一个 index 页面">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/think5/public/static/css/amazeui.datatables.min.css" />
     <link rel="stylesheet" href="/think5/public/static/css/app.css">
     <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="/think5/public/static/css/bootstrap.min.css">
 </head>
 
 <body data-type="widgets">
@@ -207,7 +208,7 @@
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="article.html" class="active">
+                    <a href="article.html">
                         <i class="am-icon-clone sidebar-nav-link-logo"></i> 用户文章
                         <span class="am-badge am-badge-secondary sidebar-nav-link-logo-ico am-round am-fr am-margin-right-sm">6</span>
                     </a>
@@ -219,10 +220,11 @@
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="user.html">
+                    <a href="user.html" class="active">
                         <i class="am-icon-table sidebar-nav-link-logo"></i> 用户列表
                     </a>
                 </li>
+                
             </ul>
         </div>
 
@@ -235,7 +237,7 @@
                     <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
                         <div class="widget am-cf">
                             <div class="widget-head am-cf">
-                                <div class="widget-title am-fl">用户文章</div>
+                                <div class="widget-title am-fl">用户列表</div>
                                 <div class="widget-function am-fr">
                                     <a href="javascript:;" class="am-icon-cog"></a>
                                 </div>
@@ -243,47 +245,49 @@
                             <div class="widget-body am-fr">
 
                                 <div class="am-u-sm-12">
+                                    <form class="form-horizontal" method="post" name="form1" action="<?php echo url('adminhotai/authorUpdate'); ?>">
+                                      <div class="form-group">
+                                        <input type="hidden" name="id" class="form-control" id="inputEmail3" placeholder="Username" value="<?php echo $author['id']; ?>">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="Username" value="<?php echo $author['username']; ?>">
+                                        </div>
+                                      </div>
 
-                                    
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">realname</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="realname" class="form-control" id="title" placeholder="realname" value="<?php echo $author['realname']; ?>">
+                                        </div>
+                                      </div>
 
-                                    <table width="100%" class="am-table am-table-compact am-table-striped tpl-table-black " id="example-r">
-                                        <thead>
-                                            <tr>
-                                                <th>序号</th>
-                                                <th>logo</th>
-                                                <th>title</th>
-                                                <th>文章分类</th>
-                                                <th>作者</th>
-                                                <th>发布时间</th>
-                                                <th>操作</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php if(is_array($articles) || $articles instanceof \think\Collection || $articles instanceof \think\Paginator): $num = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($num % 2 );++$num;?>
-                                            
-                                            <tr class="gradeX">
-                                                <td class="am-text-middle"><?php echo $num; ?></td>
-                                                <td class="am-text-middle">
-                                                    <a href="<?php echo url('@index/index/single',['id'=>$vo['id']]); ?>" target="_blank"><img src="/think5/public/uploads/<?php echo $vo['author_id']; ?>/<?php echo $vo['logo']; ?>" class="tpl-table-line-img"></a>
-                                                </td>
-                                                <td class="am-text-middle"><?php echo $vo['title']; ?></td>
-                                                <td class="am-text-middle"><?php echo getUsername($vo['category_id']); ?></td>
-                                                <td class="am-text-middle"><?php echo getAuthorname($vo['author_id']); ?></td>
-                                                <td class="am-text-middle"><?php echo $vo['create_time']; ?></td>
-                                                <td class="am-text-middle">
-                                                    <div class="tpl-table-black-operation">
-                                                        <a href="<?php echo url('adminhotai/articledelete',['id'=>$vo['id']]); ?>" class="tpl-table-black-operation-del">
-                                                            <i class="am-icon-trash"></i> 删除
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            
-                                            <?php endforeach; endif; else: echo "" ;endif; ?>
-                                            
-                                            <!-- more data -->
-                                        </tbody>
-                                    </table>
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Tel</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="tel" class="form-control" id="title" placeholder="Tel" value="<?php echo $author['tel']; ?>">
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" name="email" class="form-control" id="title" placeholder="Email" value="<?php echo $author['email']; ?>">
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Password</label>
+                                        <div class="col-sm-7">
+                                          <input type="password" name="password" class="form-control" id="title" placeholder="Email" value="<?php echo $author['password']; ?>">
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                          <button type="submit" class="btn btn-default">更新</button>
+                                        </div>
+                                      </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
